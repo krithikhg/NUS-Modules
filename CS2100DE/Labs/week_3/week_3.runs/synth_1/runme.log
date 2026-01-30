@@ -1,0 +1,294 @@
+
+*** Running vivado
+    with args -log Top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source Top.tcl -notrace
+Command: synth_design -top Top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17199
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2046.098 ; gain = 411.715 ; free physical = 45774 ; free virtual = 55288
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top' [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/sources_1/new/Top.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Adder' [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/sources_1/imports/Downloads/Adder.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Adder' (0#1) [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/sources_1/imports/Downloads/Adder.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Top' (0#1) [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/sources_1/new/Top.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2121.066 ; gain = 486.684 ; free physical = 45665 ; free virtual = 55179
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2138.879 ; gain = 504.496 ; free physical = 45665 ; free virtual = 55179
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2138.879 ; gain = 504.496 ; free physical = 45665 ; free virtual = 55179
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2138.879 ; gain = 0.000 ; free physical = 45665 ; free virtual = 55179
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB1_Red'. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB1_Red'. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB1_Green'. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB1_Green'. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB1_Blue'. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:121]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB1_Blue'. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:122]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:122]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB2_Red'. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB2_Red'. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:125]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:125]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB2_Green'. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:127]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:127]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB2_Green'. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:128]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:128]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB2_Blue'. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:130]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:130]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB2_Blue'. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:131]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc:131]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2339.629 ; gain = 0.000 ; free physical = 45650 ; free virtual = 55165
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+sh: 1: cannot create /home/krithikh/NUS: Is a directory
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2339.664 ; gain = 0.000 ; free physical = 45650 ; free virtual = 55165
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2339.664 ; gain = 705.281 ; free physical = 45654 ; free virtual = 55169
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2339.664 ; gain = 705.281 ; free physical = 45654 ; free virtual = 55169
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2339.664 ; gain = 705.281 ; free physical = 45654 ; free virtual = 55169
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2339.664 ; gain = 705.281 ; free physical = 45654 ; free virtual = 55170
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 15    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2339.664 ; gain = 705.281 ; free physical = 45624 ; free virtual = 55144
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2339.664 ; gain = 705.281 ; free physical = 45615 ; free virtual = 55143
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2339.664 ; gain = 705.281 ; free physical = 45615 ; free virtual = 55143
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2339.664 ; gain = 705.281 ; free physical = 45615 ; free virtual = 55143
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2339.664 ; gain = 705.281 ; free physical = 45620 ; free virtual = 55148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2339.664 ; gain = 705.281 ; free physical = 45620 ; free virtual = 55148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2339.664 ; gain = 705.281 ; free physical = 45620 ; free virtual = 55148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2339.664 ; gain = 705.281 ; free physical = 45620 ; free virtual = 55148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2339.664 ; gain = 705.281 ; free physical = 45620 ; free virtual = 55148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2339.664 ; gain = 705.281 ; free physical = 45620 ; free virtual = 55148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |     4|
+|2     |LUT3 |     2|
+|3     |LUT4 |     1|
+|4     |LUT5 |     3|
+|5     |LUT6 |     5|
+|6     |IBUF |    16|
+|7     |OBUF |     9|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2339.664 ; gain = 705.281 ; free physical = 45620 ; free virtual = 55148
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2339.664 ; gain = 504.496 ; free physical = 45620 ; free virtual = 55148
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2339.664 ; gain = 705.281 ; free physical = 45620 ; free virtual = 55148
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2339.664 ; gain = 0.000 ; free physical = 45620 ; free virtual = 55148
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2339.664 ; gain = 0.000 ; free physical = 45910 ; free virtual = 55438
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+sh: 1: cannot create /home/krithikh/NUS: Is a directory
+Synth Design complete | Checksum: bde5c57e
+INFO: [Common 17-83] Releasing license: Synthesis
+17 Infos, 27 Warnings, 26 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 2339.664 ; gain = 1052.227 ; free physical = 45910 ; free virtual = 55438
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1805.939; main = 1477.121; forked = 376.302
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3250.289; main = 2339.633; forked = 1006.680
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2387.641 ; gain = 0.000 ; free physical = 45910 ; free virtual = 55438
+INFO: [Common 17-1381] The checkpoint '/home/krithikh/NUS Modules/CS2100DE/Labs/week_3/week_3.runs/synth_1/Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 30 10:50:17 2026...

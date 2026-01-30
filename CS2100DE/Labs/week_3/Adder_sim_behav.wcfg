@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Adder_sim_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Adder_sim" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="60.301 ns"></ZoomEndTime>
+      <Cursor1Time time="58.900 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wvobject type="array" fp_name="/Adder_sim/in_a">
+      <obj_property name="ElementShortName">in_a[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in_a[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Adder_sim/in_b">
+      <obj_property name="ElementShortName">in_b[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in_b[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Adder_sim/result">
+      <obj_property name="ElementShortName">result[7:0]</obj_property>
+      <obj_property name="ObjectShortName">result[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Adder_sim/carry">
+      <obj_property name="ElementShortName">carry</obj_property>
+      <obj_property name="ObjectShortName">carry</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Adder_sim/uut/carry">
+      <obj_property name="ElementShortName">carry[7:0]</obj_property>
+      <obj_property name="ObjectShortName">carry[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+</wave_config>
