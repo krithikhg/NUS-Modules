@@ -1,0 +1,257 @@
+
+*** Running vivado
+    with args -log Counter.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Counter.tcl
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source Counter.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.srcs/utils_1/imports/synth_1/DFF.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.srcs/utils_1/imports/synth_1/DFF.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Counter -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 32061
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2049.031 ; gain = 412.715 ; free physical = 46288 ; free virtual = 56400
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Counter' [/home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.srcs/sources_1/new/Counter.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Counter' (0#1) [/home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.srcs/sources_1/new/Counter.sv:23]
+WARNING: [Synth 8-3917] design Counter has port count[7] driven by constant 0
+WARNING: [Synth 8-3917] design Counter has port count[6] driven by constant 0
+WARNING: [Synth 8-3917] design Counter has port count[5] driven by constant 0
+WARNING: [Synth 8-3917] design Counter has port count[4] driven by constant 0
+WARNING: [Synth 8-3917] design Counter has port count[3] driven by constant 0
+WARNING: [Synth 8-3917] design Counter has port count[2] driven by constant 0
+WARNING: [Synth 8-3917] design Counter has port count[1] driven by constant 0
+WARNING: [Synth 8-3917] design Counter has port count[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2124.000 ; gain = 487.684 ; free physical = 46197 ; free virtual = 56310
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2141.812 ; gain = 505.496 ; free physical = 46195 ; free virtual = 56308
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2141.812 ; gain = 505.496 ; free physical = 46195 ; free virtual = 56308
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2141.812 ; gain = 0.000 ; free physical = 46195 ; free virtual = 56308
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc]
+Finished Parsing XDC File [/home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.srcs/constrs_1/imports/Downloads/Nexys-4-Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2341.562 ; gain = 0.000 ; free physical = 46176 ; free virtual = 56294
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2341.598 ; gain = 0.000 ; free physical = 46176 ; free virtual = 56294
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2341.598 ; gain = 705.281 ; free physical = 46183 ; free virtual = 56295
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2341.598 ; gain = 705.281 ; free physical = 46183 ; free virtual = 56295
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2341.598 ; gain = 705.281 ; free physical = 46183 ; free virtual = 56295
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2341.598 ; gain = 705.281 ; free physical = 46182 ; free virtual = 56295
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 1     
++---Registers : 
+	               25 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design Counter has port count[7] driven by constant 0
+WARNING: [Synth 8-3917] design Counter has port count[6] driven by constant 0
+WARNING: [Synth 8-3917] design Counter has port count[5] driven by constant 0
+WARNING: [Synth 8-3917] design Counter has port count[4] driven by constant 0
+WARNING: [Synth 8-3917] design Counter has port count[3] driven by constant 0
+WARNING: [Synth 8-3917] design Counter has port count[2] driven by constant 0
+WARNING: [Synth 8-3917] design Counter has port count[1] driven by constant 0
+WARNING: [Synth 8-3917] design Counter has port count[0] driven by constant 0
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin A[7] with 1st driver pin 'count_reg[7]/Q' [/home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.srcs/sources_1/new/Counter.sv:29]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin A[7] with 2nd driver pin 'GND' [/home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.srcs/sources_1/new/Counter.sv:29]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net A[7] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.srcs/sources_1/new/Counter.sv:29]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin A[6] with 1st driver pin 'count_reg[6]/Q' [/home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.srcs/sources_1/new/Counter.sv:29]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin A[6] with 2nd driver pin 'GND' [/home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.srcs/sources_1/new/Counter.sv:29]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net A[6] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.srcs/sources_1/new/Counter.sv:29]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin A[5] with 1st driver pin 'count_reg[5]/Q' [/home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.srcs/sources_1/new/Counter.sv:29]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin A[5] with 2nd driver pin 'GND' [/home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.srcs/sources_1/new/Counter.sv:29]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net A[5] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.srcs/sources_1/new/Counter.sv:29]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin A[4] with 1st driver pin 'count_reg[4]/Q' [/home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.srcs/sources_1/new/Counter.sv:29]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin A[4] with 2nd driver pin 'GND' [/home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.srcs/sources_1/new/Counter.sv:29]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net A[4] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.srcs/sources_1/new/Counter.sv:29]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin A[3] with 1st driver pin 'count_reg[3]/Q' [/home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.srcs/sources_1/new/Counter.sv:29]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin A[3] with 2nd driver pin 'GND' [/home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.srcs/sources_1/new/Counter.sv:29]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net A[3] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.srcs/sources_1/new/Counter.sv:29]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin A[2] with 1st driver pin 'count_reg[2]/Q' [/home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.srcs/sources_1/new/Counter.sv:29]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin A[2] with 2nd driver pin 'GND' [/home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.srcs/sources_1/new/Counter.sv:29]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net A[2] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.srcs/sources_1/new/Counter.sv:29]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin A[1] with 1st driver pin 'count_reg[1]/Q' [/home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.srcs/sources_1/new/Counter.sv:29]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin A[1] with 2nd driver pin 'GND' [/home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.srcs/sources_1/new/Counter.sv:29]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net A[1] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.srcs/sources_1/new/Counter.sv:29]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin A[0] with 1st driver pin 'count_reg[0]/Q' [/home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.srcs/sources_1/new/Counter.sv:29]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin A[0] with 2nd driver pin 'GND' [/home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.srcs/sources_1/new/Counter.sv:29]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net A[0] is connected to at least one constant driver which has been preserved, other driver is ignored [/home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.srcs/sources_1/new/Counter.sv:29]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2341.598 ; gain = 705.281 ; free physical = 46181 ; free virtual = 56298
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2341.598 ; gain = 705.281 ; free physical = 46193 ; free virtual = 56310
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2341.598 ; gain = 705.281 ; free physical = 46193 ; free virtual = 56310
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2341.598 ; gain = 705.281 ; free physical = 46193 ; free virtual = 56310
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2341.598 ; gain = 705.281 ; free physical = 46181 ; free virtual = 56298
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2341.598 ; gain = 705.281 ; free physical = 46181 ; free virtual = 56298
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2341.598 ; gain = 705.281 ; free physical = 46181 ; free virtual = 56298
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2341.598 ; gain = 705.281 ; free physical = 46181 ; free virtual = 56298
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2341.598 ; gain = 705.281 ; free physical = 46181 ; free virtual = 56298
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2341.598 ; gain = 705.281 ; free physical = 46181 ; free virtual = 56298
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |OBUF |     8|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2341.598 ; gain = 705.281 ; free physical = 46181 ; free virtual = 56298
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 24 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2341.598 ; gain = 505.496 ; free physical = 46180 ; free virtual = 56297
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2341.598 ; gain = 705.281 ; free physical = 46180 ; free virtual = 56297
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2341.598 ; gain = 0.000 ; free physical = 46180 ; free virtual = 56297
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2341.598 ; gain = 0.000 ; free physical = 46429 ; free virtual = 56546
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 30dfbc7a
+INFO: [Common 17-83] Releasing license: Synthesis
+20 Infos, 17 Warnings, 24 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 2341.598 ; gain = 998.383 ; free physical = 46428 ; free virtual = 56546
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1777.681; main = 1445.695; forked = 380.419
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3252.223; main = 2245.543; forked = 1006.680
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2341.598 ; gain = 0.000 ; free physical = 46429 ; free virtual = 56546
+INFO: [Common 17-1381] The checkpoint '/home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.runs/synth_1/Counter.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Counter_utilization_synth.rpt -pb Counter_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 13 11:59:27 2026...
