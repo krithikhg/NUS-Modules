@@ -19,48 +19,39 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
-module Counter(
-    input clk,
-    input rst,
-    input up_down,
+module Counter( 
+    input clk, 
+    input rst, 
+    input up_down, 
     output reg [7:0] count
-    );
-    assign count = 0;
-    int real_counter = 0;
-    localparam N_COUNT = 25*(10**6);
-    localparam N_BITS = 25;
-    logic[N_BITS-1:0] clk_cnt;
+); 
+
+localparam N_COUNTS = (10**8) / (4); //for 4Hz, change denominator according to desired frequency
+localparam N_BITS  = $clog2(N_COUNTS); //automatically calculate bus size for storing clock counter
+
+logic[N_BITS-1:0] clk_cnt = 0;
+
+always @(posedge clk) begin
+    clk_cnt <= (clk_cnt == N_COUNTS-1) ? 0 : clk_cnt+1;
+    if(rst==0) begin
+        clk_cnt <= 0;
+    end
+ 
+ end
+ 
+ always @(posedge clk) begin
+    if(clk_cnt == 0) begin
     
-    
-    
-    always @(posedge clk) begin
-        
-        if(!rst) begin
-            clk_cnt <= 0;
-            count <= 0;
+        if(up_down ==0) begin 
+            count <= count + 1; 
         end 
-        else 
-            if(clk_cnt == N_COUNT) begin
-                clk_cnt <= 0;
-            end 
-            if(clk_cnt == 0) begin
-                if(up_down) begin
-                    count <= count + 1;
-                end
-                else begin
-                    count <= count -1;
-                end
-                if(count == 256) begin
-                    count <= 0;
-                end
-                if(count == -1) begin
-                    count <= 255;
-                end
-             end
-         end
+        else begin 
+            count <= count - 1; 
+        end 
+    end 
     
-    
-    
-    
-endmodule
+    if(rst == 0) begin 
+        count <= 0;
+    end 
+end
+endmodule 

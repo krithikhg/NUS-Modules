@@ -3,12 +3,12 @@
 # SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Fri Feb 13 11:59:10 2026
-# Process ID: 32044
+# Start of session at: Tue Feb 17 15:42:31 2026
+# Process ID: 66621
 # Current directory: /home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.runs/synth_1
-# Command line: vivado -log Counter.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Counter.tcl
-# Log file: /home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.runs/synth_1/Counter.vds
+# Command line: vivado -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+# Log file: /home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.runs/synth_1/Top.vds
 # Journal file: /home/krithikh/NUS-Modules/CS2100DE/Labs/week_5/week_5.runs/synth_1/vivado.jou
-# Running On: krithikh-ThinkPad-P1-Gen-7, OS: Linux, CPU Frequency: 1702.481 MHz, CPU Physical cores: 16, Host memory: 66830 MB
+# Running On: krithikh-ThinkPad-P1-Gen-7, OS: Linux, CPU Frequency: 1934.666 MHz, CPU Physical cores: 16, Host memory: 66830 MB
 #-----------------------------------------------------------
-source Counter.tcl -notrace
+source Top.tcl -notrace
