@@ -36,7 +36,6 @@ always @(posedge clk) begin
     if(rst==0) begin
         clk_cnt <= 0;
     end
- 
  end
  
  always @(posedge clk) begin
