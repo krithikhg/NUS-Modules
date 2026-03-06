@@ -1,0 +1,17 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot Decoder_Extend_sim_behav xil_defaultlib.Decoder_Extend_sim xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-9543] actual bit length 2 differs from formal bit length 3 for port 'PCS' [/home/krithikh/NUS-Modules/CS2100DE/Labs/week_7/week_7.srcs/sim_1/imports/Downloads/Decoder_Extend_sim.sv:41]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Decoder
+Compiling module xil_defaultlib.Extend
+Compiling module xil_defaultlib.Decoder_Extend_sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Decoder_Extend_sim_behav
