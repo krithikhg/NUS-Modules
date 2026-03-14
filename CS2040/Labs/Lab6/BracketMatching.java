@@ -1,6 +1,6 @@
 //Krithikh Gopalakrishnan, A0243980Y
 
-import java.util.*
+import java.util.*;
 
 public class BracketMatching {
     public static void main(String[] args) {
