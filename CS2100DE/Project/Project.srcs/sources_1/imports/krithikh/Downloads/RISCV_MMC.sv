@@ -51,7 +51,7 @@ module RISCV_MMC(
 	
 	logic [31:0] srca;
 	logic [31:0] srcb;
-	logic [31:0] ALUresult;
+//	logic [31:0] ALUresult;
 	logic [2:0] ALUFlags;
 	logic [3:0] ALUControl;
 	logic [31:0] ALUResult;
@@ -62,8 +62,15 @@ module RISCV_MMC(
     logic [31:0] readData;
     logic mem_to_reg;
     logic [31:0] result;
+    
+    logic[31:0] adder_pc_a;
       
+	assign srca = rd1;
 	
+	assign readData = mem_read_data;
+	always_comb mem_write_data = rd2;
+	assign alu_result = ALUResult;
+
 	
 
 	// Instantiate your extender module here
@@ -139,7 +146,6 @@ module RISCV_MMC(
         .result(PC_IN),
         .carry_out()
     );
-    
     
     // Other multiplexers
     
