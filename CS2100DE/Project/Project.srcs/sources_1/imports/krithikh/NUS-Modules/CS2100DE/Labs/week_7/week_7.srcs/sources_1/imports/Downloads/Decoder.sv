@@ -48,10 +48,10 @@ module Decoder(
         
         case (opcode)
             8'h33: begin // R type
-                alu_control = {funct3, funct7[5]};
+                alu_control = {funct7[5], funct3};
             end
             8'h13: begin // I type
-                alu_control = {funct3, {(funct3 == 4'h5) ? funct7[5] : 1'b0}};
+                alu_control = {(funct3 == 3'b101) ? funct7[5] : 1'b0, funct3};
                 imm_src = 3'b000;
             end
             8'h03: begin // I type

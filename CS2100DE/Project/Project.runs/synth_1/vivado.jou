@@ -3,12 +3,12 @@
 # SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Fri Mar 13 11:00:02 2026
-# Process ID: 154675
+# Start of session at: Fri Mar 20 11:42:13 2026
+# Process ID: 24515
 # Current directory: /home/krithikh/NUS-Modules/CS2100DE/Project/Project.runs/synth_1
-# Command line: vivado -log ALU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ALU.tcl
-# Log file: /home/krithikh/NUS-Modules/CS2100DE/Project/Project.runs/synth_1/ALU.vds
+# Command line: vivado -log Top_MMC.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_MMC.tcl
+# Log file: /home/krithikh/NUS-Modules/CS2100DE/Project/Project.runs/synth_1/Top_MMC.vds
 # Journal file: /home/krithikh/NUS-Modules/CS2100DE/Project/Project.runs/synth_1/vivado.jou
-# Running On: krithikh-ThinkPad-P1-Gen-7, OS: Linux, CPU Frequency: 1999.893 MHz, CPU Physical cores: 16, Host memory: 66830 MB
+# Running On: krithikh-ThinkPad-P1-Gen-7, OS: Linux, CPU Frequency: 1934.320 MHz, CPU Physical cores: 16, Host memory: 66830 MB
 #-----------------------------------------------------------
-source ALU.tcl -notrace
+source Top_MMC.tcl -notrace
