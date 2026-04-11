@@ -25,7 +25,7 @@ public class LostMap {
         ArrayList<int[]> roads = new ArrayList<>();
         for (int i = 0; i < EdgeList.size(); i++) {
             int[] e = EdgeList.get(i);
-            int u = e[0], v = e[1]
+            int u = e[0], v = e[1];
             if (!UF.isSameSet(u, v)) { 
                 UF.unionSet(u, v);
                 roads.add(e);
