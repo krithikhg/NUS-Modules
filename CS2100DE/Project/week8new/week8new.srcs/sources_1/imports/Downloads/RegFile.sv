@@ -34,8 +34,15 @@ module RegFile(
     logic [31:0] reg_bank [0:31];
 
     always_comb begin
-        RD1 <= (rs1 == 0) ? 32'b0 : reg_bank[rs1];
-        RD2 <= (rs2 == 0) ? 32'b0 : reg_bank[rs2];
+        if (rs1 != 0 && rs1 == rd && we)
+            RD1 <= WD;
+        else
+            RD1 <= (rs1 == 0) ? 32'b0 : reg_bank[rs1];
+
+        if (rs2 != 0 && rs2 == rd && we)
+            RD2 <= WD;
+        else
+            RD2 <= (rs2 == 0) ? 32'b0 : reg_bank[rs2];
     end
     
     always @(posedge clk) begin

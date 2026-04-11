@@ -1,40 +1,10 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="NUS" Host="ELE-CWQ91D3" Pid="23248" HostCore="12" HostMemory="08291098624">
+    <Process Command="vivado" Owner="krithikh" Host="krithikh-ThinkPad-P1-Gen-7" Pid="45214" HostCore="22" HostMemory="65263852">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="NUS" Host="ELE-CWQ91D3" Pid="21108" HostCore="12" HostMemory="08291098624">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="NUS" Host="ELE-CWQ91D3" Pid="10532" HostCore="12" HostMemory="08291098624">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="NUS" Host="ELE-CWQ91D3" Pid="13704" HostCore="12" HostMemory="08291098624">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="NUS" Host="ELE-CWQ91D3" Pid="21228" HostCore="12" HostMemory="08291098624">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="NUS" Host="ELE-CWQ91D3" Pid="20300" HostCore="12" HostMemory="08291098624">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="NUS" Host="ELE-CWQ91D3" Pid="11924" HostCore="12" HostMemory="08291098624">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="krithikh" Host="krithikh-ThinkPad-P1-Gen-7" Pid="9562" HostCore="22" HostMemory="65263852">
+    <Process Command="vivado" Owner="krithikh" Host="krithikh-ThinkPad-P1-Gen-7" Pid="64150" HostCore="22" HostMemory="65263852">
     </Process>
 </ProcessHandle>

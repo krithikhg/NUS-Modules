@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/NUS/week8new/week8new.srcs/constrs_1/imports/Downloads/Nexys-4-Master-2100.xdc rfile:../../../week8new.srcs/constrs_1/imports/Downloads/Nexys-4-Master-2100.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/constrs_1/imports/Downloads/Nexys-4-Master-2100.xdc rfile:../../../week8new.srcs/constrs_1/imports/Downloads/Nexys-4-Master-2100.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN E3 [get_ports clk]
 set_property src_info {type:XDC file:1 line:14 export:INPUT save:INPUT read:READ} [current_design]

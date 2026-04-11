@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date             : Fri Mar 20 11:36:24 2026
-| Host             : ELE-CWQ91D3 running 64-bit major release  (build 9200)
+| Tool Version     : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date             : Fri Apr 10 11:40:50 2026
+| Host             : krithikh-ThinkPad-P1-Gen-7 running 64-bit Ubuntu 22.04.5 LTS
 | Command          : report_power -file Top_MMC_power_routed.rpt -pb Top_MMC_power_summary_routed.pb -rpx Top_MMC_power_routed.rpx
 | Design           : Top_MMC
 | Device           : xc7a100tcsg324-1
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.101        |
+| Total On-Chip Power (W)  | 0.124        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.017        |
-| Device Static (W)        | 0.084        |
+| Dynamic (W)              | 0.027        |
+| Device Static (W)        | 0.097        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 84.5         |
-| Junction Temperature (C) | 25.5         |
+| Max Ambient (C)          | 84.4         |
+| Junction Temperature (C) | 25.6         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,18 +53,18 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |    <0.001 |        3 |       --- |             --- |
-| Slice Logic              |     0.008 |     1000 |       --- |             --- |
-|   LUT as Logic           |     0.006 |      463 |     63400 |            0.73 |
+| Slice Logic              |     0.012 |     2130 |       --- |             --- |
+|   LUT as Logic           |     0.010 |     1031 |     63400 |            1.63 |
 |   LUT as Distributed RAM |     0.001 |      172 |     19000 |            0.91 |
-|   F7/F8 Muxes            |    <0.001 |      100 |     63400 |            0.16 |
-|   CARRY4                 |    <0.001 |       20 |     15850 |            0.13 |
-|   Register               |    <0.001 |      111 |    126800 |            0.09 |
+|   CARRY4                 |    <0.001 |       63 |     15850 |            0.40 |
+|   Register               |    <0.001 |      543 |    126800 |            0.43 |
+|   F7/F8 Muxes            |    <0.001 |      117 |     63400 |            0.18 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
-|   Others                 |     0.000 |        7 |       --- |             --- |
-| Signals                  |     0.009 |      735 |       --- |             --- |
+|   Others                 |     0.000 |        9 |       --- |             --- |
+| Signals                  |     0.014 |     1646 |       --- |             --- |
 | I/O                      |    <0.001 |       54 |       210 |           25.71 |
-| Static Power             |     0.084 |          |           |                 |
-| Total                    |     0.101 |          |           |                 |
+| Static Power             |     0.097 |          |           |                 |
+| Total                    |     0.124 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,9 +74,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.032 |       0.017 |      0.015 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.042 |       0.027 |      0.015 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -143,10 +143,11 @@ Table of Contents
 +-----------------+-----------+
 | Name            | Power (W) |
 +-----------------+-----------+
-| Top_MMC         |     0.017 |
-|   cpu           |     0.015 |
-|     counter_uut |     0.012 |
-|     reg_uut     |     0.003 |
+| Top_MMC         |     0.027 |
+|   cpu           |     0.024 |
+|     alu_uut     |     0.003 |
+|     counter_uut |     0.013 |
+|     reg_uut     |     0.002 |
 +-----------------+-----------+
 
 

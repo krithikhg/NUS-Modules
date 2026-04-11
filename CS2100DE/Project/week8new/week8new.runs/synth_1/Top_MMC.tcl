@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/NUS/week8new/week8new.runs/synth_1/Top_MMC.tcl"
+  variable script "/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.runs/synth_1/Top_MMC.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,7 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 3
+set_param chipscope.maxJobs 5
 set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
@@ -78,28 +78,28 @@ create_project -in_memory -part xc7a100tcsg324-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/NUS/week8new/week8new.cache/wt [current_project]
-set_property parent.project_path C:/Users/NUS/week8new/week8new.xpr [current_project]
+set_property webtalk.parent_dir /home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.cache/wt [current_project]
+set_property parent.project_path /home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/NUS/week8new/week8new.cache/ip [current_project]
+set_property ip_output_repo /home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_mem {
-  C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/AA_IROM.mem
-  C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/AA_DMEM.mem
+  /home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/AA_IROM.mem
+  /home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/AA_DMEM.mem
 }
 read_verilog -library xil_defaultlib -sv {
-  C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/ALU.sv
-  C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/Decoder.sv
-  C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/Extend.sv
-  C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/PC_Logic.sv
-  C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/ProgramCounter.sv
-  C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv
-  C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/RegFile.sv
-  C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/SevenSegDecoder.sv
-  C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/Top_MMC.sv
+  /home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/ALU.sv
+  /home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/Decoder.sv
+  /home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/Extend.sv
+  /home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/PC_Logic.sv
+  /home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/ProgramCounter.sv
+  /home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv
+  /home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RegFile.sv
+  /home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/SevenSegDecoder.sv
+  /home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/Top_MMC.sv
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -110,12 +110,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/NUS/week8new/week8new.srcs/constrs_1/imports/Downloads/Nexys-4-Master-2100.xdc
-set_property used_in_implementation false [get_files C:/Users/NUS/week8new/week8new.srcs/constrs_1/imports/Downloads/Nexys-4-Master-2100.xdc]
+read_xdc /home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/constrs_1/imports/Downloads/Nexys-4-Master-2100.xdc
+set_property used_in_implementation false [get_files /home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/constrs_1/imports/Downloads/Nexys-4-Master-2100.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental C:/Users/NUS/week8new/week8new.srcs/utils_1/imports/synth_1/Top_Test.dcp
+read_checkpoint -auto_incremental -incremental /home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/utils_1/imports/synth_1/Top_Test.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

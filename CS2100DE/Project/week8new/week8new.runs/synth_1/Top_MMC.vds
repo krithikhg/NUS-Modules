@@ -1,20 +1,19 @@
 #-----------------------------------------------------------
 # Vivado v2023.2 (64-bit)
-# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Fri Mar 20 11:31:37 2026
-# Process ID: 18372
-# Current directory: C:/Users/NUS/week8new/week8new.runs/synth_1
-# Command line: vivado.exe -log Top_MMC.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_MMC.tcl
-# Log file: C:/Users/NUS/week8new/week8new.runs/synth_1/Top_MMC.vds
-# Journal file: C:/Users/NUS/week8new/week8new.runs/synth_1\vivado.jou
-# Running On: ELE-CWQ91D3, OS: Windows, CPU Frequency: 3096 MHz, CPU Physical cores: 6, Host memory: 8291 MB
+# Start of session at: Fri Apr 10 11:39:48 2026
+# Process ID: 44844
+# Current directory: /home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.runs/synth_1
+# Command line: vivado -log Top_MMC.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_MMC.tcl
+# Log file: /home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.runs/synth_1/Top_MMC.vds
+# Journal file: /home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.runs/synth_1/vivado.jou
+# Running On: krithikh-ThinkPad-P1-Gen-7, OS: Linux, CPU Frequency: 1900.000 MHz, CPU Physical cores: 16, Host memory: 66830 MB
 #-----------------------------------------------------------
 source Top_MMC.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 454.766 ; gain = 184.051
-Command: read_checkpoint -auto_incremental -incremental C:/Users/NUS/week8new/week8new.srcs/utils_1/imports/synth_1/Top_Test.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/NUS/week8new/week8new.srcs/utils_1/imports/synth_1/Top_Test.dcp for incremental synthesis
+Command: read_checkpoint -auto_incremental -incremental /home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/utils_1/imports/synth_1/Top_Test.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/utils_1/imports/synth_1/Top_Test.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top Top_MMC -part xc7a100tcsg324-1
 Starting synth_design
@@ -23,43 +22,65 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
-INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 21560
+INFO: [Synth 8-7075] Helper process launched with PID 44908
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1309.645 ; gain = 441.309
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2017.516 ; gain = 404.715 ; free physical = 47069 ; free virtual = 57052
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6901] identifier 'mem_to_reg' is used before its declaration [C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:36]
-WARNING: [Synth 8-6901] identifier 'result' is used before its declaration [C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:37]
-WARNING: [Synth 8-6901] identifier 'pc' is used before its declaration [C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:38]
-WARNING: [Synth 8-6901] identifier 'RD2' is used before its declaration [C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:39]
-INFO: [Synth 8-6157] synthesizing module 'Top_MMC' [C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/Top_MMC.sv:23]
-INFO: [Synth 8-3876] $readmem data file 'AA_IROM.mem' is read successfully [C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/Top_MMC.sv:69]
-INFO: [Synth 8-3876] $readmem data file 'AA_DMEM.mem' is read successfully [C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/Top_MMC.sv:70]
-INFO: [Synth 8-6157] synthesizing module 'SevenSegDecoder' [C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/SevenSegDecoder.sv:23]
-INFO: [Synth 8-226] default block is never used [C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/SevenSegDecoder.sv:64]
-INFO: [Synth 8-6155] done synthesizing module 'SevenSegDecoder' (0#1) [C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/SevenSegDecoder.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'RISCV_MMC' [C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'Extend' [C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/Extend.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'Extend' (0#1) [C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/Extend.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'Decoder' [C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/Decoder.sv:2]
-WARNING: [Synth 8-567] referenced signal 'opcode' should be on the sensitivity list [C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/Decoder.sv:20]
-WARNING: [Synth 8-567] referenced signal 'funct7' should be on the sensitivity list [C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/Decoder.sv:20]
-WARNING: [Synth 8-567] referenced signal 'funct3' should be on the sensitivity list [C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/Decoder.sv:20]
-INFO: [Synth 8-6155] done synthesizing module 'Decoder' (0#1) [C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/Decoder.sv:2]
-INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/ALU.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/ALU.sv:23]
-WARNING: [Synth 8-689] width (4) of port connection 'flags' does not match port width (3) of module 'ALU' [C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:74]
-INFO: [Synth 8-6157] synthesizing module 'RegFile' [C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/RegFile.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'RegFile' (0#1) [C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/RegFile.sv:23]
-INFO: [Synth 8-6157] synthesizing module 'PC_Logic' [C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/PC_Logic.sv:34]
-INFO: [Synth 8-226] default block is never used [C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/PC_Logic.sv:49]
-INFO: [Synth 8-6155] done synthesizing module 'PC_Logic' (0#1) [C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/PC_Logic.sv:34]
-WARNING: [Synth 8-689] width (4) of port connection 'alu_flags' does not match port width (3) of module 'PC_Logic' [C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:93]
-INFO: [Synth 8-6157] synthesizing module 'ProgramCounter' [C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/ProgramCounter.sv:34]
-INFO: [Synth 8-6155] done synthesizing module 'ProgramCounter' (0#1) [C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/ProgramCounter.sv:34]
-INFO: [Synth 8-6155] done synthesizing module 'RISCV_MMC' (0#1) [C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'Top_MMC' (0#1) [C:/Users/NUS/week8new/week8new.srcs/sources_1/imports/Downloads/Top_MMC.sv:23]
+INFO: [Synth 8-11241] undeclared symbol 'memwb_reg_write', assumed default net type 'wire' [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:120]
+INFO: [Synth 8-11241] undeclared symbol 'memwb_rd', assumed default net type 'wire' [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:123]
+INFO: [Synth 8-11241] undeclared symbol 'wb_write_data', assumed default net type 'wire' [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:124]
+WARNING: [Synth 8-8895] 'memwb_rd' is already implicitly declared on line 123 [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:277]
+WARNING: [Synth 8-8895] 'memwb_reg_write' is already implicitly declared on line 120 [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:278]
+WARNING: [Synth 8-8895] 'wb_write_data' is already implicitly declared on line 124 [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:304]
+WARNING: [Synth 8-6901] identifier 'pc_current' is used before its declaration [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:38]
+WARNING: [Synth 8-6901] identifier 'exmem_alu_result' is used before its declaration [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:39]
+WARNING: [Synth 8-6901] identifier 'exmem_mem_write' is used before its declaration [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:40]
+WARNING: [Synth 8-6901] identifier 'exmem_mem_to_reg' is used before its declaration [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:41]
+WARNING: [Synth 8-6901] identifier 'exmem_RD2' is used before its declaration [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:42]
+WARNING: [Synth 8-6901] identifier 'idex_mem_to_reg' is used before its declaration [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:51]
+WARNING: [Synth 8-6901] identifier 'idex_rd' is used before its declaration [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:51]
+WARNING: [Synth 8-6901] identifier 'idex_rd' is used before its declaration [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:52]
+WARNING: [Synth 8-6901] identifier 'ifid_instr' is used before its declaration [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:52]
+WARNING: [Synth 8-6901] identifier 'idex_rd' is used before its declaration [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:52]
+WARNING: [Synth 8-6901] identifier 'ifid_instr' is used before its declaration [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:52]
+WARNING: [Synth 8-6901] identifier 'ex_PC_src' is used before its declaration [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:55]
+WARNING: [Synth 8-6901] identifier 'ex_pc_next' is used before its declaration [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:62]
+WARNING: [Synth 8-6901] identifier 'exmem_reg_write' is used before its declaration [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:184]
+WARNING: [Synth 8-6901] identifier 'exmem_rd' is used before its declaration [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:184]
+WARNING: [Synth 8-6901] identifier 'exmem_rd' is used before its declaration [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:184]
+WARNING: [Synth 8-6901] identifier 'exmem_reg_write' is used before its declaration [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:188]
+WARNING: [Synth 8-6901] identifier 'exmem_rd' is used before its declaration [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:188]
+WARNING: [Synth 8-6901] identifier 'exmem_rd' is used before its declaration [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:188]
+WARNING: [Synth 8-6901] identifier 'exmem_pc_to_reg' is used before its declaration [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:194]
+WARNING: [Synth 8-6901] identifier 'exmem_pc' is used before its declaration [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:194]
+WARNING: [Synth 8-6901] identifier 'exmem_alu_result' is used before its declaration [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:194]
+INFO: [Synth 8-6157] synthesizing module 'Top_MMC' [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/Top_MMC.sv:23]
+INFO: [Synth 8-3876] $readmem data file 'AA_IROM.mem' is read successfully [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/Top_MMC.sv:69]
+INFO: [Synth 8-3876] $readmem data file 'AA_DMEM.mem' is read successfully [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/Top_MMC.sv:70]
+INFO: [Synth 8-6157] synthesizing module 'SevenSegDecoder' [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/SevenSegDecoder.sv:23]
+INFO: [Synth 8-226] default block is never used [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/SevenSegDecoder.sv:64]
+INFO: [Synth 8-6155] done synthesizing module 'SevenSegDecoder' (0#1) [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/SevenSegDecoder.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'RISCV_MMC' [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ProgramCounter' [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/ProgramCounter.sv:34]
+INFO: [Synth 8-6155] done synthesizing module 'ProgramCounter' (0#1) [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/ProgramCounter.sv:34]
+INFO: [Synth 8-6157] synthesizing module 'Decoder' [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/Decoder.sv:2]
+WARNING: [Synth 8-567] referenced signal 'opcode' should be on the sensitivity list [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/Decoder.sv:22]
+WARNING: [Synth 8-567] referenced signal 'funct7' should be on the sensitivity list [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/Decoder.sv:22]
+WARNING: [Synth 8-567] referenced signal 'funct3' should be on the sensitivity list [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/Decoder.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'Decoder' (0#1) [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/Decoder.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'Extend' [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/Extend.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Extend' (0#1) [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/Extend.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'RegFile' [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RegFile.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'RegFile' (0#1) [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RegFile.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/ALU.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/ALU.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'PC_Logic' [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/PC_Logic.sv:34]
+INFO: [Synth 8-226] default block is never used [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/PC_Logic.sv:49]
+INFO: [Synth 8-6155] done synthesizing module 'PC_Logic' (0#1) [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/PC_Logic.sv:34]
+INFO: [Synth 8-6155] done synthesizing module 'RISCV_MMC' (0#1) [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/RISCV_MMC.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Top_MMC' (0#1) [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/sources_1/imports/Downloads/Top_MMC.sv:23]
 WARNING: [Synth 8-7129] Port instr[31] in module Decoder is either unconnected or has no load
 WARNING: [Synth 8-7129] Port instr[29] in module Decoder is either unconnected or has no load
 WARNING: [Synth 8-7129] Port instr[28] in module Decoder is either unconnected or has no load
@@ -82,85 +103,89 @@ WARNING: [Synth 8-7129] Port instr[9] in module Decoder is either unconnected or
 WARNING: [Synth 8-7129] Port instr[8] in module Decoder is either unconnected or has no load
 WARNING: [Synth 8-7129] Port instr[7] in module Decoder is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1418.461 ; gain = 550.125
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2094.484 ; gain = 481.684 ; free physical = 46969 ; free virtual = 56955
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1418.461 ; gain = 550.125
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2112.297 ; gain = 499.496 ; free physical = 46968 ; free virtual = 56954
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1418.461 ; gain = 550.125
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2112.297 ; gain = 499.496 ; free physical = 46968 ; free virtual = 56954
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1418.461 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2112.297 ; gain = 0.000 ; free physical = 46968 ; free virtual = 56954
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/NUS/week8new/week8new.srcs/constrs_1/imports/Downloads/Nexys-4-Master-2100.xdc]
-Finished Parsing XDC File [C:/Users/NUS/week8new/week8new.srcs/constrs_1/imports/Downloads/Nexys-4-Master-2100.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/NUS/week8new/week8new.srcs/constrs_1/imports/Downloads/Nexys-4-Master-2100.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_MMC_propImpl.xdc].
+Parsing XDC File [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/constrs_1/imports/Downloads/Nexys-4-Master-2100.xdc]
+Finished Parsing XDC File [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/constrs_1/imports/Downloads/Nexys-4-Master-2100.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.srcs/constrs_1/imports/Downloads/Nexys-4-Master-2100.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_MMC_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Top_MMC_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1453.738 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2265.047 ; gain = 0.000 ; free physical = 46955 ; free virtual = 56942
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1453.738 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2265.082 ; gain = 0.000 ; free physical = 46955 ; free virtual = 56942
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1453.738 ; gain = 585.402
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2265.082 ; gain = 652.281 ; free physical = 46978 ; free virtual = 56967
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1453.738 ; gain = 585.402
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2265.082 ; gain = 652.281 ; free physical = 46978 ; free virtual = 56968
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1453.738 ; gain = 585.402
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2265.082 ; gain = 652.281 ; free physical = 46978 ; free virtual = 56968
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1453.738 ; gain = 585.402
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2265.082 ; gain = 652.281 ; free physical = 46975 ; free virtual = 56976
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input   32 Bit       Adders := 2     
+	   2 Input   32 Bit       Adders := 5     
 	   3 Input   32 Bit       Adders := 1     
 	   2 Input    4 Bit       Adders := 1     
 	   2 Input    3 Bit       Adders := 1     
 +---XORs : 
 	   2 Input     32 Bit         XORs := 1     
 +---Registers : 
-	               32 Bit    Registers := 2     
+	               32 Bit    Registers := 14    
 	               16 Bit    Registers := 1     
 	                8 Bit    Registers := 1     
-	                4 Bit    Registers := 2     
-	                3 Bit    Registers := 1     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 12    
 +---RAMs : 
 	               8K Bit	(256 X 32 bit)          RAMs := 1     
 	             1024 Bit	(32 X 32 bit)          RAMs := 1     
 +---Muxes : 
-	   2 Input   32 Bit        Muxes := 8     
-	  11 Input   32 Bit        Muxes := 1     
-	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 15    
+	   3 Input   32 Bit        Muxes := 3     
+	 140 Input   32 Bit        Muxes := 1     
 	   8 Input    8 Bit        Muxes := 1     
-	   7 Input    4 Bit        Muxes := 1     
-	   7 Input    3 Bit        Muxes := 1     
-	   7 Input    2 Bit        Muxes := 1     
-	   7 Input    1 Bit        Muxes := 4     
-	   2 Input    1 Bit        Muxes := 2     
-	   4 Input    1 Bit        Muxes := 1     
+	  10 Input    4 Bit        Muxes := 1     
+	  10 Input    3 Bit        Muxes := 1     
+	  10 Input    2 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	  10 Input    1 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 4     
 	   3 Input    1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -179,19 +204,19 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1453.738 ; gain = 585.402
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2265.082 ; gain = 652.281 ; free physical = 46942 ; free virtual = 56937
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
 Distributed RAM: Preliminary Mapping Report (see note below)
-+------------+--------------------------+-----------+----------------------+-----------------+
-|Module Name | RTL Object               | Inference | Size (Depth x Width) | Primitives      | 
-+------------+--------------------------+-----------+----------------------+-----------------+
-|Top_MMC     | cpu/reg_uut/reg_bank_reg | Implied   | 32 x 32              | RAM32M x 12     | 
-|Top_MMC     | data_memory_reg          | Implied   | 256 x 32             | RAM256X1S x 32  | 
-+------------+--------------------------+-----------+----------------------+-----------------+
++------------+----------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object           | Inference | Size (Depth x Width) | Primitives      | 
++------------+----------------------+-----------+----------------------+-----------------+
+|cpu         | reg_uut/reg_bank_reg | Implied   | 32 x 32              | RAM32M x 12     | 
+|Top_MMC     | data_memory_reg      | Implied   | 256 x 32             | RAM256X1S x 32  | 
++------------+----------------------+-----------+----------------------+-----------------+
 
 Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
 ---------------------------------------------------------------------------------
@@ -201,25 +226,25 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1453.738 ; gain = 585.402
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2265.082 ; gain = 652.281 ; free physical = 46898 ; free virtual = 56967
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1613.930 ; gain = 745.594
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2265.082 ; gain = 652.281 ; free physical = 46894 ; free virtual = 56965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
 Distributed RAM: Final Mapping Report
-+------------+--------------------------+-----------+----------------------+-----------------+
-|Module Name | RTL Object               | Inference | Size (Depth x Width) | Primitives      | 
-+------------+--------------------------+-----------+----------------------+-----------------+
-|Top_MMC     | cpu/reg_uut/reg_bank_reg | Implied   | 32 x 32              | RAM32M x 12     | 
-|Top_MMC     | data_memory_reg          | Implied   | 256 x 32             | RAM256X1S x 32  | 
-+------------+--------------------------+-----------+----------------------+-----------------+
++------------+----------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object           | Inference | Size (Depth x Width) | Primitives      | 
++------------+----------------------+-----------+----------------------+-----------------+
+|cpu         | reg_uut/reg_bank_reg | Implied   | 32 x 32              | RAM32M x 12     | 
+|Top_MMC     | data_memory_reg      | Implied   | 256 x 32             | RAM256X1S x 32  | 
++------------+----------------------+-----------+----------------------+-----------------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -228,7 +253,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1614.969 ; gain = 746.633
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2265.082 ; gain = 652.281 ; free physical = 46893 ; free virtual = 56965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -246,37 +271,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1614.969 ; gain = 746.633
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2265.082 ; gain = 652.281 ; free physical = 46949 ; free virtual = 56968
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1614.969 ; gain = 746.633
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2265.082 ; gain = 652.281 ; free physical = 46949 ; free virtual = 56968
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1614.969 ; gain = 746.633
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2265.082 ; gain = 652.281 ; free physical = 46949 ; free virtual = 56968
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1614.969 ; gain = 746.633
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2265.082 ; gain = 652.281 ; free physical = 46949 ; free virtual = 56968
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1614.969 ; gain = 746.633
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2265.082 ; gain = 652.281 ; free physical = 46899 ; free virtual = 56954
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1614.969 ; gain = 746.633
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2265.082 ; gain = 652.281 ; free physical = 46899 ; free virtual = 56954
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -293,47 +318,49 @@ Report Cell Usage:
 |      |Cell      |Count |
 +------+----------+------+
 |1     |BUFG      |     2|
-|2     |CARRY4    |    20|
-|3     |LUT1      |     6|
-|4     |LUT2      |    54|
-|5     |LUT3      |    41|
-|6     |LUT4      |   113|
-|7     |LUT5      |   102|
-|8     |LUT6      |   231|
-|9     |MUXF7     |     4|
+|2     |CARRY4    |    63|
+|3     |LUT1      |    18|
+|4     |LUT2      |   145|
+|5     |LUT3      |   133|
+|6     |LUT4      |   190|
+|7     |LUT5      |   208|
+|8     |LUT6      |   499|
+|9     |MUXF7     |    21|
 |10    |RAM256X1S |    32|
 |11    |RAM32M    |    10|
 |12    |RAM32X1D  |     4|
-|13    |FDRE      |   103|
+|13    |FDRE      |   535|
 |14    |FDSE      |     8|
 |15    |IBUF      |    23|
 |16    |OBUF      |    31|
 +------+----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1614.969 ; gain = 746.633
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2265.082 ; gain = 652.281 ; free physical = 46888 ; free virtual = 56950
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:00:52 . Memory (MB): peak = 1614.969 ; gain = 711.355
-Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1614.969 ; gain = 746.633
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2265.082 ; gain = 499.496 ; free physical = 46887 ; free virtual = 56950
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2265.082 ; gain = 652.281 ; free physical = 46887 ; free virtual = 56950
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1626.812 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 70 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2265.082 ; gain = 0.000 ; free physical = 47188 ; free virtual = 57253
+INFO: [Netlist 29-17] Analyzing 130 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1630.480 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2265.082 ; gain = 0.000 ; free physical = 47211 ; free virtual = 57251
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 46 instances were transformed.
   RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 32 instances
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
   RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
 
-Synth Design complete | Checksum: 326acf7d
+Synth Design complete | Checksum: ee084ac6
 INFO: [Common 17-83] Releasing license: Synthesis
-43 Infos, 31 Warnings, 0 Critical Warnings and 0 Errors encountered.
+46 Infos, 50 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 1630.480 ; gain = 1171.723
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1630.480 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/NUS/week8new/week8new.runs/synth_1/Top_MMC.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 2265.082 ; gain = 945.383 ; free physical = 47210 ; free virtual = 57252
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1829.166; main = 1498.796; forked = 380.923
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3225.227; main = 2265.051; forked = 992.191
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2289.059 ; gain = 0.000 ; free physical = 47210 ; free virtual = 57252
+INFO: [Common 17-1381] The checkpoint '/home/krithikh/NUS-Modules/CS2100DE/Project/week8new/week8new.runs/synth_1/Top_MMC.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_MMC_utilization_synth.rpt -pb Top_MMC_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Mar 20 11:32:52 2026...
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 10 11:40:13 2026...

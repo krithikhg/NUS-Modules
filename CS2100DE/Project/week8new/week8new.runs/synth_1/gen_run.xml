@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1773977493" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Top_Test.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1775792387" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Top_Test.dcp">
+  <File Type="VDS-TIMING-PB" Name="Top_MMC_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Top_MMC_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="Top_MMC.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="Top_MMC_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="Top_MMC_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="Top_MMC_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="Top_MMC.vds"/>
   <File Type="REPORTS-TCL" Name="Top_MMC_reports.tcl"/>
   <File Type="PA-TCL" Name="Top_MMC.tcl"/>
-  <File Type="RDS-DCP" Name="Top_MMC.dcp"/>
-  <File Type="RDS-UTIL" Name="Top_MMC_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="Top_MMC_utilization_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/Downloads/ALU.sv">
@@ -105,6 +108,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PPRDIR/archive_project_summary.txt"/>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="Top_MMC"/>

@@ -34,8 +34,9 @@
 module ProgramCounter(
     input clk,
     input rst,
+    input pc_enable,
     input [31:0] pc_in,
-    output reg [31:0] pc  
+    output reg [31:0] pc
     );
     
     //Perhaps pass the default PC value as a parameter from Wrapper. For future.
@@ -49,8 +50,8 @@ module ProgramCounter(
     always @(posedge clk) begin
         if(rst)
             pc <= 32'h00000000; // Should be the same as the initial value above.
-        else 
-            pc <= pc_in ;        
+        else if (pc_enable)
+            pc <= pc_in ;
     end
     
 endmodule

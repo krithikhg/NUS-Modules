@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Fri Mar 20 11:35:51 2026
-| Host         : ELE-CWQ91D3 running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Fri Apr 10 11:40:37 2026
+| Host         : krithikh-ThinkPad-P1-Gen-7 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : report_control_sets -verbose -file Top_MMC_control_sets_placed.rpt
 | Design       : Top_MMC
 | Device       : xc7a100t
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    11 |
-|    Minimum number of control sets                        |    11 |
+| Total control sets                                       |    14 |
+|    Minimum number of control sets                        |    14 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    33 |
+| Unused register locations in slices containing registers |    41 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,7 +39,7 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    11 |
+| Total control sets |    14 |
 | >= 0 to < 4        |     3 |
 | >= 4 to < 6        |     2 |
 | >= 6 to < 8        |     0 |
@@ -47,7 +47,7 @@ Table of Contents
 | >= 10 to < 12      |     0 |
 | >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     0 |
-| >= 16              |     6 |
+| >= 16              |     9 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -60,30 +60,33 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |              24 |            9 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              39 |           14 |
-| Yes          | No                    | No                     |              48 |           14 |
+| No           | Yes                   | No                     |             375 |          142 |
+| Yes          | No                    | No                     |              48 |           13 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |               0 |            0 |
+| Yes          | Yes                   | No                     |              96 |           44 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------+---------------------------------------------+-------------------------------+------------------+----------------+--------------+
-|  Clock Signal  |                Enable Signal                |        Set/Reset Signal       | Slice Load Count | Bel Load Count | Bels / Slice |
-+----------------+---------------------------------------------+-------------------------------+------------------+----------------+--------------+
-|  clk_cpu_BUFG  |                                             | ss_decoder/an[0]_i_1_n_0      |                1 |              1 |         1.00 |
-|  clk_cpu_BUFG  |                                             | ss_decoder/an_to_display[0]   |                1 |              1 |         1.00 |
-|  clk_cpu_BUFG  |                                             | ss_decoder/an_to_display[2]   |                1 |              2 |         2.00 |
-|  clk_cpu_BUFG  |                                             | ss_decoder/an_to_display[1]   |                3 |              4 |         1.33 |
-|  clk_IBUF_BUFG |                                             |                               |                1 |              4 |         4.00 |
-|  clk_cpu_BUFG  | cpu/counter_uut/E[0]                        |                               |                7 |             16 |         2.29 |
-|  clk_cpu_BUFG  |                                             |                               |                8 |             20 |         2.50 |
-|  clk_cpu_BUFG  |                                             | cpu/counter_uut/pc[1]_i_1_n_0 |                8 |             31 |         3.88 |
-|  clk_cpu_BUFG  | cpu/counter_uut/seven_seg_data[31]_i_2_0[0] |                               |                7 |             32 |         4.57 |
-|  clk_cpu_BUFG  | cpu/counter_uut/p_0_in                      |                               |               11 |             88 |         8.00 |
-|  clk_cpu_BUFG  | cpu/counter_uut/pc_reg[5]_11                |                               |               32 |            128 |         4.00 |
-+----------------+---------------------------------------------+-------------------------------+------------------+----------------+--------------+
++----------------+----------------------------------+-----------------------------+------------------+----------------+--------------+
+|  Clock Signal  |           Enable Signal          |       Set/Reset Signal      | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+----------------------------------+-----------------------------+------------------+----------------+--------------+
+|  clk_cpu_BUFG  |                                  | ss_decoder/an_to_display[0] |                1 |              1 |         1.00 |
+|  clk_cpu_BUFG  |                                  | ss_decoder/an[0]_i_1_n_0    |                1 |              1 |         1.00 |
+|  clk_cpu_BUFG  |                                  | ss_decoder/an_to_display[2] |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG |                                  |                             |                1 |              4 |         4.00 |
+|  clk_cpu_BUFG  |                                  | ss_decoder/an_to_display[1] |                2 |              4 |         2.00 |
+|  clk_cpu_BUFG  | cpu/exmem_alu_result_reg[2]_0[0] |                             |                7 |             16 |         2.29 |
+|  clk_cpu_BUFG  |                                  |                             |                8 |             20 |         2.50 |
+|  clk_cpu_BUFG  | cpu/counter_uut/p_0_in__0        | cpu/counter_uut/btnCpuReset |                9 |             32 |         3.56 |
+|  clk_cpu_BUFG  | cpu/E[0]                         |                             |                6 |             32 |         5.33 |
+|  clk_cpu_BUFG  | cpu/counter_uut/p_0_in__0        | cpu/alu_uut/SR[0]           |               35 |             64 |         1.83 |
+|  clk_cpu_BUFG  | cpu/reg_uut/p_0_in1_out          |                             |               11 |             88 |         8.00 |
+|  clk_cpu_BUFG  | cpu/p_0_in0_out                  |                             |               32 |            128 |         4.00 |
+|  clk_cpu_BUFG  |                                  | cpu/alu_uut/btnCpuReset[0]  |               57 |            158 |         2.77 |
+|  clk_cpu_BUFG  |                                  | cpu/counter_uut/btnCpuReset |               80 |            209 |         2.61 |
++----------------+----------------------------------+-----------------------------+------------------+----------------+--------------+
 
 
