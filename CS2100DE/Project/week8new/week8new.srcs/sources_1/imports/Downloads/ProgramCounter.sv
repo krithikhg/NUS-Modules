@@ -34,7 +34,6 @@
 module ProgramCounter(
     input clk,
     input rst,
-    input pc_enable,
     input [31:0] pc_in,
     output reg [31:0] pc
     );
@@ -50,7 +49,7 @@ module ProgramCounter(
     always @(posedge clk) begin
         if(rst)
             pc <= 32'h00000000; // Should be the same as the initial value above.
-        else if (pc_enable)
+        else
             pc <= pc_in ;
     end
     

@@ -51,14 +51,13 @@ module RISCV_MMC(
 	
 	logic [31:0] srca;
 	logic [31:0] srcb;
-//	logic [31:0] ALUresult;
 	logic [2:0] ALUFlags;
 	logic [3:0] ALUControl;
 	logic [31:0] ALUResult;
 	
+    logic [1:0] ALUSrcA;
     logic ALUSrcB;
     logic [31:0] write_data;
-    logic memWrite;
     logic [31:0] readData;
     logic mem_to_reg;
     logic [31:0] result;
@@ -87,8 +86,9 @@ module RISCV_MMC(
 	   .instr(instr),
 	   .PCS(PCS),
 	   .mem_to_reg(mem_to_reg),
-	   .mem_write(memWrite),
+	   .mem_write(mem_write),
 	   .alu_control(ALUControl),
+	   .alu_src_a(ALUSrcA),
 	   .alu_src_b(ALUSrcB),
 	   .imm_src(imm_src),
 	   .reg_write(reg_write)
@@ -104,7 +104,6 @@ module RISCV_MMC(
         .flags(ALUFlags)
     );
     
-
 	// Instantiate the Register File
 	
 	RegFile regfile_uut(
@@ -149,7 +148,9 @@ module RISCV_MMC(
     
     // Other multiplexers
     
-    assign srcb = (ALUSrcB) ? ext_imm : rd2;
+    assign srca = ALUSrcA[0] ? (ALUSrcA[1] ? PC : 32'b0) : rd1;
+    
+    assign srcb = (ALUSrcB) ? ext_imm : rd2; 
     assign result = (mem_to_reg) ? readData : ALUResult;
  
 endmodule
