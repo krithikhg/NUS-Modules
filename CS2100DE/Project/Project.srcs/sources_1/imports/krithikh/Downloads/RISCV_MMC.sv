@@ -47,7 +47,7 @@ module RISCV_MMC(
 	logic [2:0] imm_src;
 	
 	logic [1:0] PCS;
-	logic PC_src;
+	logic [1:0] PC_src;
 	
 	logic [31:0] srca;
 	logic [31:0] srcb;
@@ -56,16 +56,14 @@ module RISCV_MMC(
 	logic [31:0] ALUResult;
 	
     logic [1:0] ALUSrcA;
-    logic ALUSrcB;
+    logic [1:0] ALUSrcB;
     logic [31:0] write_data;
     logic [31:0] readData;
     logic mem_to_reg;
     logic [31:0] result;
     
-    logic[31:0] adder_pc_a;
-      
-	assign srca = rd1;
-	
+    logic[31:0] adder_pc_a, adder_pc_b;
+    	
 	assign readData = mem_read_data;
 	always_comb mem_write_data = rd2;
 	assign alu_result = ALUResult;
@@ -137,20 +135,20 @@ module RISCV_MMC(
     
     // Instantiate Adder for Program Counter
     
-    assign adder_pc_a = (PC_src) ? ext_imm : 32'd4;
+    assign adder_pc_a = PC_src[0] ? ext_imm : 32'd4;
+    assign adder_pc_b = PC_src[1] ? rd1 : PC; //multiplexer added here for jal/jalr
     
     Adder adder_uut(
         .in_a(adder_pc_a),
-        .in_b(PC),
+        .in_b(adder_pc_b),
         .result(PC_IN),
         .carry_out()
     );
     
     // Other multiplexers
     
-    assign srca = ALUSrcA[0] ? (ALUSrcA[1] ? PC : 32'b0) : rd1;
-    
-    assign srcb = (ALUSrcB) ? ext_imm : rd2; 
+    assign srca = ALUSrcA[0] ? (ALUSrcA[1] ? PC : 32'b0) : rd1; //2 multiplexers added here to support lui & auipc
+    assign srcb = ALUSrcB[0] ? (ALUSrcB[1] ? ext_imm : 32'd4) : rd2; //1 multiplexer added here to support jal/jalr
     assign result = (mem_to_reg) ? readData : ALUResult;
  
 endmodule
