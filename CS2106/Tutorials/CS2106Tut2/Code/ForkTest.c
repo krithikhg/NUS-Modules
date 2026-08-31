@@ -42,8 +42,8 @@ int main(int argc, char *argv[ ])
     //Insertion Point
 
     //Part (f)
-    //if (childPID == 0)
-    //    sleep(5);
+//    if (childPID == 0)
+  //      sleep(5);
 
     //Part (g)
     if (childPID != 0)
