@@ -27,8 +27,8 @@ String reverse(String str){
 }
 
 int countRepeats(List<Integer> list){
-	return IntStream.range(0, list.size() - 2).
-		filter(x -> ((x-1 >= 0) && list.get(x-1) != list.get(x)) && (list.get(x+1) == list.get(x))).
+	return IntStream.range(0, list.size() - 1).
+		filter(x -> list.get(x+1) == list.get(x)).
+		filter(x -> (x-1 >= 0) ? list.get(x-1) != list.get(x) : true).
 		reduce(0, (x,y) -> x+1);
 }
-
