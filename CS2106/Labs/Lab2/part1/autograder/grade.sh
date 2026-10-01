@@ -44,6 +44,7 @@ for student in subs/*; do
         diff "$student.$(basename $input).out" "$input.out"
         if [[ $? -eq 0 ]]; then
             score=$((score+1))
+            echo "Failed test case $input" >> "$student/testCases.log"
         fi
     done
     if [[ $score -ge $maxScore ]]; then

@@ -9,4 +9,3 @@ int main() {
     else
         wait(NULL);
 }
-
