@@ -1,3 +1,5 @@
+import java.util.Optional;
+
 class CalcEval {
     private final Value firstVal;
     private final Operator operator;
@@ -14,7 +16,10 @@ class CalcEval {
     }
 
     public Calc2 operate(Operator operator) {
-        return new Calc2(this.firstVal, this.operator, this.secondVal, operator);
+        return new Calc2(
+                new Calc2(this.firstVal, Optional.of(this.operator), this.firstVal, Optional.empty()),
+                this.secondVal)
+            .operate(operator);
     }
 
     public Result equal() {
