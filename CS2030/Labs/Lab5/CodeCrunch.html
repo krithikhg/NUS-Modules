@@ -1,0 +1,994 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0057)https://codecrunch.comp.nus.edu.sg/task_view.php?tid=5727 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="-1">
+
+<title>CodeCrunch</title>
+<!-- START NUS Includes-->
+<script type="text/javascript" src="./CodeCrunch_files/nussearch.js"></script>
+<link rel="stylesheet" type="text/css" href="./CodeCrunch_files/nusbase.css" media="screen, print, projection, handheld">
+<link rel="stylesheet" type="text/css" href="./CodeCrunch_files/nusmenu.css" media="screen, print, projection, handheld">
+<link rel="stylesheet" type="text/css" href="./CodeCrunch_files/nusscreen.css" media="screen, projection, print">
+<link href="https://codecrunch.comp.nus.edu.sg/nus/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+<link rel="apple-touch-icon" href="https://codecrunch.comp.nus.edu.sg/nus/blank.png">
+<!-- END NUS Includes -->
+<script type="text/javascript" src="./CodeCrunch_files/ajax.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/jquery.tablesorter.pager.js"></script>
+<!--<script type="text/javascript" src="/js/folding.js"></script>-->
+<script type="text/javascript" src="./CodeCrunch_files/jquery.watermark.min.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/jquery.scrollTo-2.1.3-min.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/customScript.js"></script>
+<!--script type="text/javascript">
+            function enterPressButton(field, button) {
+                $(field).keypress(function(e){if(e.which==13)$(button).trigger("click");});
+            }
+</script>-->
+<link rel="stylesheet" href="./CodeCrunch_files/style.css" type="text/css">
+<link rel="stylesheet" href="./CodeCrunch_files/jquery.tablesorter.css" type="text/css">
+<script type="text/javascript" src="./CodeCrunch_files/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/practice-progress.js"></script>
+<!--<script type="text/javascript" src="js/folding.js"></script>-->
+<script type="text/javascript" src="./CodeCrunch_files/jquery.rating.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/behaviour.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/textarea_maxlen.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/jquery.timer.js"></script>
+
+<script type="text/javascript" src="./CodeCrunch_files/plupload.full.min.js"></script>
+
+<link rel="stylesheet" href="./CodeCrunch_files/jquery.rating.css" type="text/css">
+<link rel="stylesheet" href="./CodeCrunch_files/style.css" type="text/css">
+<link rel="stylesheet" href="./CodeCrunch_files/tagcloud.css" type="text/css">
+<link rel="stylesheet" href="./CodeCrunch_files/jquery-ui-1.7.2.custom.css" type="text/css">
+
+<link rel="stylesheet" href="./CodeCrunch_files/jquery.ui.plupload.css" type="text/css">
+
+</head>
+
+<body>
+<!-- START NUS-Header -->
+
+<!-- NUS Header -->
+<div id="nusheader" class="nusbody">
+<div class="nuslogodiv">
+<a href="https://www.nus.edu.sg/">
+<img class="nuslogo" src="./CodeCrunch_files/soclogo.png" alt="">
+</a>
+</div>
+
+</div>
+
+<!-- NUS Inner-Title -->
+<div id="nustitle" class="nusbody"><div id="nustitle_l"><div id="nustitle_r">
+              <h1 id="site-name">
+                <a href="https://codecrunch.comp.nus.edu.sg/" title="Home" rel="home">CodeCrunch</a>
+              </h1>
+</div></div></div>
+
+<!-- END NUS-Header -->
+
+<div id="banner">
+        <div id="topmenu">
+        <div id="login">
+                Logged in as: <strong>e0843506</strong>
+                </div>
+                <div style="display: block;"><ul>
+                                        <li><a href="https://codecrunch.comp.nus.edu.sg/index.php">Home</a></li>
+                                                    <li><a href="https://codecrunch.comp.nus.edu.sg/user_course_viewall.php">My Courses</a></li>
+                                                                <li><a href="https://codecrunch.comp.nus.edu.sg/tutorial_browser.php">Browse Tutorials</a></li>
+                                                                <li><a href="https://codecrunch.comp.nus.edu.sg/task_browser.php">Browse Tasks</a></li>
+                                                                <li><a href="https://codecrunch.comp.nus.edu.sg/task_criteria.php">Search</a></li>
+                                                                <li><a href="https://codecrunch.comp.nus.edu.sg/user_viewsubmissions.php">My Submissions</a></li>
+                                                <li><a href="https://codecrunch.comp.nus.edu.sg/logout_process.php">Logout</a></li>
+                            </ul></div>
+        </div>
+</div>
+<div id="container">
+<div id="outer">
+<div id="inner">
+	<div id="content_full">                         
+		<div class="content-header"><h3>CS2030 (AY26/27) Lab #5</h3></div>
+		<div class="spacer"></div>
+		<table width="100%" cellpadding="0" cellspacing="0" border="0">
+			<tbody><tr><td valign="top" style="width: 30%;">
+				<div class="meta_header">Tags &amp; Categories</div>
+				<div id="classifyList"><span class="value">Tags:
+</span>
+<span class="value">Categories:
+</span></div>
+			</td>
+			<td valign="top" style="width: 40%;">
+				<div class="meta_header">Related Tutorials</div>
+				<div id="tutorialList"></div>
+			</td>
+			<td valign="top" style="width: 30%;">
+			</td>
+			</tr>
+		</tbody></table>
+		<div class="content-header">
+			<h3>Task Content
+							</h3>
+		</div>                          
+		<div class="panel"><div class="task-content">
+		<h2>Logging</h2>
+
+<h2>Topic Coverage</h2>
+<ul>
+<li>Generics</li>
+<li>Function</li>
+<li>Lambda expression</li>
+<li><tt>map</tt> and <tt>flatMap</tt></li>
+</ul>
+
+<h2>Problem Description</h2>
+
+<p>In this lab, we are going to write a <tt>Log</tt> class to handle the context of logging changes to values while they are operated upon. 
+<!--We do this so as to separate the code for logging from the main business logic.-->
+
+</p><p>Let's start with an example.
+The following recursive function (or method) returns the sum of non-negative integers from <tt>0</tt> to <tt>n</tt>.
+
+</p><pre>int sum(int n) {
+    if (n == 0) {
+        System.out.println("base case returns 0");
+        return 0;
+    } else {
+        int ans = sum(n - 1) + n;
+        System.out.println("adding " + n);
+        return ans;
+    }
+}
+</pre>
+
+<p>Notice that debugging statements are added to show how the computation progresses.  For instance,
+
+</p><pre>jshell&gt; sum(5)
+base case returns 0
+adding 1
+adding 2
+adding 3
+adding 4
+adding 5
+$.. ==&gt; 15
+</pre>
+
+<p>Since debugging output is a side-effect, you are to define a
+generic <tt>Log&lt;T&gt;</tt> class that encapsulates a value of type <tt>T</tt>, as well as a <tt>String</tt>.
+
+</p><p>A sample logging session is shown below:
+
+</p><pre>jshell&gt; sum(5)
+$.. ==&gt; Log[15]
+
+jshell&gt; sum(5).log()
+hit base case!
+adding 1
+adding 2
+adding 3
+adding 4
+adding 5
+</pre>
+
+<!--
+<p>Moreover, operations which do not change the value are not logged.
+-->
+
+<h2>Task</h2>
+<p>
+Your task is to write a <tt>Log</tt> class that provides the operations
+<tt>of</tt>,
+<tt>equals</tt>,
+<tt>map</tt> and
+<tt>flatMap</tt>.
+You will also be using <tt>Log</tt> within solutions to classic computation problems.  This would allow us to look at the values changes when solving each problem.
+
+<!--
+<p>This task is divided into several levels. 
+Read through all the levels to see how the different levels are related.
+
+<p>Remember to:
+
+<ul>
+<li>always compile your program files first before using jshell to test your program
+<li>use checkstyle and javadoc comments to enhance code readability and facilitating code review
+</ul>
+-->
+
+</p><p>
+</p><h2>Level 1</h2>
+
+<p>Define a <tt>Log&lt;T&gt;</tt> class with two factory methods <tt>of(T t)</tt> and <tt>of(T t, String log)</tt>.
+Also include a <tt>log()</tt> method that would output the log.
+
+</p><pre>jshell&gt; Log.&lt;Integer&gt;of(5)
+$.. ==&gt; Log[5]
+
+jshell&gt; Log.&lt;Integer&gt;of(5).log()
+
+jshell&gt; Log.&lt;Integer&gt;of(5, "5")
+$.. ==&gt; Log[5]
+
+jshell&gt; Log.&lt;Integer&gt;of(5, "5").log()
+5
+
+jshell&gt; Log&lt;String&gt; hello = Log.&lt;String&gt;of("Hello")
+hello ==&gt; Log[Hello]
+
+jshell&gt; hello.log()
+
+jshell&gt;
+</pre>
+
+<p>To ensure that a valid <tt>Log</tt> is created, 
+an <tt>IllegalArgumentException</tt> would be thrown from the <tt>of</tt> method when the argument is <tt>null</tt> or another <tt>Log</tt>.
+
+</p><pre>jshell&gt; try { Log.&lt;Object&gt;of(hello); }
+   ...&gt; catch (Exception e) { System.out.println(e); }
+java.lang.IllegalArgumentException: Invalid arguments 
+
+jshell&gt; try { Log.&lt;Integer&gt;of(null); } 
+   ...&gt; catch (Exception e) { System.out.println(e); }
+java.lang.IllegalArgumentException: Invalid arguments
+
+jshell&gt; try { Log.&lt;Integer&gt;of(5, null); } 
+   ...&gt; catch (Exception e) { System.out.println(e); }
+java.lang.IllegalArgumentException: Invalid arguments
+</pre>
+
+<p><i>Tip: define the <tt>of(T,String)</tt> method with</i>
+</p><pre>static &lt;T&gt; Log&lt;T&gt; of(T value, String log) {
+    return Optional.ofNullable...;
+}
+</pre>
+
+<p>In this exercise, we are not overly concerned that the <tt>of</tt>
+method would be invoked after the creation of a <tt>Log</tt>.
+<!--
+<p>
+Check the format correctness of the output by running the following on the command line:
+<pre>
+$ javac -Xlint:rawtypes *.java
+$ jshell -q your_java_files_in_bottom-up_dependency_order < test2.jsh
+</pre>
+<p>
+Check your styling by issuing the following
+</p>
+<pre>
+$ checkstyle *.java
+</pre>
+-->
+
+</p><h2>Level 2</h2>
+
+<p>Include the method <tt>map</tt> that takes in an appropriate <tt>Function</tt> and maps the value in the <tt>Log</tt>.  
+Note that <tt>map</tt> does not add further logging.
+
+</p><pre>jshell&gt; Log.&lt;Integer&gt;of(5, "5, add 1").
+   ...&gt; map(x -&gt; x + 1)
+$.. ==&gt; Log[6]
+
+jshell&gt; Log.&lt;Integer&gt;of(5, "5, add 1").
+   ...&gt; map(x -&gt; x + 1).
+   ...&gt; log()
+5, add 1
+
+jshell&gt; Log.&lt;Integer&gt;of(5, "5, add 1, mul 2").
+   ...&gt; map(x -&gt; x + 1).
+   ...&gt; map(x -&gt; x * 2)
+$.. ==&gt; Log[12]
+
+jshell&gt; Log.&lt;Integer&gt;of(5, "5, add 1, mul 2").
+   ...&gt; map(x -&gt; x + 1).
+   ...&gt; map(x -&gt; x * 2).
+   ...&gt; log()
+5, add 1, mul 2
+
+jshell&gt; Log.&lt;String&gt;of("five", "five, get length, mul 2").
+   ...&gt; map(x -&gt; x.length()).
+   ...&gt; map(x -&gt; x * 2)
+$.. ==&gt; Log[8]
+
+jshell&gt; Log.&lt;String&gt;of("five", "five, get length, mul 2").
+   ...&gt; map(x -&gt; x.length()).
+   ...&gt; map(x -&gt; x * 2).
+   ...&gt; log()
+five, get length, mul 2
+</pre>
+
+<!--
+<p>Each logger wraps around a value, and each time <tt>map</tt> or <tt>flatMap</tt> is called, a new <tt>Log</tt> object is created.
+<p>A <tt>Log</tt> is also lazily evaluated, i.e. the <tt>of</tt> and <tt>map</tt> methods above do not evaluate until a <tt>get</tt> method is invoked.
+-->
+
+<!--
+<p>
+Check the format correctness of the output by running the following on the command line:
+<pre>
+$ javac -Xlint:rawtypes *.java
+$ jshell -q your_java_files_in_bottom-up_dependency_order < test3.jsh
+</pre>
+<p>
+Check your styling by issuing the following
+</p>
+<pre>
+$ checkstyle *.java
+</pre>
+-->
+
+<h2>Level 3</h2>
+
+<p>Now define the method <tt>flatMap</tt> that
+takes in an appropriate <tt>Function</tt> so as to add further
+logging.
+
+</p><pre>jshell&gt; Function&lt;Integer, Log&lt;Integer&gt;&gt; f = x -&gt; Log.&lt;Integer&gt;of(x + 1, "add 1")
+f ==&gt; $Lambda..
+
+jshell&gt; Function&lt;Integer, Log&lt;Integer&gt;&gt; g = x -&gt; Log.&lt;Integer&gt;of(x, "mul 2").
+   ...&gt; map(y -&gt; y * 2)
+g ==&gt; $Lambda..
+
+jshell&gt; Log.&lt;Integer&gt;of(5, "5").flatMap(f)
+$.. ==&gt; Log[6]
+
+jshell&gt; Log.&lt;Integer&gt;of(5, "5").flatMap(f).log()
+5
+add 1
+
+jshell&gt; Log.&lt;Integer&gt;of(5, "5").flatMap(f).flatMap(g)
+$.. ==&gt; Log[12]
+
+jshell&gt; Log.&lt;Integer&gt;of(5, "5").flatMap(f).flatMap(g).log()
+5
+add 1
+mul 2
+</pre>
+
+
+<!--
+<p>Write the <tt>flatMap</tt> method that takes a function <tt>Function&lt;? super T, ? extends Log&lt;? extends U&gt;&gt;</tt>, applies it on the value and wraps the result in another <tt>Log</tt>.
+In particular, note the sequence of value changes being output.
+
+<pre>
+jshell&gt; Log&lt;Integer&gt; five = Log.&lt;Integer&gt;of(5)
+five ==&gt; Log[5]
+
+jshell&gt; five.flatMap(x -&gt; Log.of(x + 1))
+$.. ==&gt; Log[6]
+
+jshell&gt; five.map(x -&gt; x + 2).map(x -&gt; x * 10)
+$.. ==&gt; Log[70]
+5 -&gt; 7
+7 -&gt; 70
+
+jshell&gt; five.flatMap(x -&gt; Log.of(x).map(y -&gt; y + 2)).
+   ...&gt;     flatMap(y -&gt; Log.of(y).map(z -&gt; z * 10))
+$.. ==&gt; Log[70]
+5 -&gt; 7
+7 -&gt; 70
+
+jshell&gt; Log.&lt;Integer&gt;of(5).
+   ...&gt;     flatMap(x -&gt; Log.of(x).
+   ...&gt;         map(y -&gt; y + 2).
+   ...&gt;         flatMap(y -&gt; Log.of(y).map(z -&gt; z * 10)))
+$.. ==&gt; Log[70]
+5 -&gt; 7
+7 -&gt; 70
+
+jshell&gt; Function&lt;Object, Log&lt;Integer&gt;&gt; f = x -&gt; Log.&lt;Object&gt;of(x).map(y -&gt; y.hashCode())
+f ==&gt; $Lambda..
+
+jshell&gt; Log.of("hello").flatMap(f)
+$.. ==&gt; Log[99162322]
+hello -&gt; 99162322
+
+jshell&gt; Function&lt;String, Log&lt;Integer&gt;&gt; g = x -&gt; Log.&lt;String&gt;of(x).map(y -&gt; y.length())
+g ==&gt; $Lambda..
+
+jshell&gt; Log&lt;Number&gt; lognum = Log.&lt;String&gt;of("hello").flatMap(g)
+lognum ==&gt; Log[5]
+hello -&gt; 5
+</pre>
+
+<p>
+Check the format correctness of the output by running the following on the command line:
+<pre>
+$ javac -Xlint:rawtypes *.java
+$ jshell -q your_java_files_in_bottom-up_dependency_order < test4.jsh
+</pre>
+<p>
+Check your styling by issuing the following
+</p>
+<pre>
+$ checkstyle *.java
+</pre>
+-->
+
+<h2>Level 4</h2>
+
+<p>Include the overriding <tt>equals</tt> method that returns
+<tt>true</tt> if the argument <tt>Log</tt> object is the same as this <tt>Log</tt>, or <tt>false</tt> otherwise. 
+Two loggers are equal, if and only if, both the wrapped value as well as the logs are the same.
+
+</p><pre>jshell&gt; Log&lt;Integer&gt; five = Log.&lt;Integer&gt;of(5)
+five ==&gt; Log[5]
+
+jshell&gt; five.equals(five)
+$.. ==&gt; true
+
+jshell&gt; Log.&lt;Integer&gt;of(5).equals(five)
+$.. ==&gt; true
+
+jshell&gt; five.equals(5)
+$.. ==&gt; false
+
+jshell&gt; Log.&lt;Integer&gt;of(5, "five").equals(five)
+$.. ==&gt; false
+
+jshell&gt; Log.&lt;Integer&gt;of(5, "").equals(five)
+$.. ==&gt; true
+
+jshell&gt; Function&lt;Log&lt;Integer&gt;,Boolean&gt; idf = x -&gt; x.map(y -&gt; y).equals(x) // functor identity
+idf ==&gt; $Lambda..
+
+jshell&gt; idf.apply(Log.&lt;Integer&gt;of(5))
+$.. ==&gt; true
+
+jshell&gt; Function&lt;Integer, Integer&gt; f = x -&gt; x + 1
+f ==&gt; $Lambda..
+
+jshell&gt; Function&lt;Integer, Integer&gt; g = x -&gt; x * 2
+g ==&gt; $Lambda..
+
+jshell&gt; Log.&lt;Integer&gt;of(5).map(f).map(g).
+   ...&gt; equals(Log.&lt;Integer&gt;of(5).map(g.compose(f))) // functor associativity
+$.. ==&gt; true
+
+jshell&gt; Log.&lt;Integer&gt;of(5).flatMap(x -&gt; Log.&lt;Integer&gt;of(x)).
+   ...&gt; equals(Log.&lt;Integer&gt;of(5)) // monad right identity
+$.. ==&gt; true
+
+jshell&gt; Function&lt;Integer, Log&lt;Integer&gt;&gt; f = x -&gt; Log.&lt;Integer&gt;of(x + 1, "add 1")
+f ==&gt; $Lambda..
+
+jshell&gt; Function&lt;Integer,Boolean&gt; idleft = x -&gt; Log.&lt;Integer&gt;of(x).flatMap(f).
+   ...&gt; equals(f.apply(x)) // monad left identity
+idleft ==&gt; $Lambda..
+
+jshell&gt; idleft.apply(5)
+$.. ==&gt; true
+
+jshell&gt; Function&lt;Integer, Log&lt;Integer&gt;&gt; g = x -&gt; Log.&lt;Integer&gt;of(x, "mul 2").map(y -&gt; y * 2)
+g ==&gt; $Lambda..
+
+jshell&gt; Function&lt;Integer,Boolean&gt; assoc = x -&gt; Log.&lt;Integer&gt;of(x).flatMap(f).flatMap(g).
+   ...&gt; equals(f.apply(x).flatMap(g)) // monad associativity
+assoc ==&gt; $Lambda..
+
+jshell&gt; assoc.apply(5)
+$.. ==&gt; true
+</pre>
+
+
+<h2>Level 5</h2>
+
+<p>Let's write some applications using JShell that makes use of our <tt>Log</tt> so as to observe how the values changes over the course of the computation.
+Save your methods in the file <tt>level5.jsh</tt>.
+
+</p><p>Start by modifying the <tt>sum</tt> method so that logging is now handled in a <tt>Log</tt> context.
+
+</p><pre>Log&lt;Integer&gt; sum(int n) {
+   ...
+</pre>
+
+The following shows the output of <tt>sum(5)</tt>.
+
+<pre>jshell&gt; sum(5)
+$.. ==&gt; Log[15]
+
+jshell&gt; sum(5).log()
+hit base case!
+adding 1
+adding 2
+adding 3
+adding 4
+adding 5
+</pre>
+
+<p>The <i>Collatz conjecture</i> (or the <tt>3n+1</tt> <i>Conjecture</i>) is a process of generating a sequence of numbers starting with a positive integer that <i>seems to always</i> end with <tt>1</tt>.
+
+</p><pre>int f(int n) {
+   if (n == 1) {
+      return 1;
+   } else if (n % 2 == 0) {
+      return f(n / 2);
+   } else {
+      return f(3 * n + 1);
+   } 
+}
+</pre>
+
+<p>Modify the method <tt>f</tt> such that the following log is obtained using the <tt>Log</tt> context.
+
+</p><pre>jshell&gt; f(11)
+$.. ==&gt; Log[1]
+
+jshell&gt; f(11).log()
+3(11) + 1
+34 / 2
+3(17) + 1
+52 / 2
+26 / 2
+3(13) + 1
+40 / 2
+20 / 2
+10 / 2
+3(5) + 1
+16 / 2
+8 / 2
+4 / 2
+2 / 2
+1
+</pre>
+
+<p>Note that you should keep to the recursive implementations of methods <tt>sum</tt> and <tt>f</tt>.
+Do not convert them to iterative implementations using internal or external iteration constructs.
+
+<!--
+<p>Write the function <tt>f</tt> that takes in <tt>n</tt> and returns a <tt>Log&lt;Integer&gt;</tt> that wraps around the final value, with a log of the value changes over time.
+You should include a <tt>test</tt> method in the <tt>Log</tt> 
+
+
+<pre>
+Log&lt;T&gt; test(Predicate&lt;? super T&gt; pred, Log&lt;T&gt; trueLog, Log&lt;T&gt; falseLog)
+</pre>
+
+that takes in a <tt>Predicate</tt> and two loggers, and returns the former or latter <tt>Log</tt> depending on whether <tt>pred</tt> is evaluated to <tt>true</tt> or <tt>false</tt>.
+
+<pre>
+jshell&gt; Log&lt;Integer&gt; five = Log.&lt;Integer&gt;of(5)
+five ==&gt; Log[5]
+
+jshell&gt; five.test(x -&gt; x == 5, five.map(x -&gt; x + 1), five.map(x -&gt; x - 1))
+$.. ==&gt; Log[6]
+5 -&gt; 6
+
+jshell&gt; five.map(x -&gt; x + 1).test(x -&gt; x == 5, five.map(x -&gt; x + 1), five.map(x -&gt; x - 1))
+$.. ==&gt; Log[4]
+5 -&gt; 4
+
+jshell&gt; five.map(x -&gt; x + 1).
+   ...&gt;     test(x -&gt; x == 5, 
+   ...&gt;         five.map(x -&gt; { System.out.println("add 1"); return x + 1; }),
+   ...&gt;         five.map(x -&gt; { System.out.println("sub 1"); return x - 1; }))
+sub 1
+$.. ==&gt; Log[4]
+5 -&gt; 4
+
+jshell&gt; f(16)
+$.. ==&gt; Log[1]
+16 -&gt; 8
+8 -&gt; 4
+4 -&gt; 2
+2 -&gt; 1
+
+jshell&gt; f(10)
+$.. ==&gt; Log[1]
+10 -&gt; 5
+5 -&gt; 15
+15 -&gt; 16
+16 -&gt; 8
+8 -&gt; 4
+4 -&gt; 2
+2 -&gt; 1
+</pre>
+
+<p>
+Check the format correctness of the output by running the following on the command line:
+<pre>
+$ javac -Xlint:rawtypes *.java
+$ jshell -q your_java_files_in_bottom-up_dependency_order < test5.jsh
+</pre>
+<p>
+Check your styling by issuing the following
+</p>
+<pre>
+$ checkstyle *.java
+</pre>
+
+<p>
+<h2>Level 2</h2>
+<h2>Creating a valid logger</h2>
+
+<p>We need to prevent the <tt>.of</tt> method from being called repeatedly, e.g. <li><tt>Log.of(() -&gt; 5).of(() -&gt; 7)</tt>.
+
+<li><tt>Log.of(() -&gt; Log.of(() -&gt; 5))</tt>
+
+<p>To prevent chaining, we can make the <tt>Log</tt> an interface with the static method <tt>of</tt>, and let <tt>LogImpl</tt> be the concrete class that implements the functionalities of logging.
+<p>A skeleton <tt>Log</tt> interface is given to you:
+
+<pre>
+import java.util.function.Supplier;
+
+interface Log<T> {
+    static <T> Log<T> of(Supplier<T> thing) {
+        return new LogImpl<T>(thing);
+    }
+
+    T get();
+}
+</pre>
+
+<p>Notice that the static (generic) method <tt>of</tt> that takes in a <tt>Supplier<tt> is defined within the <tt>Log</tt> interface.
+This method will generate and return a <tt>LogImpl</tt> object which prevents the <tt>of</tt> method from being called again, since a static method of an interface cannot be called through it's implementation as shown below.  
+
+<pre>
+jshell&gt; interface A {
+   ...&gt; static A foo() { return new B(); } }
+|  created interface A, however, its methods cannot be invoked until class B is declared
+
+jshell&gt; class B implements A { } // A and B is now cyclic dependent
+|  created class B
+
+jshell&gt; A.foo()
+$.. ==&gt; B@53b32d7
+
+jshell&gt; new B().foo()
+|  Error:
+|  cannot find symbol
+|    symbol:   method foo()
+|  new B().foo()
+|  ^---------^
+
+jshell&gt; A.foo().foo()
+|  Error:
+|  illegal static interface method call
+|    the receiver expression should be replaced with the type qualifier 'A'
+|  A.foo().foo()
+|  ^-----------^
+</pre>
+
+Also you will notice that we restrict the chaining of the <tt>.of</tt> method calls at the expense of introducing a cyclic dependency between <tt>Log</tt> and <tt>LogImpl</tt>... <i>that is, unless someone comes up with a better idea...</i>
+
+-->
+		</p></div></div>                          
+					<div class="content-header">
+					<h3>Submission (Course)</h3>
+			</div>
+			<div id="courseNotification"></div>
+			<div class="panel" id="course_submit">
+				<div><span class="label">Select course:</span> <select id="course_id">
+			<option value="232">CS2030 (2026/2027 Sem 1) - Programming Methodology II</option>				</select>
+				</div>
+				<span class="label" style="vertical-align:top">Your Files:</span>
+				<span class="value-long">
+					<div id="plupload_containerCourse" style="position: relative;">
+						<a id="course_submission" href="javascript:;" class="submitButton" style="position: relative; z-index: 1;">BROWSE</a>
+					<div id="html5_1k63rcalt1hp0tsoele1k091gut5_container" class="moxie-shim moxie-shim-html5" style="position: absolute; top: -7px; left: 0px; width: 103px; height: 27px; overflow: hidden; z-index: 0;"><input id="html5_1k63rcalt1hp0tsoele1k091gut5" type="file" style="font-size: 999px; opacity: 0; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" multiple="" accept=".java,.c,.cpp,.h,.py,.jar,.jsh" tabindex="-1"></div></div>
+					<br>
+					<div id="filelistCourse"></div>
+					<script type="text/javascript">
+						var uploaderCourse;
+						$(document).ready(function() {
+							uploaderCourse = new plupload.Uploader({
+								runtimes: 'html5,flash,html4',
+								browse_button: 'course_submission',
+								container: 'plupload_containerCourse',
+								prevent_duplicates: true,
+								url: 'plupload/uploadFiles.php',
+
+								filters: {
+									max_file_size: '2097152', 
+									mime_types: [
+										{title : "Allowed files", extensions : "java,c,cpp,h,py,jar,jsh"}	
+									]
+								},
+
+								init: {
+									PostInit: function () {
+										document.getElementById('filelistCourse').innerHTML = '';
+									},
+
+									FilesAdded: function (up, files) {
+										plupload.each(files, function(file) {
+											document.getElementById('filelistCourse').innerHTML += 
+												'<li class="plupload_file ui-state-default plupload_delete" id="' + file.id + '" class="plupload_file_name">' +  
+													'<div class="plupload_file_status">' +
+														'<div class="plupload_file_action">' + 
+															'<div class="plupload_action_icon ui-icon ui-icon-circle-close" onclick="uploaderCourse.removeFile(uploaderCourse.getFile(\''+file.id+'\'));"> </div>' + 
+														'</div>' +
+														'<div class="plupload_file_name" title="' + file.name + '">' + 
+															'<span class="plupload_file_name_wrapper">' + file.name + '   (<i>' + plupload.formatSize(file.size) + '</i>) <b></b>' + '</span>' +
+														'</div>' +
+													'</div>' +
+												'</li>';
+										});
+										document.getElementById('filelistCourse').innerHTML = '<ul class="plupload_filelist_content" id="uploader_filelist_Course" unselectable="on">' + document.getElementById('filelistCourse').innerHTML + '</ul>';
+
+									},
+
+									FilesRemoved: function(up, files) {
+										plupload.each(files, function(file) {
+											$('#' + file.id).remove();
+										});
+									},
+
+									FileUploaded: function(up, file, info) {
+										$('#' + file.id).remove();
+									},
+
+									UploadProgress: function(up, file) {
+										$('#' + file.id + ' b')[0].innerHTML = '<span>' + file.percent + "%</span>";
+									},
+
+									UploadComplete: function(up, files) {
+										doCourseTaskGrade();
+									},
+
+									Error: function(up, err) {
+										alert("\nError #" + err.code + ": " + err.message);
+									}
+								}
+							});
+							uploaderCourse.init();
+						});
+					</script>
+					<p><a href="javascript:uploaderCourse.setOption('multipart_params', { 'sess_id': 'fa0e8d7d55af10ab162af1c5107fcd75','type': 'course_submission', 'tid': '5727', 'username': 'e0843506', 'uid': '27562' }); javascript:uploaderCourse.start();" class="submitButton">SUBMIT</a>
+					(only .java, .c, .cpp, .h, .jsh, and .py extensions allowed)</p>
+				</span>
+				<br>
+				<span class="label">&nbsp;</span>
+				<span class="value-long" style="font-size: 90%; color: #777;">To submit multiple files, click on the Browse button, then select one or more
+				files. The selected file(s) will be added to the upload queue. You can repeat this step to add more files. Check that you have all the files
+				needed for your submission. Then click on the Submit button to upload your submission.</span>
+			</div>
+										<input type="hidden" id="tid" name="tid" value="5727">
+		</div>
+		<!-- end content -->
+</div>
+<!-- end inner -->
+<div id="loading-mask">
+        <p id="loading_mask_loader" class="loader" style="display: none;"> <img alt="Loading..." src="./CodeCrunch_files/ajax-loader-tr.gif"> <br>
+                Please wait... </p>
+</div>
+<div id="practice-progress" style="display:none;position:fixed;inset:0;z-index:100000;background:rgba(0,0,0,.4);cursor:wait;">
+    <div role="status" aria-live="polite" aria-atomic="true" style="position:absolute;top:40%;left:50%;transform:translate(-50%,-50%);background:white;color:#222;padding:28px;max-width:420px;width:80%;text-align:center;border-radius:8px;box-shadow:0 4px 20px #555;">
+        <img src="./CodeCrunch_files/ajax-loader-tr.gif" alt="" width="32" height="32"><br>
+        <strong id="practice-progress-message">Uploading your files. Please wait…</strong>
+        <p>Please keep this page open. Larger submissions may take a little longer.</p>
+    </div>
+</div>
+<script type="text/javascript">
+$(".star").rating({
+        focus: function(value, link) {
+                var tip = $("#rating_text");
+                tip[0].data = tip[0].data || tip.html(); 
+                tip.html(link.title || "value: " + value);
+        },
+        blur: function(value, link) {
+                var tip = $("#rating_text");
+                $("#rating_text").html(tip[0].data || "");
+        },
+        callback: function(value, link) {
+                $.ajax({
+                        type: "POST",
+                        url: "task_updaterating.php",
+                        data: ({tid:$("#tid").val(), rating:value}),
+                        success: function(html) {
+                                var msg = html.split(";");
+                                $("#rating_text").removeClass().addClass(msg[0]);
+                                $("#rating_text").html(msg[1]);
+                        }
+                });
+        }
+});
+
+function getComments() {
+        $.ajax({
+                type: "POST",
+                url: "task_getcomments.php",
+                data: ({tid:$("#tid").val()}),
+                success: function(html) {
+                        $("#commentList").html(html);
+                }
+        });
+}
+
+function doTaskGrade(e, d) {
+        practiceProgress.show('Files uploaded. Submitting for grading. Please wait…');
+        $.ajax({
+                global: false,
+                type: "POST",
+                url: "doTaskGrade.php",
+                data: ({tid:$("#tid").val()}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#practiceNotification").removeClass().addClass(msg[0]);
+                        $("#practiceNotification").html(msg[1]);
+                },
+                error: function () {
+                    practiceProgress.fail('The submission could not be confirmed. Check My Submissions before trying again.');
+                },
+                complete: function () { practiceProgress.hide(); }
+        });
+
+}
+
+function doCourseTaskGrade(e, d) {
+        $.ajax({
+                type: "POST",
+                url: "doTaskGrade.php",
+                data: ({tid:$("#tid").val(), course_id:$("#course_id").val(), do_course:1}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#courseNotification").removeClass().addClass(msg[0]);
+                        $("#courseNotification").html(msg[1]);
+                }
+        });
+
+}
+
+function addComment() {
+        $.ajax({
+                type: "POST",
+                url: "task_addcomment.php",
+                data: ({tid:$("#tid").val(), comment:encodeURIComponent($("#comment").val())}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#commentNotification").removeClass().addClass(msg[0]);
+                        $("#commentNotification").html(msg[1]);
+                        
+                        getComments();
+                }
+        });
+}
+
+function deleteComment(c) {
+        $.ajax({
+                type: "POST",
+                url: "task_deletecomment.php",
+                data: ({comment_id:c}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#commentNotification").removeClass().addClass(msg[0]);
+                        $("#commentNotification").html(msg[1]);
+                        
+                        getComments();
+                }
+        });
+}
+
+function getClassify(){
+                $.ajax({
+                type: "GET",
+                url: "task_classify.php",
+                data: ({tid:$("#tid").val()}),
+                success: function(html) {
+                        $("#classifyList").html(html);
+                }
+        });
+}
+
+function getTutorial(){
+        $.ajax({
+                type: "POST",
+                url: "task_gettutorials.php",
+                data: ({tid:$("#tid").val()}),
+                success: function(html) {
+                        $("#tutorialList").html(html);
+                }
+        });
+}
+
+function getQueries() {
+        $.ajax({
+                type: "POST",
+                url: "task_getqueries.php",
+                data: ({tid:$("#tid").val()}),
+                success: function(html) {
+                        $("#queryList").html(html);
+                }
+        });
+}
+
+function addQuery() {
+        $.ajax({
+                type: "POST",
+                url: "task_addquery.php",
+                data: ({tid:$("#tid").val(), contest_id:$("#contest_id").val(), query:encodeURIComponent($("#query").val())}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#queryNotification").removeClass().addClass(msg[0]);
+                        $("#queryNotification").html(msg[1]);
+                        
+                        getQueries();
+                }
+        });
+}
+
+function deleteQuery(q) {
+        $.ajax({
+                type: "POST",
+                url: "task_deletequery.php",
+                data: ({query_id:q}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#queryNotification").removeClass().addClass(msg[0]);
+                        $("#queryNotification").html(msg[1]);
+                        
+                        getQueries();
+                }
+        });
+}
+
+function addTag() {
+        $.ajax({
+                type: "POST",
+                url: "tag_add.php",
+                data: ({tid:$("#tid").val(), tags:$("#tagwords").val()}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#tagNotification").removeClass().addClass(msg[0]);
+                        $("#tagNotification").html(msg[1]);
+                        
+                        getClassify();
+                }
+        });
+}
+
+
+$(document).ready(function() {
+        getComments();
+        getQueries();
+        getClassify();
+        getTutorial();
+        //getCloud();
+});
+
+$(document).everyTime(60000, function(i) {
+        if ($("#tid").val() != "" && $("#tid").val() != null) {
+                $.ajax({
+                        type: "POST",
+                        url: "task_checkcontest.php",
+                        data: ({tid:$("#tid").val()}),
+                        success: function(html) {
+                                if (html == "0") {
+                                        $("#contest_submit").html("");
+                                }
+                        }
+                });
+                $.ajax({
+                        type: "POST",
+                        url: "task_checkcourse.php",
+                        data: ({tid:$("#tid").val()}),
+                        success: function(html) {
+                                if (html == "0") {
+                                        $("#course_submit").html("");
+                                }
+                        }
+                });
+        }
+}, 0);
+
+$('#loading_mask_loader')
+        .hide()  // hide it initially
+        .ajaxStart(function() {
+                $(this).show();
+        })
+        .ajaxStop(function() {
+                $(this).hide();
+        });
+        
+</script>
+
+
+</div> <!-- end outer -->
+
+</div> <!-- end container -->
+
+
+
+</body></html>

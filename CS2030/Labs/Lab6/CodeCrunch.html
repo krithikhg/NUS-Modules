@@ -1,0 +1,1027 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0057)https://codecrunch.comp.nus.edu.sg/task_view.php?tid=5728 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="-1">
+
+<title>CodeCrunch</title>
+<!-- START NUS Includes-->
+<script type="text/javascript" src="./CodeCrunch_files/nussearch.js"></script>
+<link rel="stylesheet" type="text/css" href="./CodeCrunch_files/nusbase.css" media="screen, print, projection, handheld">
+<link rel="stylesheet" type="text/css" href="./CodeCrunch_files/nusmenu.css" media="screen, print, projection, handheld">
+<link rel="stylesheet" type="text/css" href="./CodeCrunch_files/nusscreen.css" media="screen, projection, print">
+<link href="https://codecrunch.comp.nus.edu.sg/nus/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+<link rel="apple-touch-icon" href="https://codecrunch.comp.nus.edu.sg/nus/blank.png">
+<!-- END NUS Includes -->
+<script type="text/javascript" src="./CodeCrunch_files/ajax.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/jquery.tablesorter.pager.js"></script>
+<!--<script type="text/javascript" src="/js/folding.js"></script>-->
+<script type="text/javascript" src="./CodeCrunch_files/jquery.watermark.min.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/jquery.scrollTo-2.1.3-min.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/customScript.js"></script>
+<!--script type="text/javascript">
+            function enterPressButton(field, button) {
+                $(field).keypress(function(e){if(e.which==13)$(button).trigger("click");});
+            }
+</script>-->
+<link rel="stylesheet" href="./CodeCrunch_files/style.css" type="text/css">
+<link rel="stylesheet" href="./CodeCrunch_files/jquery.tablesorter.css" type="text/css">
+<script type="text/javascript" src="./CodeCrunch_files/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/practice-progress.js"></script>
+<!--<script type="text/javascript" src="js/folding.js"></script>-->
+<script type="text/javascript" src="./CodeCrunch_files/jquery.rating.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/behaviour.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/textarea_maxlen.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/jquery.timer.js"></script>
+
+<script type="text/javascript" src="./CodeCrunch_files/plupload.full.min.js"></script>
+
+<link rel="stylesheet" href="./CodeCrunch_files/jquery.rating.css" type="text/css">
+<link rel="stylesheet" href="./CodeCrunch_files/style.css" type="text/css">
+<link rel="stylesheet" href="./CodeCrunch_files/tagcloud.css" type="text/css">
+<link rel="stylesheet" href="./CodeCrunch_files/jquery-ui-1.7.2.custom.css" type="text/css">
+
+<link rel="stylesheet" href="./CodeCrunch_files/jquery.ui.plupload.css" type="text/css">
+
+</head>
+
+<body>
+<!-- START NUS-Header -->
+
+<!-- NUS Header -->
+<div id="nusheader" class="nusbody">
+<div class="nuslogodiv">
+<a href="https://www.nus.edu.sg/">
+<img class="nuslogo" src="./CodeCrunch_files/soclogo.png" alt="">
+</a>
+</div>
+
+</div>
+
+<!-- NUS Inner-Title -->
+<div id="nustitle" class="nusbody"><div id="nustitle_l"><div id="nustitle_r">
+              <h1 id="site-name">
+                <a href="https://codecrunch.comp.nus.edu.sg/" title="Home" rel="home">CodeCrunch</a>
+              </h1>
+</div></div></div>
+
+<!-- END NUS-Header -->
+
+<div id="banner">
+        <div id="topmenu">
+        <div id="login">
+                Logged in as: <strong>e0843506</strong>
+                </div>
+                <div style="display: block;"><ul>
+                                        <li><a href="https://codecrunch.comp.nus.edu.sg/index.php">Home</a></li>
+                                                    <li><a href="https://codecrunch.comp.nus.edu.sg/user_course_viewall.php">My Courses</a></li>
+                                                                <li><a href="https://codecrunch.comp.nus.edu.sg/tutorial_browser.php">Browse Tutorials</a></li>
+                                                                <li><a href="https://codecrunch.comp.nus.edu.sg/task_browser.php">Browse Tasks</a></li>
+                                                                <li><a href="https://codecrunch.comp.nus.edu.sg/task_criteria.php">Search</a></li>
+                                                                <li><a href="https://codecrunch.comp.nus.edu.sg/user_viewsubmissions.php">My Submissions</a></li>
+                                                <li><a href="https://codecrunch.comp.nus.edu.sg/logout_process.php">Logout</a></li>
+                            </ul></div>
+        </div>
+</div>
+<div id="container">
+<div id="outer">
+<div id="inner">
+	<div id="content_full">                         
+		<div class="content-header"><h3>CS2030 (AY26/27) Lab #6</h3></div>
+		<div class="spacer"></div>
+		<table width="100%" cellpadding="0" cellspacing="0" border="0">
+			<tbody><tr><td valign="top" style="width: 30%;">
+				<div class="meta_header">Tags &amp; Categories</div>
+				<div id="classifyList"><span class="value">Tags:
+</span>
+<span class="value">Categories:
+</span></div>
+			</td>
+			<td valign="top" style="width: 40%;">
+				<div class="meta_header">Related Tutorials</div>
+				<div id="tutorialList"></div>
+			</td>
+			<td valign="top" style="width: 30%;">
+			</td>
+			</tr>
+		</tbody></table>
+		<div class="content-header">
+			<h3>Task Content
+							</h3>
+		</div>                          
+		<div class="panel"><div class="task-content">
+		<h2>Try Context for Exception Handling</h2>
+
+<h3>Topic Coverage</h3>
+
+<ul>
+<li>Computation context
+</li><li>Exception handling
+</li><li>Local classes and variable captures
+</li></ul>
+
+<!--
+<p>In programming, a computation typically completes successfully with a returned value, or fails to complete with an error message.
+Rather than letting the client handle the the success or failure scenarios explicitly, we can encapsulate them in a <tt>Try</tt> context.
+-->
+
+Programming languages such as Scala supports the <tt>Try</tt> monad (or context), which encapsulates a computation that either completes successfully with a returned value, or fails with an error message.  
+With the <tt>Try</tt> monad, instead of printing out error messages when the error occur, causing the function to be impure, we can now return this error message as part of the return value.  
+Furthermore, rather than returning a "special" value (such as <tt>null</tt> or <tt>-1</tt>) to indicate errors which are prone to bugs, using <tt>Try</tt> eliminates the need to return these "special" values.
+<p></p>
+
+<p>You are given the following <tt><a href="https://codecrunch.comp.nus.edu.sg/taskfile.php/5728/Try_skel.java">Try_skel.java</a></tt> source, which contains the
+<tt>Try</tt> interface, together with implementation classes
+<tt>Success</tt> and <tt>Failure</tt>.
+<!-- ; these classes are declared <tt>final</tt>; hence they do not allow further sub-classing.
+-->
+
+</p><p>More interestingly, the astute reader may notice that <tt>Try</tt> and <tt>Success</tt> (also <tt>Failure</tt>) are cyclic dependent!
+In this task, we shall remove the cyclic dependencies by implementing the success and failure classes as
+local classes enclosed within the <tt>Try</tt> interface.
+
+</p><p>This task is divided into several levels.
+<!-- You are highly encouraged to read through all the levels to see how the different levels are related. -->
+You are required to design a single <tt>Try</tt> interface for levels 1 to 3.  
+In level 4, you will 
+implement another generic class called <tt>TopN</tt> that makes use of <tt>Try</tt>.
+
+
+<!--
+<h3>Take Note:</h3>
+
+<ul>
+<li>Write each class/interface/enum in its own file with meaningful names.
+<li>Do not use <tt>*</tt> wildcard imports.
+<li>Ensure that ALL object properties and class constants are declared <tt>private final</tt>.
+<li>You are NOT allowed to use <tt>instanceof</tt>, other than within the same class (e.g. obj instanceof A within class A). 
+<li>Ensure that your classes are NOT cyclic dependent.
+<li>You are NOT allowed to use the following java keywords/literals: <tt>null</tt>,
+<tt>instanceof</tt>, <tt>default</tt>, <tt>var</tt>
+<li>Java reflection is NOT allowed.
+<li>There should be NO type cast with <tt>SuppressWarnings</tt>
+<li>You are only allowed to import <tt>java.util.Optional</tt> and specific packages from <tt>java.util.function</tt>. 
+<li>There is no restriction on Java libraries.  However, if you use <tt>java.util.Optional</tt>, do not use the <tt>get</tt>/<tt>isPresent</tt>/<tt>isEmpty</tt> methods.
+<li>For ease of implementation, you need NOT include bounded/unbounded wildcards.
+<li>Do NOT define anonymous inner classes; define lambdas instead.
+<li>Do NOT use method references <tt>::</tt> (the grader cannot handle it).
+<li>Do NOT use ellipsis, e.g. <tt>String...</tt>
+</ul>
+
+<p>In essence, keep to the constructs and programming discipline that is instilled throughout the module.
+-->
+
+</p><h2>Level 1</h2>
+
+<p>Define a generic <tt>Try&lt;T&gt;</tt> interface in <tt>Try.java</tt> to encapsulate a computation with the following methods:
+
+</p><ul>
+<li><tt>static &lt;T&gt; of(Supplier&lt;? extends T&gt; supplier)</tt> method that initializes a successful <tt>Try</tt> object with the given computation.</li>
+<!--
+<li>static <tt>fail(String msg)</tt> method that initializes a failure <tt>Try</tt> object with the error message.</li>
+-->
+<li><tt>toString()</tt> method that returns either the string representation of the value if the
+<tt>Try</tt> object is a success, or the error message
+<!-- <tt>ex.getMessage()</tt> of the exception <tt>ex</tt> -->
+if it is a failure.</li>
+</ul>
+
+<pre>jshell&gt; Try.&lt;Integer&gt;of(() -&gt; 1)
+$.. ==&gt; Success: 1
+
+jshell&gt; Try.&lt;String&gt;of(() -&gt; "ok")
+$.. ==&gt; Success: ok
+
+jshell&gt; Try.&lt;Integer&gt;of(() -&gt; { 
+   ...&gt; throw new IllegalStateException("error"); })
+$.. ==&gt; Failure: java.lang.IllegalStateException: error
+</pre>
+
+<p>Specifically, the <tt>of</tt> method should call a private factory method (say <tt>succ</tt>) to create a
+successful <tt>Try</tt>, and another factory method (say <tt>fail</tt>) to create a failure <tt>Try</tt>.
+
+</p><pre>interface Try&lt;T&gt; {
+
+    static &lt;T&gt; Try&lt;T&gt; of(Supplier&lt;? extends T&gt; supplier) {
+        ...
+    }
+
+    private static &lt;T&gt; Try&lt;T&gt; succ(T val) {
+        return new Try&lt;T&gt;() {
+            // define methods using the captured variable (val)
+        };
+    }
+
+    private static &lt;T&gt; Try&lt;T&gt; fail(Exception exc) {
+        return new Try&lt;T&gt;() {
+            // define methods using the captured variable (exc)
+        };
+    }
+}
+</pre>
+
+<p><i>Something worth pondering</i>... the <tt>of</tt> method is defined as a static method
+within an interface so as to restrict the invocation at the start of pipeline creation, and not as an intermediate operation.
+
+</p><pre>jshell&gt; Try.&lt;Integer&gt;of(() -&gt; 1)
+$.. ==&gt; Success: 1
+
+jshell&gt; Try.&lt;Integer&gt;of(() -&gt; 1).of(() -&gt; 2)
+|  Error:
+|  illegal static interface method call
+|    the receiver expression should be replaced with the type qualifier 'Try&lt;java.lang.Integer&gt;'
+|  Try.&lt;Integer&gt;of(() -&gt; 1).of(() -&gt; 2)
+|  ^----------------------------------^
+</pre>
+
+<p>You would be surprised that Java's <tt>Optional</tt> class does not prevent this from happening since
+<tt>Optional</tt> is a class, and static methods of a class can be invoked from any object.
+
+</p><pre>jshell&gt; Optional.of(1).map(x -&gt; x + 1)
+$.. ==&gt; Optional[2]
+
+jshell&gt; Optional.of(1).map(x -&gt; x + 1).of(10)
+$.. ==&gt; Optional[10]
+</pre>
+
+<!--
+<h2>Level 2</h2>
+
+<p>Write the methods <tt>orElse</tt>, <tt>orElseGet</tt> which when called on a successful <tt>Try</tt> object, returns the value stored within <tt>Try</tt>.  
+If the <tt>Try</tt> object is a failure, then <tt>orElse</tt> returns the given default value, and <tt>orElseGet</tt> returns a value provided by the given supplier.
+</p>
+
+<pre>
+jshell&gt; Try&lt;Integer&gt; t1 = Try.&lt;Integer&gt;of(() -&gt; 1)
+t1 ==&gt; Success: 1
+
+jshell&gt; Try&lt;Integer&gt; t2 = Try.&lt;Integer&gt;of(() -&gt; { 
+   ...&gt; throw new IllegalStateException("error"); })
+t2 ==&gt; Failure: java.lang.IllegalStateException: error
+
+jshell&gt; t1.orElse(0)
+$.. ==&gt; 1
+
+jshell&gt; t2.orElse(0)
+$.. ==&gt; 0
+
+jshell&gt; Supplier&lt;Integer&gt; zero = () -&gt; 0
+zero ==&gt; $Lambda..
+
+jshell&gt; t1.orElseGet(zero)
+$.. ==&gt; 1
+
+jshell&gt; t2.orElseGet(zero)
+$.. ==&gt; 0
+</pre>
+-->
+
+<h2>Level 2</h2>
+
+<p>
+Now, implement the <tt>map</tt> and <tt>flatMap</tt> methods.  You
+will first need to specify both of these methods in the <tt>Try</tt>
+interface.
+
+</p><pre>    public &lt;R&gt; Try&lt;R&gt; map(Function&lt;? super T, ? extends R&gt; mapper);
+    public &lt;R&gt; Try&lt;R&gt; flatMap(Function&lt;? super T, ? extends Try&lt;? extends R&gt;&gt; mapper);
+</pre>    
+
+
+<p>
+If the <tt>Try</tt> object is a failure, these methods simply return
+the calling <tt>Try</tt> object; otherwise, apply the given function
+to the value contained within the <tt>Try</tt> object.  Moreover,
+take note of the following:
+</p><ul>
+<li>in the case of <tt>map</tt>, the given function is assumed pure,
+and hence does not throw an exception;
+<!-- 
+hence throws an exception, then the resulting <tt>Try</tt> becomes a failure with the error message initialized to the message obtained from the exception;
+-->
+</li><li>in the case of <tt>flatMap</tt>, the given function can
+potentially throw an error, but it is nonetheless pure (since the
+error is encapsulated in the <tt>Try</tt> context).
+<!--
+and hence no exception would be thrown when applying the function.
+-->
+</li></ul>
+
+<p>Indeed, one is always expected to consciously convert all impure functions to pure ones in advance, and just use purely functional code.
+
+</p>
+<pre>jshell&gt; Try&lt;Integer&gt; t1 = Try.&lt;Integer&gt;of(() -&gt; 1)
+t1 ==&gt; Success: 1
+
+jshell&gt; Try&lt;Integer&gt; t2 = Try.&lt;Integer&gt;of(() -&gt; { 
+   ...&gt; throw new IllegalStateException("error"); })
+t2 ==&gt; Failure: java.lang.IllegalStateException: error
+
+jshell&gt; t1.map(x -&gt; x + 3)
+$.. ==&gt; Success: 4
+
+jshell&gt; t2.map(x -&gt; x + 3)
+$.. ==&gt; Failure: java.lang.IllegalStateException: error
+
+jshell&gt; t1.flatMap(x -&gt; Try.&lt;Integer&gt;of(() -&gt; x + 3))
+$.. ==&gt; Success: 4
+
+jshell&gt; t1.flatMap(x -&gt; Try.&lt;Integer&gt;of(() -&gt; { 
+   ...&gt; throw new IllegalStateException("out of time"); }))
+$.. ==&gt; Failure: java.lang.IllegalStateException: out of time
+
+jshell&gt; t2.flatMap(x -&gt; Try.&lt;Integer&gt;of(() -&gt; { 
+   ...&gt; throw new IllegalStateException("out of time"); }))
+$.. ==&gt; Failure: java.lang.IllegalStateException: error
+
+jshell&gt; t2.flatMap(x -&gt; Try.&lt;Integer&gt;of(() -&gt; 3))
+$.. ==&gt; Failure: java.lang.IllegalStateException: error
+</pre>
+<!--
+<p>Note that the <tt>flatMap</tt> method signature is in its most general form
+
+<pre>
+public &lt;R&gt; Try&lt;R&gt; flatMap(Function&lt;? super T, ? extends Try&lt;? extends R&gt;&gt; mapper)
+</pre>
+
+so as to allow the following
+-->
+<pre>jshell&gt; Function&lt;Object,Integer&gt; f = x -&gt; x.hashCode()
+f ==&gt; $Lambda..
+
+jshell&gt; Try&lt;Number&gt; tn = Try.&lt;String&gt;of(() -&gt; "OK").map(f)
+tn ==&gt; Success: 2524
+</pre>
+<!--
+<p>In contrast, the given implementation
+
+<pre>
+    public &lt;R&gt; Try&lt;R&gt; flatMap(Function&lt;? super T, ? extends Try&lt;R&gt;&gt; mapper) {
+        // no need to use try-catch here since mapper is pure
+        return mapper.apply(val);
+    }
+</pre>
+
+suffices to have <tt>mapper.apply(val)</tt> returned as this will be evaluated to a value of type <tt>Try&lt;R&gt;</tt>.
+However with the more general method signature, it is now evaluated to <tt>Try&lt;? extends R&gt;</tt> instead.
+The usual approach to "get" the value contained within, and rewrap it in a <tt>Try&lt;R&gt;</tt> no longer works and there are no "getter" methods!
+
+<p><em>Hint</em>: one can use a <tt>map</tt> with an appropriate function to transform the 
+<tt>Try&lt;? extends R&gt;</tt> to <tt>Try&lt;R&gt;</tt> without changing the actual value contained within the <tt>Try</tt> object.
+-->
+
+<!--
+<h2>Level 3</h2>
+
+<p>Create a <tt>filter</tt> method that takes in a <tt>Predicate</tt> and an error message.  If the <tt>Try</tt> object is a failure, then the <tt>filter</tt> method does not do anything.  Otherwise, test the predicate on the value contained within <tt>Try</tt>.  
+If the test returns false, then a <tt>Try</tt> object that fails with the given error message is returned.  If the test returns true, the calling <tt>Try</tt> object is returned.</p>
+
+<pre>
+jshell&gt; Try&lt;Integer&gt; t1 = Try.ok(1)
+t1 ==&gt; Success: 1
+
+jshell&gt; Try&lt;Integer&gt; t2 = Try.fail("error")
+t2 ==&gt; Failure: error
+
+jshell&gt; t1.filter(x -&gt; x &lt; 0, "not positive")
+$.. ==&gt; Failure: not positive
+
+jshell&gt; t1.filter(x -&gt; x &gt; 0, "positive")
+$.. ==&gt; Success: 1
+
+jshell&gt; t2.filter(x -&gt; x &lt; 0, "not positive")
+$.. ==&gt; Failure: error
+
+jshell&gt; t2.filter(x -&gt; x &gt; 0, "positive")
+$.. ==&gt; Failure: error
+
+jshell&gt; Predicate&lt;Number&gt; isEven = x -&gt; x.intValue() % 2 == 0
+isEven ==&gt; $Lambda..
+
+jshell&gt; t1.filter(isEven, "not even")
+$.. ==&gt; Failure: not even
+</pre>
+-->
+
+<h2>Level 3</h2>
+
+<p>To facilitate the check for compliance against the functor and monad laws, implement a static <tt>equals</tt> method in the <tt>Try</tt> interface that takes in two <tt>Try</tt> objects and returns <tt>true</tt> if
+
+</p><ul>
+<li>two successful <tt>Try</tt> objects encapsulates the same value, or
+</li><li>two failure <tt>Try</tt> objects encapsulates exceptions with the same message.
+</li></ul>
+
+<pre>jshell&gt; Try&lt;Integer&gt; t1 = Try.&lt;Integer&gt;of(() -&gt; 1)
+t1 ==&gt; Success: 1
+
+jshell&gt; Try&lt;Integer&gt; t2 = Try.&lt;Integer&gt;of(() -&gt; { 
+   ...&gt; throw new IllegalStateException("error"); })
+t2 ==&gt; Failure: java.lang.IllegalStateException: error
+
+jshell&gt; Try.equals(t1, t1.map(x -&gt; x))
+$.. ==&gt; true
+
+jshell&gt; Try.equals(t2, t2.map(x -&gt; x))
+$.. ==&gt; true
+
+jshell&gt; Try.equals(t1, t2.map(x -&gt; x))
+$.. ==&gt; false
+
+jshell&gt; Try.equals(t2, t1.map(x -&gt; x))
+$.. ==&gt; false
+
+jshell&gt; Function&lt;Integer,Integer&gt; f = x -&gt; x + 3
+f ==&gt; $Lambda..
+
+jshell&gt; Function&lt;Integer,Integer&gt; g = x -&gt; x * 3
+g ==&gt; $Lambda..
+
+jshell&gt; Try.equals(t1.map(f).map(g), t1.map(g.compose(f)))
+$.. ==&gt; true
+
+jshell&gt; Function&lt;Integer,Try&lt;Integer&gt;&gt; id = x -&gt; Try.of(() -&gt; x)
+id ==&gt; $Lambda..
+
+jshell&gt; Try.equals(t1.flatMap(id), t1)
+$.. ==&gt; true
+
+jshell&gt; Try.equals(t2.flatMap(id), t2)
+$.. ==&gt; true
+
+jshell&gt; id.apply(5)
+$.. ==&gt; Success: 5
+
+jshell&gt; Function&lt;Integer,Try&lt;Integer&gt;&gt; ff = x -&gt; Try.of(() -&gt; x + 3)
+ff ==&gt; $Lambda..
+
+jshell&gt; Function&lt;Integer,Try&lt;Integer&gt;&gt; gg = x -&gt; Try.of(() -&gt; x / 0)
+gg ==&gt; $Lambda..
+
+jshell&gt; Try.equals(id.apply(5).flatMap(ff), ff.apply(5))
+$.. ==&gt; true
+
+jshell&gt; Try.equals(id.apply(5).flatMap(gg), gg.apply(5))
+$.. ==&gt; true
+
+jshell&gt; Try.equals(id.apply(5).flatMap(ff), gg.apply(5))
+$.. ==&gt; false
+
+jshell&gt; Try.equals(t1.flatMap(ff).flatMap(gg), t1.flatMap(x -&gt; ff.apply(x).flatMap(gg)))
+$.. ==&gt; true
+
+jshell&gt; Try.equals(t1.flatMap(gg).flatMap(ff), t1.flatMap(x -&gt; gg.apply(x).flatMap(ff)))
+$.. ==&gt; true
+</pre>
+
+
+<!--
+<pre>
+jshell&gt; Try&lt;Integer&gt; t1 = Try.&lt;Integer&gt;of(() -&gt; 1)
+t1 ==&gt; Success: 1
+
+jshell&gt; Try&lt;Integer&gt; t2 = Try.&lt;Integer&gt;of(() -&gt; { 
+   ...&gt; throw new IllegalStateException("error"); })
+t2 ==&gt; Failure: java.lang.IllegalStateException: error
+
+jshell&gt; t1.equals(t1.map(x -&gt; x))
+$.. ==&gt; true
+
+jshell&gt; t2.equals(t2.map(x -&gt; x))
+$.. ==&gt; true
+
+jshell&gt; t1.equals(t2.map(x -&gt; x))
+$.. ==&gt; false
+
+jshell&gt; t2.equals(t1.map(x -&gt; x))
+$.. ==&gt; false
+
+jshell&gt; Function&lt;Integer,Integer&gt; f = x -&gt; x + 3
+f ==&gt; $Lambda..
+
+jshell&gt; Function&lt;Integer,Integer&gt; g = x -&gt; x / 0
+g ==&gt; $Lambda..
+
+jshell&gt; t1.map(f).map(g).equals(t1.map(g.compose(f)))
+$.. ==&gt; true
+
+jshell&gt; Function&lt;Integer,Try&lt;Integer&gt;&gt; id = x -&gt; Try.of(() -&gt; x)
+id ==&gt; $Lambda..
+
+jshell&gt; t1.flatMap(id).equals(t1)
+$.. ==&gt; true
+
+jshell&gt; t2.flatMap(id).equals(t2)
+$.. ==&gt; true
+
+jshell&gt; id.apply(5)
+$.. ==&gt; Success: 5
+
+jshell&gt; Function&lt;Integer,Try&lt;Integer&gt;&gt; ff = x -&gt; Try.of(() -&gt; x + 3)
+ff ==&gt; $Lambda..
+
+jshell&gt; Function&lt;Integer,Try&lt;Integer&gt;&gt; gg = x -&gt; Try.of(() -&gt; x / 0)
+gg ==&gt; $Lambda..
+
+jshell&gt; id.apply(5).flatMap(ff).equals(ff.apply(5))
+$.. ==&gt; true
+
+jshell&gt; id.apply(5).flatMap(gg).equals(gg.apply(5))
+$.. ==&gt; true
+
+jshell&gt; id.apply(5).flatMap(ff).equals(gg.apply(5))
+$.. ==&gt; false
+
+jshell&gt; t1.flatMap(ff).flatMap(gg).equals(t1.flatMap(x -&gt; ff.apply(x).flatMap(gg)))
+$.. ==&gt; true
+
+jshell&gt; t1.flatMap(gg).flatMap(ff).equals(t1.flatMap(x -&gt; gg.apply(x).flatMap(ff)))
+$.. ==&gt; true
+</pre>
+-->
+
+<p><em>Hint:</em> define the <tt>tryCatch</tt> method to assist with "getting" the value (or
+exception) encapsulated within the <tt>Try</tt>.
+</p><pre>    public &lt;R&gt; R tryCatch(Function&lt;? super T, ? extends R&gt; succ, Function&lt;Exception, ? extends R&gt; fail);
+</pre>
+
+Here is an example of what <tt>tryCatch</tt> can do.
+
+
+
+
+<pre>jshell&gt; Try.&lt;Integer&gt;of(() -&gt; 1).tryCatch(x -&gt; x + 10, ex -&gt; 100)
+$.. ==&gt; 11
+
+jshell&gt; Try.&lt;Integer&gt;of(() -&gt; 1 / 0).tryCatch(x -&gt; x + 10, ex -&gt; 100)
+$.. ==&gt; 100
+</pre>
+
+<p><em>Here's an advice...</em> since <tt>tryCatch</tt> can be <em>exploited</em> as a
+getter, one should avoid using it indiscriminately.
+
+<!--
+<p>Another noteworthy point is that in the test cases above, function <tt>g</tt> is an <em>impure</em>
+function that is passed to <tt>map</tt>.  This is contentious as one typically assumes <em>pure</em> mapper
+functions to be passed.
+In our case, any function that potentially throw exceptions should have the output of the function wrapped in
+a <tt>Try</tt> (such as the function <tt>gg</tt> above) and passed to <tt>flatMap</tt> instead.
+Indeed, one is expected to consciously convert all impure functions to pure ones in advance, and just use
+purely functional code.  
+Alas, since Java supports imperative exception handling (via <tt>try..catch</tt>), we find ourselves
+caught in such a predicament.  Imagine that the only way to create/handle exceptions is via the <tt>Try</tt> context, then coding becomes very clean. 
+&#128513;
+-->
+
+</p><h2>Level 4</h2>
+
+<p>The <tt>Try</tt> class can be used in many common situations.  
+You are given a skeleton generic class <tt>TopN</tt> in <a href="https://codecrunch.comp.nus.edu.sg/taskfile.php/5728/TopN_skel.java"><tt>TopN_skel.java</tt></a>.
+
+</p><pre>import java.util.List;
+
+class TopN&lt;T&gt; {
+    private final List&lt;T&gt; list;
+    private final int top;
+
+    TopN(int top) {
+        this(List.&lt;T&gt;of(), top);
+    }
+
+    private TopN(List&lt;T&gt; list, int top) {
+        this.list = list;
+        this.top = top;
+    }
+
+    TopN&lt;T&gt; add(T str) {
+        return this;
+    }
+
+    T get(int i) {
+        return list.get(i);
+    }
+
+    int find(T s) {
+        return 0;
+    }
+
+    public String toString() {
+        return this.list.toString();
+    }
+}
+</pre>
+
+<p>Let's throw some exceptions first.  Rewrite the class in <tt>TopN.java</tt> following the sample run below.
+
+</p><pre>jshell&gt; TopN&lt;String&gt; t5 = new TopN&lt;String&gt;(5).
+   ...&gt; add("Liverpool").
+   ...&gt; add("Man City").
+   ...&gt; add("Arsenal").
+   ...&gt; add("Man United").
+   ...&gt; add("Aston Villa")
+t5 ==&gt; [Liverpool, Man City, Arsenal, Man United, Aston Villa]
+
+jshell&gt; t5.get(0)
+$.. ==&gt; "Liverpool"
+
+jshell&gt; t5.get(13)
+|  Exception java.lang.IllegalStateException: index 13 out of range
+|        at ..
+
+jshell&gt; t5.add("Chelsea")
+|  Exception java.lang.IllegalStateException: out of range
+|        at ..
+
+jshell&gt; t5.find("Arsenal")
+$.. ==&gt; 2
+
+jshell&gt; t5.find("Chelsea")
+|  Exception java.lang.IllegalStateException: Chelsea not among top 5
+|        at ..
+</pre>
+
+<p>Now further modify <tt>TopN</tt> so that the methods <tt>add</tt>, <tt>get</tt>, and <tt>find</tt> returns a <tt>Try</tt> object so that success or failure is encapsulated within the context.
+You only need to encapsulate the original return values within a <tt>Try</tt>.
+More specifically, wrap each method implementation in a supplier, wrap that in a <tt>Try</tt>, and have that
+returned in each method.
+
+</p><p>All previous operations on <tt>TopN</tt> can now be passed declaratively via <tt>flatMap</tt> to the
+<tt>Try</tt> context instead.
+
+</p><pre>jshell&gt; Try&lt;TopN&lt;String&gt;&gt; t5 = Try.of(() -&gt; new TopN&lt;String&gt;(5)).
+   ...&gt; flatMap(t -&gt; t.add("Liverpool")).
+   ...&gt; flatMap(t -&gt; t.add("Man City")).
+   ...&gt; flatMap(t -&gt; t.add("Arsenal")).
+   ...&gt; flatMap(t -&gt; t.add("Man United")).
+   ...&gt; flatMap(t -&gt; t.add("Aston Villa"))
+t5 ==&gt; Success: [Liverpool, Man City, Arsenal, Man United, Aston Villa]
+
+jshell&gt; t5.flatMap(t -&gt; t.get(0))
+$.. ==&gt; Success: Liverpool
+
+jshell&gt; t5.flatMap(t -&gt; t.get(0)).map(team -&gt; team + " is at the top")
+$.. ==&gt; Success: Liverpool is at the top
+
+jshell&gt; t5.flatMap(t -&gt; t.get(13).map(team -&gt; team + " is at 14th place"))
+$.. ==&gt; Failure: java.lang.IllegalStateException: index 13 out of range
+
+jshell&gt; t5.flatMap(t -&gt; t.add("Chelsea"))
+$.. ==&gt; Failure: java.lang.IllegalStateException: out of range
+
+jshell&gt; t5.flatMap(t -&gt; t.find("Arsenal")).map(i -&gt; "Arsenal is at pos " + i)
+$.. ==&gt; Success: Arsenal is at pos 2
+
+jshell&gt; t5.flatMap(t -&gt; t.find("Chelsea")).map(i -&gt; "Chelsea is at pos " + i)
+$.. ==&gt; Failure: java.lang.IllegalStateException: Chelsea not among top 5
+
+jshell&gt; t5.flatMap(t -&gt; t.find("Man City")).
+   ...&gt; tryCatch(x -&gt; "ranked " + (x + 1) + " on the table", ex -&gt; "bottom of the table")
+$.. ==&gt; "ranked 2 on the table"
+
+jshell&gt; t5.flatMap(t -&gt; t.find("Chelsea")).
+   ...&gt; tryCatch(x -&gt; "ranked " + (x + 1) + " on the table", ex -&gt; "nowhere near the top")
+$.. ==&gt; "nowhere near the top"
+</pre>
+
+
+		</div></div>                          
+					<div class="content-header">
+					<h3>Submission (Course)</h3>
+			</div>
+			<div id="courseNotification"></div>
+			<div class="panel" id="course_submit">
+				<div><span class="label">Select course:</span> <select id="course_id">
+			<option value="232">CS2030 (2026/2027 Sem 1) - Programming Methodology II</option>				</select>
+				</div>
+				<span class="label" style="vertical-align:top">Your Files:</span>
+				<span class="value-long">
+					<div id="plupload_containerCourse" style="position: relative;">
+						<a id="course_submission" href="javascript:;" class="submitButton" style="position: relative; z-index: 1;">BROWSE</a>
+					<div id="html5_1k6ljuh4k147154a1j25qf2gnu5_container" class="moxie-shim moxie-shim-html5" style="position: absolute; top: -7px; left: 0px; width: 103px; height: 27px; overflow: hidden; z-index: 0;"><input id="html5_1k6ljuh4k147154a1j25qf2gnu5" type="file" style="font-size: 999px; opacity: 0; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" multiple="" accept=".java,.c,.cpp,.h,.py,.jar,.jsh" tabindex="-1"></div></div>
+					<br>
+					<div id="filelistCourse"></div>
+					<script type="text/javascript">
+						var uploaderCourse;
+						$(document).ready(function() {
+							uploaderCourse = new plupload.Uploader({
+								runtimes: 'html5,flash,html4',
+								browse_button: 'course_submission',
+								container: 'plupload_containerCourse',
+								prevent_duplicates: true,
+								url: 'plupload/uploadFiles.php',
+
+								filters: {
+									max_file_size: '2097152', 
+									mime_types: [
+										{title : "Allowed files", extensions : "java,c,cpp,h,py,jar,jsh"}	
+									]
+								},
+
+								init: {
+									PostInit: function () {
+										document.getElementById('filelistCourse').innerHTML = '';
+									},
+
+									FilesAdded: function (up, files) {
+										plupload.each(files, function(file) {
+											document.getElementById('filelistCourse').innerHTML += 
+												'<li class="plupload_file ui-state-default plupload_delete" id="' + file.id + '" class="plupload_file_name">' +  
+													'<div class="plupload_file_status">' +
+														'<div class="plupload_file_action">' + 
+															'<div class="plupload_action_icon ui-icon ui-icon-circle-close" onclick="uploaderCourse.removeFile(uploaderCourse.getFile(\''+file.id+'\'));"> </div>' + 
+														'</div>' +
+														'<div class="plupload_file_name" title="' + file.name + '">' + 
+															'<span class="plupload_file_name_wrapper">' + file.name + '   (<i>' + plupload.formatSize(file.size) + '</i>) <b></b>' + '</span>' +
+														'</div>' +
+													'</div>' +
+												'</li>';
+										});
+										document.getElementById('filelistCourse').innerHTML = '<ul class="plupload_filelist_content" id="uploader_filelist_Course" unselectable="on">' + document.getElementById('filelistCourse').innerHTML + '</ul>';
+
+									},
+
+									FilesRemoved: function(up, files) {
+										plupload.each(files, function(file) {
+											$('#' + file.id).remove();
+										});
+									},
+
+									FileUploaded: function(up, file, info) {
+										$('#' + file.id).remove();
+									},
+
+									UploadProgress: function(up, file) {
+										$('#' + file.id + ' b')[0].innerHTML = '<span>' + file.percent + "%</span>";
+									},
+
+									UploadComplete: function(up, files) {
+										doCourseTaskGrade();
+									},
+
+									Error: function(up, err) {
+										alert("\nError #" + err.code + ": " + err.message);
+									}
+								}
+							});
+							uploaderCourse.init();
+						});
+					</script>
+					<p><a href="javascript:uploaderCourse.setOption('multipart_params', { 'sess_id': 'd75500baeb2615fee836c5f2ce7bdf0c','type': 'course_submission', 'tid': '5728', 'username': 'e0843506', 'uid': '27562' }); javascript:uploaderCourse.start();" class="submitButton">SUBMIT</a>
+					(only .java, .c, .cpp, .h, .jsh, and .py extensions allowed)</p>
+				</span>
+				<br>
+				<span class="label">&nbsp;</span>
+				<span class="value-long" style="font-size: 90%; color: #777;">To submit multiple files, click on the Browse button, then select one or more
+				files. The selected file(s) will be added to the upload queue. You can repeat this step to add more files. Check that you have all the files
+				needed for your submission. Then click on the Submit button to upload your submission.</span>
+			</div>
+										<input type="hidden" id="tid" name="tid" value="5728">
+		</div>
+		<!-- end content -->
+</div>
+<!-- end inner -->
+<div id="loading-mask">
+        <p id="loading_mask_loader" class="loader" style="display: none;"> <img alt="Loading..." src="./CodeCrunch_files/ajax-loader-tr.gif"> <br>
+                Please wait... </p>
+</div>
+<div id="practice-progress" style="display:none;position:fixed;inset:0;z-index:100000;background:rgba(0,0,0,.4);cursor:wait;">
+    <div role="status" aria-live="polite" aria-atomic="true" style="position:absolute;top:40%;left:50%;transform:translate(-50%,-50%);background:white;color:#222;padding:28px;max-width:420px;width:80%;text-align:center;border-radius:8px;box-shadow:0 4px 20px #555;">
+        <img src="./CodeCrunch_files/ajax-loader-tr.gif" alt="" width="32" height="32"><br>
+        <strong id="practice-progress-message">Uploading your files. Please wait…</strong>
+        <p>Please keep this page open. Larger submissions may take a little longer.</p>
+    </div>
+</div>
+<script type="text/javascript">
+$(".star").rating({
+        focus: function(value, link) {
+                var tip = $("#rating_text");
+                tip[0].data = tip[0].data || tip.html(); 
+                tip.html(link.title || "value: " + value);
+        },
+        blur: function(value, link) {
+                var tip = $("#rating_text");
+                $("#rating_text").html(tip[0].data || "");
+        },
+        callback: function(value, link) {
+                $.ajax({
+                        type: "POST",
+                        url: "task_updaterating.php",
+                        data: ({tid:$("#tid").val(), rating:value}),
+                        success: function(html) {
+                                var msg = html.split(";");
+                                $("#rating_text").removeClass().addClass(msg[0]);
+                                $("#rating_text").html(msg[1]);
+                        }
+                });
+        }
+});
+
+function getComments() {
+        $.ajax({
+                type: "POST",
+                url: "task_getcomments.php",
+                data: ({tid:$("#tid").val()}),
+                success: function(html) {
+                        $("#commentList").html(html);
+                }
+        });
+}
+
+function doTaskGrade(e, d) {
+        practiceProgress.show('Files uploaded. Submitting for grading. Please wait…');
+        $.ajax({
+                global: false,
+                type: "POST",
+                url: "doTaskGrade.php",
+                data: ({tid:$("#tid").val()}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#practiceNotification").removeClass().addClass(msg[0]);
+                        $("#practiceNotification").html(msg[1]);
+                },
+                error: function () {
+                    practiceProgress.fail('The submission could not be confirmed. Check My Submissions before trying again.');
+                },
+                complete: function () { practiceProgress.hide(); }
+        });
+
+}
+
+function doCourseTaskGrade(e, d) {
+        $.ajax({
+                type: "POST",
+                url: "doTaskGrade.php",
+                data: ({tid:$("#tid").val(), course_id:$("#course_id").val(), do_course:1}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#courseNotification").removeClass().addClass(msg[0]);
+                        $("#courseNotification").html(msg[1]);
+                }
+        });
+
+}
+
+function addComment() {
+        $.ajax({
+                type: "POST",
+                url: "task_addcomment.php",
+                data: ({tid:$("#tid").val(), comment:encodeURIComponent($("#comment").val())}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#commentNotification").removeClass().addClass(msg[0]);
+                        $("#commentNotification").html(msg[1]);
+                        
+                        getComments();
+                }
+        });
+}
+
+function deleteComment(c) {
+        $.ajax({
+                type: "POST",
+                url: "task_deletecomment.php",
+                data: ({comment_id:c}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#commentNotification").removeClass().addClass(msg[0]);
+                        $("#commentNotification").html(msg[1]);
+                        
+                        getComments();
+                }
+        });
+}
+
+function getClassify(){
+                $.ajax({
+                type: "GET",
+                url: "task_classify.php",
+                data: ({tid:$("#tid").val()}),
+                success: function(html) {
+                        $("#classifyList").html(html);
+                }
+        });
+}
+
+function getTutorial(){
+        $.ajax({
+                type: "POST",
+                url: "task_gettutorials.php",
+                data: ({tid:$("#tid").val()}),
+                success: function(html) {
+                        $("#tutorialList").html(html);
+                }
+        });
+}
+
+function getQueries() {
+        $.ajax({
+                type: "POST",
+                url: "task_getqueries.php",
+                data: ({tid:$("#tid").val()}),
+                success: function(html) {
+                        $("#queryList").html(html);
+                }
+        });
+}
+
+function addQuery() {
+        $.ajax({
+                type: "POST",
+                url: "task_addquery.php",
+                data: ({tid:$("#tid").val(), contest_id:$("#contest_id").val(), query:encodeURIComponent($("#query").val())}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#queryNotification").removeClass().addClass(msg[0]);
+                        $("#queryNotification").html(msg[1]);
+                        
+                        getQueries();
+                }
+        });
+}
+
+function deleteQuery(q) {
+        $.ajax({
+                type: "POST",
+                url: "task_deletequery.php",
+                data: ({query_id:q}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#queryNotification").removeClass().addClass(msg[0]);
+                        $("#queryNotification").html(msg[1]);
+                        
+                        getQueries();
+                }
+        });
+}
+
+function addTag() {
+        $.ajax({
+                type: "POST",
+                url: "tag_add.php",
+                data: ({tid:$("#tid").val(), tags:$("#tagwords").val()}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#tagNotification").removeClass().addClass(msg[0]);
+                        $("#tagNotification").html(msg[1]);
+                        
+                        getClassify();
+                }
+        });
+}
+
+
+$(document).ready(function() {
+        getComments();
+        getQueries();
+        getClassify();
+        getTutorial();
+        //getCloud();
+});
+
+$(document).everyTime(60000, function(i) {
+        if ($("#tid").val() != "" && $("#tid").val() != null) {
+                $.ajax({
+                        type: "POST",
+                        url: "task_checkcontest.php",
+                        data: ({tid:$("#tid").val()}),
+                        success: function(html) {
+                                if (html == "0") {
+                                        $("#contest_submit").html("");
+                                }
+                        }
+                });
+                $.ajax({
+                        type: "POST",
+                        url: "task_checkcourse.php",
+                        data: ({tid:$("#tid").val()}),
+                        success: function(html) {
+                                if (html == "0") {
+                                        $("#course_submit").html("");
+                                }
+                        }
+                });
+        }
+}, 0);
+
+$('#loading_mask_loader')
+        .hide()  // hide it initially
+        .ajaxStart(function() {
+                $(this).show();
+        })
+        .ajaxStop(function() {
+                $(this).hide();
+        });
+        
+</script>
+
+
+</div> <!-- end outer -->
+
+</div> <!-- end container -->
+
+
+
+</body></html>
