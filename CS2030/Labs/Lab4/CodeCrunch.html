@@ -1,0 +1,1246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0057)https://codecrunch.comp.nus.edu.sg/task_view.php?tid=5726 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="-1">
+
+<title>CodeCrunch</title>
+<!-- START NUS Includes-->
+<script type="text/javascript" src="./CodeCrunch_files/nussearch.js"></script>
+<link rel="stylesheet" type="text/css" href="./CodeCrunch_files/nusbase.css" media="screen, print, projection, handheld">
+<link rel="stylesheet" type="text/css" href="./CodeCrunch_files/nusmenu.css" media="screen, print, projection, handheld">
+<link rel="stylesheet" type="text/css" href="./CodeCrunch_files/nusscreen.css" media="screen, projection, print">
+<link href="https://codecrunch.comp.nus.edu.sg/nus/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+<link rel="apple-touch-icon" href="https://codecrunch.comp.nus.edu.sg/nus/blank.png">
+<!-- END NUS Includes -->
+<script type="text/javascript" src="./CodeCrunch_files/ajax.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/jquery.tablesorter.pager.js"></script>
+<!--<script type="text/javascript" src="/js/folding.js"></script>-->
+<script type="text/javascript" src="./CodeCrunch_files/jquery.watermark.min.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/jquery.scrollTo-2.1.3-min.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/customScript.js"></script>
+<!--script type="text/javascript">
+            function enterPressButton(field, button) {
+                $(field).keypress(function(e){if(e.which==13)$(button).trigger("click");});
+            }
+</script>-->
+<link rel="stylesheet" href="./CodeCrunch_files/style.css" type="text/css">
+<link rel="stylesheet" href="./CodeCrunch_files/jquery.tablesorter.css" type="text/css">
+<script type="text/javascript" src="./CodeCrunch_files/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/practice-progress.js"></script>
+<!--<script type="text/javascript" src="js/folding.js"></script>-->
+<script type="text/javascript" src="./CodeCrunch_files/jquery.rating.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/behaviour.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/textarea_maxlen.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/jquery.timer.js"></script>
+
+<script type="text/javascript" src="./CodeCrunch_files/plupload.full.min.js"></script>
+
+<link rel="stylesheet" href="./CodeCrunch_files/jquery.rating.css" type="text/css">
+<link rel="stylesheet" href="./CodeCrunch_files/style.css" type="text/css">
+<link rel="stylesheet" href="./CodeCrunch_files/tagcloud.css" type="text/css">
+<link rel="stylesheet" href="./CodeCrunch_files/jquery-ui-1.7.2.custom.css" type="text/css">
+
+<link rel="stylesheet" href="./CodeCrunch_files/jquery.ui.plupload.css" type="text/css">
+
+</head>
+
+<body>
+<!-- START NUS-Header -->
+
+<!-- NUS Header -->
+<div id="nusheader" class="nusbody">
+<div class="nuslogodiv">
+<a href="https://www.nus.edu.sg/">
+<img class="nuslogo" src="./CodeCrunch_files/soclogo.png" alt="">
+</a>
+</div>
+
+</div>
+
+<!-- NUS Inner-Title -->
+<div id="nustitle" class="nusbody"><div id="nustitle_l"><div id="nustitle_r">
+              <h1 id="site-name">
+                <a href="https://codecrunch.comp.nus.edu.sg/" title="Home" rel="home">CodeCrunch</a>
+              </h1>
+</div></div></div>
+
+<!-- END NUS-Header -->
+
+<div id="banner">
+        <div id="topmenu">
+        <div id="login">
+                Logged in as: <strong>e0843506</strong>
+                </div>
+                <div style="display: block;"><ul>
+                                        <li><a href="https://codecrunch.comp.nus.edu.sg/index.php">Home</a></li>
+                                                    <li><a href="https://codecrunch.comp.nus.edu.sg/user_course_viewall.php">My Courses</a></li>
+                                                                <li><a href="https://codecrunch.comp.nus.edu.sg/tutorial_browser.php">Browse Tutorials</a></li>
+                                                                <li><a href="https://codecrunch.comp.nus.edu.sg/task_browser.php">Browse Tasks</a></li>
+                                                                <li><a href="https://codecrunch.comp.nus.edu.sg/task_criteria.php">Search</a></li>
+                                                                <li><a href="https://codecrunch.comp.nus.edu.sg/user_viewsubmissions.php">My Submissions</a></li>
+                                                <li><a href="https://codecrunch.comp.nus.edu.sg/logout_process.php">Logout</a></li>
+                            </ul></div>
+        </div>
+</div>
+<div id="container">
+<div id="outer">
+<div id="inner">
+	<div id="content_full">                         
+		<div class="content-header"><h3>CS2030 (AY26/27) Lab #4</h3></div>
+		<div class="spacer"></div>
+		<table width="100%" cellpadding="0" cellspacing="0" border="0">
+			<tbody><tr><td valign="top" style="width: 30%;">
+				<div class="meta_header">Tags &amp; Categories</div>
+				<div id="classifyList"><span class="value">Tags:
+</span>
+<span class="value">Categories:
+</span></div>
+			</td>
+			<td valign="top" style="width: 40%;">
+				<div class="meta_header">Related Tutorials</div>
+				<div id="tutorialList"></div>
+			</td>
+			<td valign="top" style="width: 30%;">
+			</td>
+			</tr>
+		</tbody></table>
+		<div class="content-header">
+			<h3>Task Content
+							</h3>
+		</div>                          
+		<div class="panel"><div class="task-content">
+		<h2>Lab #4</h2>
+
+<p>You have been designing a discrete event simulator to simulate the changes in the state of a system across time, with each transition from one state of the system to another triggered via an event. 
+Such a system can be used to study many complex real-world systems such as queuing to order food at a fast-food restaurant.
+<!--
+<p>An event occurs at a particular time, and each event alters the state of the system and may generate more events.  
+States remain unchanged between two events (hence the term discrete), and this allows the simulator to jump from the time of one event to another.  
+
+<p>
+-->
+The following illustrates a multi-queue-multi-server system:
+
+</p><div><img src="data:image/png;base64,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"></div>
+<ul>
+<li>There are <i>n</i> servers with its own queue.
+</li><li>Each server can serve one customer at a time.</li>
+<li>Each customer is served with a different service time.</li>
+<li>When a customer arrives, 
+<ul>
+<li>he/she finds the first idling server (not serving any customer);
+</li><li>if all servers are serving customers, then the customer joins the
+first available queue;
+</li><li>if all queues are full, he/she leaves.
+</li></ul>    
+</li></ul>
+
+<p>This lab comprises only two levels: the first focuses on varying
+service times (assume each server with queue length of zero); and the
+second addressing queuing customers.    
+
+
+</p><h2>Level 1</h2>
+
+<!--
+<p>In labs 2 and 3, a constant service
+time has been used for every serve event.
+
+we assigned a service time to
+individual customers before they are served.  The following shows a
+sample run from the last test case:
+
+<pre>
+$ cat 5.in
+2 6
+1 0.5 1.1
+2 0.6 0.9
+3 0.7 0.7
+4 1.5 0.1
+5 1.6 0.2
+6 1.7 0.3
+
+$ cat 5.in | java --enable-preview Main
+0.5 customer 1 arrives
+0.5 customer 1 serve by server 1
+0.6 customer 2 arrives
+0.6 customer 2 serve by server 2
+0.7 customer 3 arrives
+0.7 customer 3 leaves
+1.5 customer 2 done
+1.5 customer 4 arrives
+1.5 customer 4 serve by server 2
+1.6 customer 1 done
+1.6 customer 4 done
+1.6 customer 5 arrives
+1.6 customer 5 serve by server 1
+1.7 customer 6 arrives
+1.7 customer 6 serve by server 2
+1.8 customer 5 done
+2.0 customer 6 done
+</pre>
+
+<p>Notice that customer <tt>3</tt> is not served.
+Indeed, it is unrealistic to pre-determine the service time before the customer is served.
+In the above example, customer <tt>3</tt> would not be served and hence a service time need not be specified.
+-->
+
+<p>We now generate a different service time, only when it is needed.
+To faciliate such on-demand (or delayed) data, we make use of the 
+<tt><a target="_blank" href="https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html">Supplier</a></tt> 
+interface which specifies an abstract method <tt>get()</tt> to be defined by its implementation class.
+
+</p><p>As an example, 
+the following <tt>Supplier</tt> implementation can be defined
+that generates service times based on a mutable priority queue.
+
+</p><pre>jshell&gt; PriorityQueue&lt;Double&gt; pq = new PriorityQueue&lt;Double&gt;(
+   ...&gt; List.of(1.0,2.0,3.0))
+pq ==&gt; [1.0, 2.0, 3.0]
+
+jshell&gt; class ServiceTime implements Supplier&lt;Double&gt; {
+   ...&gt;     public Double get() {
+   ...&gt;         System.out.println("generating service time..."); // for tracing purposes
+   ...&gt;         return pq.poll();
+   ...&gt;     }
+   ...&gt; }
+|  created class ServiceTime
+</pre>
+
+<p>Each time a service time is needed, we call the supplier's
+<tt>get</tt> method.
+As an example, suppose we have the following simplified
+<tt>Customer</tt> and <tt>Server</tt> classes.
+
+<!--
+<p>Since not all customers are served, rather than passing
+<tt>DefaultServiceTime</tt> to the <tt>Customer</tt> class, it
+should be passed to the <tt>Server</tt> instead that initiates the actual
+service.  The following is a highly simplified implementations of the
+<tt>Customer</tt> and <tt>Server</tt> classes to illustrate.
+-->
+
+</p><pre>jshell&gt; class Customer {
+   ...&gt;     private final int id;
+   ...&gt;     Customer(int id) {
+   ...&gt;         this.id = id;
+   ...&gt;     }
+   ...&gt;     public String toString() {
+   ...&gt;         return "customer " + this.id;
+   ...&gt;     }
+   ...&gt; }
+|  created class Customer
+
+jshell&gt; class Server {
+   ...&gt;     private final int id;
+   ...&gt;     private final Supplier&lt;Double&gt; serviceTime;
+   ...&gt;     Server(int id, Supplier&lt;Double&gt; serviceTime) {
+   ...&gt;         this.id = id;
+   ...&gt;         this.serviceTime = serviceTime;
+   ...&gt;     }
+   ...&gt;     void serve(Customer c) {
+   ...&gt;         System.out.println(this + " serves " + c + " for " + serviceTime.get());
+   ...&gt;     }
+   ...&gt;     public String toString() {
+   ...&gt;         return "server " + this.id;
+   ...&gt;     }
+   ...&gt; }
+|  created class Server
+
+jshell&gt; List&lt;Customer&gt; customers = List.of(
+   ...&gt; new Customer(1), new Customer(2), new Customer(3))
+customers ==&gt; [customer 1, customer 2, customer 3]
+
+jshell&gt; Server s1 = new Server(1, new ServiceTime())
+s1 ==&gt; server 1
+</pre>
+
+
+<p>Now suppose <tt>customer 3</tt> is served first then followed by 
+<tt>customer 1</tt>, and assume <tt>customer 2</tt> leaves.  Then
+
+</p><pre>jshell&gt; s1.serve(customers.get(2))
+generating service time...
+server 1 serves customer 3 for 1.0
+
+jshell&gt; s1.serve(customers.get(0))
+generating service time...
+server 1 serves customer 1 for 2.0
+</pre>
+
+<!--
+<p>This allows <tt>customer 3</tt> to be served with the first
+service time, and <tt>customer 1</tt> to be served with the second
+service time.  
+-->
+<p>Notice that the sequence of service times are used on demand,
+irrespective of the ordering of customer arrivals.
+
+<!--
+<p>The utility classes
+<tt><a href="/taskfile.php/5726/PQ.java">PQ.java</a></tt>,
+<tt><a href="/taskfile.php/5726/Pair.java">Pair.java</a></tt>,
+<tt><a href="/taskfile.php/5726/Maybe.java">Maybe.java</a></tt>
+and <tt><a href="/taskfile.php/5726/InfList.java">InfList.java</a></tt> are given.
+The Java API for these classes can be found
+using this <a href="https://data.comp.nus.edu.sg/cs2030/doc/allclasses-index.html">link</a>.
+-->
+
+</p><p>The utility classes 
+<tt>InfList</tt>,
+<tt>Maybe</tt>,
+<tt>Pair</tt> and
+<tt>PQ</tt>
+have been provided to you.
+The Java API for these classes can be found
+using this <a href="https://data.comp.nus.edu.sg/cs2030/doc/allclasses-index.html">link</a>.
+
+You will also be making use of the <tt>Main</tt> class below:
+
+</p><pre>import java.util.Scanner;
+import java.util.function.Supplier;
+
+void main() {
+    Scanner sc = new Scanner(System.in);
+    int numOfServers = sc.nextInt();
+    int qmax = 0; // assume no queuing
+    int numOfCustomers = sc.nextInt();
+    Supplier&lt;Double&gt; serviceTime = () -&gt; sc.nextDouble();
+
+    sc.nextLine(); // removes trailing newline
+    InfList&lt;Pair&lt;Integer,Double&gt;&gt; arrivals = InfList.iterate(1, x -&gt; x + 1)
+        .limit(numOfCustomers)
+        .map(x -&gt; new Pair&lt;&gt;(sc.nextInt(), sc.nextDouble()));
+
+    new Simulator(numOfServers, qmax, numOfCustomers, arrivals, serviceTime)
+        .run().ifPresent(x -&gt; System.out.println(x));
+}
+</pre>
+
+<!--
+<p>Input is presented in the following format where
+all customer identifiers and arrival times are presented first,
+followed by a series of service times.
+-->
+Modify your existing implementation so that service times are
+generated on demand when customers are served.
+
+<p>Use <tt>String.format</tt> to format the event times to three decimal places.
+
+</p><pre>jshell&gt; double d = 1.2
+d ==&gt; 1.2
+
+jshell&gt; String.format("%.3f", d)
+$.. ==&gt; "1.200"
+</pre>
+
+<p>Sample runs are given below:
+
+</p><pre>$ cat 1.in
+1 3
+1 0.5
+2 1.6
+3 3.7
+1.0
+2.0
+3.0
+
+$ cat 1.in | java --enable-preview Main
+
+0.500 customer 1 arrives
+0.500 customer 1 serve by server 1
+1.500 customer 1 done
+1.600 customer 2 arrives
+1.600 customer 2 serve by server 1
+3.600 customer 2 done
+3.700 customer 3 arrives
+3.700 customer 3 serve by server 1
+6.700 customer 3 done
+
+$ cat 2.in
+1 3
+1 0.5
+2 1.6
+3 3.7
+4.0
+2.0
+3.0
+
+$ cat 2.in | java --enable-preview Main
+
+0.500 customer 1 arrives
+0.500 customer 1 serve by server 1
+1.600 customer 2 arrives
+1.600 customer 2 leaves
+3.700 customer 3 arrives
+3.700 customer 3 leaves
+4.500 customer 1 done
+
+$ cat 3.in
+1 3
+1 0.5
+2 1.6
+3 3.7
+2.0
+2.0
+3.0
+
+$ cat 3.in | java --enable-preview Main
+
+0.500 customer 1 arrives
+0.500 customer 1 serve by server 1
+1.600 customer 2 arrives
+1.600 customer 2 leaves
+2.500 customer 1 done
+3.700 customer 3 arrives
+3.700 customer 3 serve by server 1
+5.700 customer 3 done
+
+$ cat 4.in
+2 6
+1 0.5
+2 0.6
+3 0.7
+4 1.5
+5 1.6
+6 1.7
+1.1
+0.9
+0.7
+0.1
+0.2
+
+$ cat 4.in | java --enable-preview Main
+
+0.500 customer 1 arrives
+0.500 customer 1 serve by server 1
+0.600 customer 2 arrives
+0.600 customer 2 serve by server 2
+0.700 customer 3 arrives
+0.700 customer 3 leaves
+1.500 customer 2 done
+1.500 customer 4 arrives
+1.500 customer 4 serve by server 2
+1.600 customer 1 done
+1.600 customer 5 arrives
+1.600 customer 5 serve by server 1
+1.700 customer 5 done
+1.700 customer 6 arrives
+1.700 customer 6 serve by server 1
+1.900 customer 6 done
+2.200 customer 4 done
+</pre>
+
+<p>Pay particular attention to the last two test cases.
+<!--
+<p>In particular, for the last test case, customer <tt>4</tt>
+arriving at <tt>1.5</tt> now makes use of the third service time of
+<tt>0.7</tt>, and subsequently service is done by <tt>2.2</tt>;
+customers <tt>5</tt> and <tt>6</tt> would then require two more service
+times.  As such, only five service times are read.
+-->
+
+</p><h2>Level 2</h2>
+
+<p>Let us study the event transitions with queuing customers:
+
+</p><ul>
+<li>When a customer arrives (<tt><strong>ARRIVE</strong></tt> event): 
+<ul>
+<li>the servers are scanned from <tt>1</tt> to <tt>n</tt> to find the first one that is idle (not serving any customer).
+This server starts serving the customer immediately (<tt><strong>SERVE</strong></tt> event).</li>
+<li>the server is done (<tt><strong>DONE</strong></tt> event) after
+serving the customer.</li>
+<li>if all servers are serving customers, then the customer that just arrived scans the queues from <tt>1</tt> to <tt>n</tt>, joins the first queue that is not full (not necessarily the shortest) and waits in the queue (<tt><strong>WAIT</strong></tt> event).
+Note that a customer that chooses to queue joins at the end of the queue.
+</li><li>if all servers are serving customers and all queues are full of waiting customers, then a new customer that arrives, just leaves (<tt><strong>LEAVE</strong></tt> event).
+<!--
+<li>When a server is done serving a customer (<tt><strong>DONE</strong></tt> event), the server can start serving the customer waiting at the front of the queue (if any).</li>
+-->
+</li></ul>
+</li>
+<li>If there is no waiting customer, then the server becomes idle again.</li>
+</ul>
+<p>Notice from the above description that there are five events in the system, namely: <tt><strong>ARRIVE</strong></tt>,  <tt><strong>SERVE</strong></tt>, <tt><strong>WAIT</strong></tt>, <tt><strong>LEAVE</strong></tt> and <tt><strong>DONE</strong></tt>.  For each customer, these are the only possible event transitions:</p>
+<ul>
+<li> <tt>ARRIVE</tt> → <tt>SERVE</tt> → <tt>DONE</tt> </li>
+<li> <tt>ARRIVE</tt> → <tt>WAIT</tt> → <tt>SERVE</tt> → <tt>DONE</tt> </li>
+<li> <tt>ARRIVE</tt> → <tt>LEAVE</tt> </li>
+</ul>
+<p>In essence, an event is tied to one customer.   Depending on the current state of the system, triggering an event will result in the next state of the system, and possibly the next event. Events are also processed via a queue. At the start of the simulation, the queue only contains the customer arrival events. With every simultation time step, an event is retrieved from the queue to be processed, and any resulting event added to the queue. This process is repeated until there are no events left in the queue.</p>
+
+<!--
+<h4>Take Note</h4>
+<p>The requirements of this project will be released in stages. For each level <tt>N</tt>, you will need to create a driver class <tt>MainN</tt> in the file <tt>MainN.java</tt>. 
+
+<h4>Level 1</h4>
+
+<p>Given the number of servers and a set of customer arrival times in chronological order, output the discrete events. Also output the statistics at the end of the simulation.</p>
+<p>Define a driver class <tt>Main1</tt> (stored in <tt>Main1.java</tt>) that reads a series of arrival times, creates the arrival events, and starts the simulation.</p>
+<p>Take note of the following assumptions:</p>
+<ul>
+<li>The format of the input is always correct; </li>
+<li>Output of a <tt>double</tt> value, say <tt>d</tt>, is to be formatted with <tt>String.format("%.3f", d)</tt>; 
+</ul>
+-->
+<p>As an example, given an input of one server with a maximum queue
+length of <tt>1</tt> (i.e. only one waiting customer is allowed),
+followed by three customer arrivals and assuming that service times is <tt>1.0</tt>,
+</p><pre>1 1 3
+0.500
+0.600
+0.700
+</pre>
+
+<p>the entire similation run results in the following output:
+
+</p><pre>0.500 customer 1 arrives
+0.500 customer 1 serves by server 1
+0.600 customer 2 arrives
+0.600 customer 2 waits at server 1
+0.700 customer 3 arrives
+0.700 customer 3 leaves
+1.500 customer 1 done
+1.500 customer 2 serves by server 1
+2.500 customer 2 done
+</pre>
+<p>
+</p><p>Simulation statistics are also typically tracked to measure the performance of the system.
+The statistics that we need to keep track of are:</p>
+<ol>
+<li>the average waiting time for customers who have been served;</li>
+<li>the number of customers served;</li>
+<li>the number of customers who left without being served.</li>
+</ol>
+<p>In our example, the end-of-simulation statistics are respectively, <tt>[0.450 2 1]</tt>.
+We can use <tt>String.format</tt> to format the event times to three decimal places.
+
+</p><p>Just like in the previous milestone, a <tt>State</tt> can be used to set up a specific
+configuration of the simulation, so that the <tt>next()</tt> method can be used to test the rest of the simulation for correctness.
+The <tt>shop</tt> constructor takes in the following parameters in
+order:
+
+</p><ul>
+<li>the number of servers;
+</li><li>the supplier for the service time so that everytime a server in the shop serves a customer, the service time will be generated.
+</li><li>the maximum queue length for waiting customers.
+</li></ul>
+
+<p>In the following, the service time is set constant for illustration purposes.
+
+</p><pre>jshell&gt; PQ&lt;Event&gt; pq = new PQ&lt;Event&gt;().add(new ArriveEvent(new Customer(1, 1.0), 1.0)).
+   ...&gt; add(new ArriveEvent(new Customer(2, 2.0), 2.0))
+pq ==&gt; [1.000 customer 1 arrives, 2.000 customer 2 arrives]
+
+jshell&gt; new State(pq, new Shop(2, () -&gt; 1.0, 0)).next()
+$.. ==&gt; 1.000 customer 1 arrives
+
+jshell&gt; new State(pq, new Shop(2, () -&gt; 1.0, 0)).next().
+   ...&gt; next()
+$.. ==&gt; 1.000 customer 1 arrives
+1.000 customer 1 serves by server 1
+
+jshell&gt; new State(pq, new Shop(2, () -&gt; 1.0, 0)).next().
+   ...&gt; next().
+   ...&gt; next()
+$.. ==&gt; 1.000 customer 1 arrives
+1.000 customer 1 serves by server 1
+2.000 customer 1 done
+
+jshell&gt; InfList.iterate(new State(pq, new Shop(2, () -&gt; 1.0, 0)),
+   ...&gt;    state -&gt; state.next()).
+   ...&gt; takeWhile(state -&gt; !state.isEmpty()).
+   ...&gt; reduce((s1, s2) -&gt; s2).
+   ...&gt; ifPresent(state -&gt; System.out.println(state))
+1.000 customer 1 arrives
+1.000 customer 1 serves by server 1
+2.000 customer 1 done
+2.000 customer 2 arrives
+2.000 customer 2 serves by server 1
+3.000 customer 2 done
+
+jshell&gt; InfList.iterate(new State(pq, new Shop(2, () -&gt; 2.0, 0)),
+   ...&gt;    state -&gt; state.next()).
+   ...&gt; takeWhile(state -&gt; !state.isEmpty()).
+   ...&gt; reduce((s1, s2) -&gt; s2).
+   ...&gt; ifPresent(state -&gt; System.out.println(state))
+1.000 customer 1 arrives
+1.000 customer 1 serves by server 1
+2.000 customer 2 arrives
+2.000 customer 2 serves by server 2
+3.000 customer 1 done
+4.000 customer 2 done
+
+jshell&gt; InfList.iterate(new State(pq, new Shop(1, () -&gt; 2.0, 1)),
+   ...&gt;    state -&gt; state.next()).
+   ...&gt; takeWhile(state -&gt; !state.isEmpty()).
+   ...&gt; reduce((s1, s2) -&gt; s2).
+   ...&gt; ifPresent(state -&gt; System.out.println(state))
+1.000 customer 1 arrives
+1.000 customer 1 serves by server 1
+2.000 customer 2 arrives
+2.000 customer 2 waits at server 1
+3.000 customer 1 done
+3.000 customer 2 serves by server 1
+5.000 customer 2 done
+</pre>
+
+<p>For the purpose of demonstration, we shall use the following 
+<!-- <tt><a href="/taskfile.php/5726/Main.java">Main</a></tt> -->
+<tt>Main</tt> client.
+Note that your implementation will eventually be tested with an alternative
+client.
+
+<!--with 
+<tt><a href="DefaultServiceTime.java">DefaultServiceTime</a></tt>
+are 
+is provided for you.
+-->
+
+</p><pre>import java.util.List;
+import java.util.Scanner;
+import java.util.function.Supplier;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int numOfServers = sc.nextInt();
+        int qmax = sc.nextInt();
+        int numOfCustomers = sc.nextInt();
+        Supplier&lt;Double&gt; serviceTime = () -&gt; 1.0;
+
+        sc.nextLine(); // removes trailing newline
+        InfList&lt;Pair&lt;Integer,Double&gt;&gt; arrivals = InfList.iterate(1, x -&gt; x + 1)
+            .limit(numOfCustomers)
+            .map(x -&gt; new Pair&lt;&gt;(sc.nextInt(), sc.nextDouble()));
+
+        new Simulator(numOfServers, qmax, numOfCustomers, arrivals,serviceTime)
+            .run().ifPresent(x -&gt; System.out.println(x));
+    }
+}
+</pre>
+
+<p>Take note that 
+<!--of the following:
+
+<ul>
+<li>
+the <tt>run()</tt> method of the <tt>Simulator</tt> class now returns a pair of strings comprising the simultation output and the statistic.
+<li>use <tt>1e-15</tt> as a tolerance for comparison of floating point values.
+<li>
+-->
+blank lines will be ignored during testing.
+<!--
+;
+<li>only the <tt>Simulator</tt> class is allowed to expose the <tt>Optional</tt>, i.e. there is <b>no restriction</b> to any <tt>Optional</tt> methods;
+<li>you are <b>not allowed</b> to expose the encapsulated <tt>Optional</tt> value in all other classes including the use of <tt>orElse</tt> and <tt>orElseGet</tt>.  However, you can use the <tt>or</tt> method that takes in a supplier of an optional.
+-->
+
+
+</p><p>Sample runs of the program is given below.
+All of them assumes a constant service time of <tt>1.0</tt>.
+You should create your own input files using <tt>vim</tt>.
+You may also create other implementations of <tt>Supplier&lt;Double&gt;</tt> to test out different service times.
+Note that your program will be tested against test cases where the service times could be different when serving customers.
+</p>
+
+<pre>$ cat 1.in
+1 1 3
+1 0.500 
+2 0.600 
+3 0.700 
+
+$ cat 1.in | java Main
+0.500 customer 1 arrives
+0.500 customer 1 serve by server 1
+0.600 customer 2 arrives
+0.600 customer 2 waits at server 1
+0.700 customer 3 arrives
+0.700 customer 3 leaves
+1.500 customer 1 done
+1.500 customer 2 serve by server 1
+2.500 customer 2 done
+[0.450 2 1]
+
+$ cat 2.in
+1 1 6
+1 0.500 
+2 0.600 
+3 0.700 
+4 1.500 
+5 1.600 
+6 1.700 
+
+$ cat 2.in | java Main
+0.500 customer 1 arrives
+0.500 customer 1 serve by server 1
+0.600 customer 2 arrives
+0.600 customer 2 waits at server 1
+0.700 customer 3 arrives
+0.700 customer 3 leaves
+1.500 customer 1 done
+1.500 customer 2 serve by server 1
+1.500 customer 4 arrives
+1.500 customer 4 waits at server 1
+1.600 customer 5 arrives
+1.600 customer 5 leaves
+1.700 customer 6 arrives
+1.700 customer 6 leaves
+2.500 customer 2 done
+2.500 customer 4 serve by server 1
+3.500 customer 4 done
+[0.633 3 3]
+
+$ cat 3.in
+2 1 6
+1 0.500 
+2 0.600 
+3 0.700 
+4 1.500 
+5 1.600 
+6 1.700 
+
+$ cat 3.in | java Main
+0.500 customer 1 arrives
+0.500 customer 1 serve by server 1
+0.600 customer 2 arrives
+0.600 customer 2 serve by server 2
+0.700 customer 3 arrives
+0.700 customer 3 waits at server 1
+1.500 customer 1 done
+1.500 customer 3 serve by server 1
+1.500 customer 4 arrives
+1.500 customer 4 waits at server 1
+1.600 customer 2 done
+1.600 customer 5 arrives
+1.600 customer 5 serve by server 2
+1.700 customer 6 arrives
+1.700 customer 6 waits at server 2
+2.500 customer 3 done
+2.500 customer 4 serve by server 1
+2.600 customer 5 done
+2.600 customer 6 serve by server 2
+3.500 customer 4 done
+3.600 customer 6 done
+[0.450 6 0] 
+
+$ cat 4.in
+2 2 6
+1 0.500 
+2 0.600 
+3 0.700 
+4 1.500 
+5 1.600 
+6 1.700 
+
+$ cat 4.in | java Main
+0.500 customer 1 arrives
+0.500 customer 1 serve by server 1
+0.600 customer 2 arrives
+0.600 customer 2 serve by server 2
+0.700 customer 3 arrives
+0.700 customer 3 waits at server 1
+1.500 customer 1 done
+1.500 customer 3 serve by server 1
+1.500 customer 4 arrives
+1.500 customer 4 waits at server 1
+1.600 customer 2 done
+1.600 customer 5 arrives
+1.600 customer 5 serve by server 2
+1.700 customer 6 arrives
+1.700 customer 6 waits at server 1
+2.500 customer 3 done
+2.500 customer 4 serve by server 1
+2.600 customer 5 done
+3.500 customer 4 done
+3.500 customer 6 serve by server 1
+4.500 customer 6 done
+[0.600 6 0]
+</pre>
+
+<!--
+
+<h2>Some design tips...</h2>
+
+<ul>
+<li>Make use of polymorphism instead of checking the type of event in
+the simulator class:
+<ul>
+<li>Your event class should have a method that returns another type of
+event. If you need to return more values, consider putting into a pair.
+<li>Each event will transit into the next event, e.g. a serve will transit to a done event after running the method above.
+<li>Terminating events (done and leave) can return itself since there is no event to transit to.
+</ul>
+<li>In your design, only invoke <tt>getServiceTime()</tt> in one location. Invoking in multiple locations may result in wrong service time.
+<li>Consider how you would emulate a queue for each server.
+<li>Avoid having multiple events with the same customer in the <tt>PQ</tt>, i.e. the <tt>PQ</tt> should contain only one event per customer.
+</ul>
+
+<p>These are hidden  cases
+
+<pre>
+$ cat 4.in
+1 1
+0 0.313141
+0.313508 0.103753
+1.204909 0.699522
+2.776498 0.014224
+3.876961 0.154173
+
+$ java Main &lt; 4.in
+0.000 1 arrives
+0.000 1 serves by 1
+0.313 1 done serving by 1
+0.314 2 arrives
+0.314 2 serves by 1
+0.417 2 done serving by 1
+1.205 3 arrives
+1.205 3 serves by 1
+1.904 3 done serving by 1
+2.776 4 arrives
+2.776 4 serves by 1
+2.791 4 done serving by 1
+3.877 5 arrives
+3.877 5 serves by 1
+4.031 5 done serving by 1
+[0.000 5 0]
+
+$ cat 5.in
+2 1
+0 0.313141
+0.313508 0.103753
+1.204909 0.699522
+2.776498 0.014224
+3.876961 0.154173
+3.909736 0.012659
+9.006390 1.477717
+9.043360 2.593020
+9.105379 0.296847
+9.159629 0.051732
+
+$ java Main &lt; 5.in
+0.000 1 arrives
+0.000 1 serves by 1
+0.313 1 done serving by 1
+0.314 2 arrives
+0.314 2 serves by 1
+0.417 2 done serving by 1
+1.205 3 arrives
+1.205 3 serves by 1
+1.904 3 done serving by 1
+2.776 4 arrives
+2.776 4 serves by 1
+2.791 4 done serving by 1
+3.877 5 arrives
+3.877 5 serves by 1
+3.910 6 arrives
+3.910 6 serves by 2
+3.922 6 done serving by 2
+4.031 5 done serving by 1
+9.006 7 arrives
+9.006 7 serves by 1
+9.043 8 arrives
+9.043 8 serves by 2
+9.105 9 arrives
+9.105 9 waits at 1
+9.160 10 arrives
+9.160 10 waits at 2
+10.484 7 done serving by 1
+10.484 9 serves by 1
+10.781 9 done serving by 1
+11.636 8 done serving by 2
+11.636 10 serves by 2
+11.688 10 done serving by 2
+[0.386 10 0]
+
+$ cat 6.in
+2 2
+0 0.313141
+0.313508 0.103753
+1.204909 0.699522
+2.776498 0.014224
+3.876961 0.154173
+3.909736 0.012659
+9.006390 1.477717
+9.043360 2.593020
+9.105379 0.296847
+9.159629 0.051732
+
+$ java Main &lt; 6.in
+0.000 1 arrives
+0.000 1 serves by 1
+0.313 1 done serving by 1
+0.314 2 arrives
+0.314 2 serves by 1
+0.417 2 done serving by 1
+1.205 3 arrives
+1.205 3 serves by 1
+1.904 3 done serving by 1
+2.776 4 arrives
+2.776 4 serves by 1
+2.791 4 done serving by 1
+3.877 5 arrives
+3.877 5 serves by 1
+3.910 6 arrives
+3.910 6 serves by 2
+3.922 6 done serving by 2
+4.031 5 done serving by 1
+9.006 7 arrives
+9.006 7 serves by 1
+9.043 8 arrives
+9.043 8 serves by 2
+9.105 9 arrives
+9.105 9 waits at 1
+9.160 10 arrives
+9.160 10 waits at 1
+10.484 7 done serving by 1
+10.484 9 serves by 1
+10.781 9 done serving by 1
+10.781 10 serves by 1
+10.833 10 done serving by 1
+11.636 8 done serving by 2
+[0.300 10 0]
+</pre>
+-->
+		</div></div>                          
+					<div class="content-header">
+					<h3>Submission (Course)</h3>
+			</div>
+			<div id="courseNotification"></div>
+			<div class="panel" id="course_submit">
+				<div><span class="label">Select course:</span> <select id="course_id">
+			<option value="232">CS2030 (2026/2027 Sem 1) - Programming Methodology II</option>				</select>
+				</div>
+				<span class="label" style="vertical-align:top">Your Files:</span>
+				<span class="value-long">
+					<div id="plupload_containerCourse" style="position: relative;">
+						<a id="course_submission" href="javascript:;" class="submitButton" style="position: relative; z-index: 1;">BROWSE</a>
+					<div id="html5_1k6qnqcmvc1l1gf514ri3trn6c5_container" class="moxie-shim moxie-shim-html5" style="position: absolute; top: -7px; left: 0px; width: 103px; height: 27px; overflow: hidden; z-index: 0;"><input id="html5_1k6qnqcmvc1l1gf514ri3trn6c5" type="file" style="font-size: 999px; opacity: 0; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" multiple="" accept=".java,.c,.cpp,.h,.py,.jar,.jsh" tabindex="-1"></div></div>
+					<br>
+					<div id="filelistCourse"></div>
+					<script type="text/javascript">
+						var uploaderCourse;
+						$(document).ready(function() {
+							uploaderCourse = new plupload.Uploader({
+								runtimes: 'html5,flash,html4',
+								browse_button: 'course_submission',
+								container: 'plupload_containerCourse',
+								prevent_duplicates: true,
+								url: 'plupload/uploadFiles.php',
+
+								filters: {
+									max_file_size: '2097152', 
+									mime_types: [
+										{title : "Allowed files", extensions : "java,c,cpp,h,py,jar,jsh"}	
+									]
+								},
+
+								init: {
+									PostInit: function () {
+										document.getElementById('filelistCourse').innerHTML = '';
+									},
+
+									FilesAdded: function (up, files) {
+										plupload.each(files, function(file) {
+											document.getElementById('filelistCourse').innerHTML += 
+												'<li class="plupload_file ui-state-default plupload_delete" id="' + file.id + '" class="plupload_file_name">' +  
+													'<div class="plupload_file_status">' +
+														'<div class="plupload_file_action">' + 
+															'<div class="plupload_action_icon ui-icon ui-icon-circle-close" onclick="uploaderCourse.removeFile(uploaderCourse.getFile(\''+file.id+'\'));"> </div>' + 
+														'</div>' +
+														'<div class="plupload_file_name" title="' + file.name + '">' + 
+															'<span class="plupload_file_name_wrapper">' + file.name + '   (<i>' + plupload.formatSize(file.size) + '</i>) <b></b>' + '</span>' +
+														'</div>' +
+													'</div>' +
+												'</li>';
+										});
+										document.getElementById('filelistCourse').innerHTML = '<ul class="plupload_filelist_content" id="uploader_filelist_Course" unselectable="on">' + document.getElementById('filelistCourse').innerHTML + '</ul>';
+
+									},
+
+									FilesRemoved: function(up, files) {
+										plupload.each(files, function(file) {
+											$('#' + file.id).remove();
+										});
+									},
+
+									FileUploaded: function(up, file, info) {
+										$('#' + file.id).remove();
+									},
+
+									UploadProgress: function(up, file) {
+										$('#' + file.id + ' b')[0].innerHTML = '<span>' + file.percent + "%</span>";
+									},
+
+									UploadComplete: function(up, files) {
+										doCourseTaskGrade();
+									},
+
+									Error: function(up, err) {
+										alert("\nError #" + err.code + ": " + err.message);
+									}
+								}
+							});
+							uploaderCourse.init();
+						});
+					</script>
+					<p><a href="javascript:uploaderCourse.setOption('multipart_params', { 'sess_id': '5124bce1f767ff55a81f52571a34f71a','type': 'course_submission', 'tid': '5726', 'username': 'e0843506', 'uid': '27562' }); javascript:uploaderCourse.start();" class="submitButton">SUBMIT</a>
+					(only .java, .c, .cpp, .h, .jsh, and .py extensions allowed)</p>
+				</span>
+				<br>
+				<span class="label">&nbsp;</span>
+				<span class="value-long" style="font-size: 90%; color: #777;">To submit multiple files, click on the Browse button, then select one or more
+				files. The selected file(s) will be added to the upload queue. You can repeat this step to add more files. Check that you have all the files
+				needed for your submission. Then click on the Submit button to upload your submission.</span>
+			</div>
+										<input type="hidden" id="tid" name="tid" value="5726">
+		</div>
+		<!-- end content -->
+</div>
+<!-- end inner -->
+<div id="loading-mask">
+        <p id="loading_mask_loader" class="loader" style="display: none;"> <img alt="Loading..." src="./CodeCrunch_files/ajax-loader-tr.gif"> <br>
+                Please wait... </p>
+</div>
+<div id="practice-progress" style="display:none;position:fixed;inset:0;z-index:100000;background:rgba(0,0,0,.4);cursor:wait;">
+    <div role="status" aria-live="polite" aria-atomic="true" style="position:absolute;top:40%;left:50%;transform:translate(-50%,-50%);background:white;color:#222;padding:28px;max-width:420px;width:80%;text-align:center;border-radius:8px;box-shadow:0 4px 20px #555;">
+        <img src="./CodeCrunch_files/ajax-loader-tr.gif" alt="" width="32" height="32"><br>
+        <strong id="practice-progress-message">Uploading your files. Please wait…</strong>
+        <p>Please keep this page open. Larger submissions may take a little longer.</p>
+    </div>
+</div>
+<script type="text/javascript">
+$(".star").rating({
+        focus: function(value, link) {
+                var tip = $("#rating_text");
+                tip[0].data = tip[0].data || tip.html(); 
+                tip.html(link.title || "value: " + value);
+        },
+        blur: function(value, link) {
+                var tip = $("#rating_text");
+                $("#rating_text").html(tip[0].data || "");
+        },
+        callback: function(value, link) {
+                $.ajax({
+                        type: "POST",
+                        url: "task_updaterating.php",
+                        data: ({tid:$("#tid").val(), rating:value}),
+                        success: function(html) {
+                                var msg = html.split(";");
+                                $("#rating_text").removeClass().addClass(msg[0]);
+                                $("#rating_text").html(msg[1]);
+                        }
+                });
+        }
+});
+
+function getComments() {
+        $.ajax({
+                type: "POST",
+                url: "task_getcomments.php",
+                data: ({tid:$("#tid").val()}),
+                success: function(html) {
+                        $("#commentList").html(html);
+                }
+        });
+}
+
+function doTaskGrade(e, d) {
+        practiceProgress.show('Files uploaded. Submitting for grading. Please wait…');
+        $.ajax({
+                global: false,
+                type: "POST",
+                url: "doTaskGrade.php",
+                data: ({tid:$("#tid").val()}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#practiceNotification").removeClass().addClass(msg[0]);
+                        $("#practiceNotification").html(msg[1]);
+                },
+                error: function () {
+                    practiceProgress.fail('The submission could not be confirmed. Check My Submissions before trying again.');
+                },
+                complete: function () { practiceProgress.hide(); }
+        });
+
+}
+
+function doCourseTaskGrade(e, d) {
+        $.ajax({
+                type: "POST",
+                url: "doTaskGrade.php",
+                data: ({tid:$("#tid").val(), course_id:$("#course_id").val(), do_course:1}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#courseNotification").removeClass().addClass(msg[0]);
+                        $("#courseNotification").html(msg[1]);
+                }
+        });
+
+}
+
+function addComment() {
+        $.ajax({
+                type: "POST",
+                url: "task_addcomment.php",
+                data: ({tid:$("#tid").val(), comment:encodeURIComponent($("#comment").val())}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#commentNotification").removeClass().addClass(msg[0]);
+                        $("#commentNotification").html(msg[1]);
+                        
+                        getComments();
+                }
+        });
+}
+
+function deleteComment(c) {
+        $.ajax({
+                type: "POST",
+                url: "task_deletecomment.php",
+                data: ({comment_id:c}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#commentNotification").removeClass().addClass(msg[0]);
+                        $("#commentNotification").html(msg[1]);
+                        
+                        getComments();
+                }
+        });
+}
+
+function getClassify(){
+                $.ajax({
+                type: "GET",
+                url: "task_classify.php",
+                data: ({tid:$("#tid").val()}),
+                success: function(html) {
+                        $("#classifyList").html(html);
+                }
+        });
+}
+
+function getTutorial(){
+        $.ajax({
+                type: "POST",
+                url: "task_gettutorials.php",
+                data: ({tid:$("#tid").val()}),
+                success: function(html) {
+                        $("#tutorialList").html(html);
+                }
+        });
+}
+
+function getQueries() {
+        $.ajax({
+                type: "POST",
+                url: "task_getqueries.php",
+                data: ({tid:$("#tid").val()}),
+                success: function(html) {
+                        $("#queryList").html(html);
+                }
+        });
+}
+
+function addQuery() {
+        $.ajax({
+                type: "POST",
+                url: "task_addquery.php",
+                data: ({tid:$("#tid").val(), contest_id:$("#contest_id").val(), query:encodeURIComponent($("#query").val())}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#queryNotification").removeClass().addClass(msg[0]);
+                        $("#queryNotification").html(msg[1]);
+                        
+                        getQueries();
+                }
+        });
+}
+
+function deleteQuery(q) {
+        $.ajax({
+                type: "POST",
+                url: "task_deletequery.php",
+                data: ({query_id:q}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#queryNotification").removeClass().addClass(msg[0]);
+                        $("#queryNotification").html(msg[1]);
+                        
+                        getQueries();
+                }
+        });
+}
+
+function addTag() {
+        $.ajax({
+                type: "POST",
+                url: "tag_add.php",
+                data: ({tid:$("#tid").val(), tags:$("#tagwords").val()}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#tagNotification").removeClass().addClass(msg[0]);
+                        $("#tagNotification").html(msg[1]);
+                        
+                        getClassify();
+                }
+        });
+}
+
+
+$(document).ready(function() {
+        getComments();
+        getQueries();
+        getClassify();
+        getTutorial();
+        //getCloud();
+});
+
+$(document).everyTime(60000, function(i) {
+        if ($("#tid").val() != "" && $("#tid").val() != null) {
+                $.ajax({
+                        type: "POST",
+                        url: "task_checkcontest.php",
+                        data: ({tid:$("#tid").val()}),
+                        success: function(html) {
+                                if (html == "0") {
+                                        $("#contest_submit").html("");
+                                }
+                        }
+                });
+                $.ajax({
+                        type: "POST",
+                        url: "task_checkcourse.php",
+                        data: ({tid:$("#tid").val()}),
+                        success: function(html) {
+                                if (html == "0") {
+                                        $("#course_submit").html("");
+                                }
+                        }
+                });
+        }
+}, 0);
+
+$('#loading_mask_loader')
+        .hide()  // hide it initially
+        .ajaxStart(function() {
+                $(this).show();
+        })
+        .ajaxStop(function() {
+                $(this).hide();
+        });
+        
+</script>
+
+
+</div> <!-- end outer -->
+
+</div> <!-- end container -->
+
+
+
+</body></html>
