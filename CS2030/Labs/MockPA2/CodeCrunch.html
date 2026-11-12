@@ -1,0 +1,885 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0057)https://codecrunch.comp.nus.edu.sg/task_view.php?tid=5730 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="-1">
+
+<title>CodeCrunch</title>
+<!-- START NUS Includes-->
+<script type="text/javascript" src="./CodeCrunch_files/nussearch.js"></script>
+<link rel="stylesheet" type="text/css" href="./CodeCrunch_files/nusbase.css" media="screen, print, projection, handheld">
+<link rel="stylesheet" type="text/css" href="./CodeCrunch_files/nusmenu.css" media="screen, print, projection, handheld">
+<link rel="stylesheet" type="text/css" href="./CodeCrunch_files/nusscreen.css" media="screen, projection, print">
+<link href="https://codecrunch.comp.nus.edu.sg/nus/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+<link rel="apple-touch-icon" href="https://codecrunch.comp.nus.edu.sg/nus/blank.png">
+<!-- END NUS Includes -->
+<script type="text/javascript" src="./CodeCrunch_files/ajax.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/jquery.tablesorter.pager.js"></script>
+<!--<script type="text/javascript" src="/js/folding.js"></script>-->
+<script type="text/javascript" src="./CodeCrunch_files/jquery.watermark.min.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/jquery.scrollTo-2.1.3-min.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/customScript.js"></script>
+<!--script type="text/javascript">
+            function enterPressButton(field, button) {
+                $(field).keypress(function(e){if(e.which==13)$(button).trigger("click");});
+            }
+</script>-->
+<link rel="stylesheet" href="./CodeCrunch_files/style.css" type="text/css">
+<link rel="stylesheet" href="./CodeCrunch_files/jquery.tablesorter.css" type="text/css">
+<script type="text/javascript" src="./CodeCrunch_files/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/practice-progress.js"></script>
+<!--<script type="text/javascript" src="js/folding.js"></script>-->
+<script type="text/javascript" src="./CodeCrunch_files/jquery.rating.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/behaviour.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/textarea_maxlen.js"></script>
+<script type="text/javascript" src="./CodeCrunch_files/jquery.timer.js"></script>
+
+<script type="text/javascript" src="./CodeCrunch_files/plupload.full.min.js"></script>
+
+<link rel="stylesheet" href="./CodeCrunch_files/jquery.rating.css" type="text/css">
+<link rel="stylesheet" href="./CodeCrunch_files/style.css" type="text/css">
+<link rel="stylesheet" href="./CodeCrunch_files/tagcloud.css" type="text/css">
+<link rel="stylesheet" href="./CodeCrunch_files/jquery-ui-1.7.2.custom.css" type="text/css">
+
+<link rel="stylesheet" href="./CodeCrunch_files/jquery.ui.plupload.css" type="text/css">
+
+</head>
+
+<body>
+<!-- START NUS-Header -->
+
+<!-- NUS Header -->
+<div id="nusheader" class="nusbody">
+<div class="nuslogodiv">
+<a href="https://www.nus.edu.sg/">
+<img class="nuslogo" src="./CodeCrunch_files/soclogo.png" alt="">
+</a>
+</div>
+
+</div>
+
+<!-- NUS Inner-Title -->
+<div id="nustitle" class="nusbody"><div id="nustitle_l"><div id="nustitle_r">
+              <h1 id="site-name">
+                <a href="https://codecrunch.comp.nus.edu.sg/" title="Home" rel="home">CodeCrunch</a>
+              </h1>
+</div></div></div>
+
+<!-- END NUS-Header -->
+
+<div id="banner">
+        <div id="topmenu">
+        <div id="login">
+                Logged in as: <strong>e0843506</strong>
+                </div>
+                <div style="display: block;"><ul>
+                                        <li><a href="https://codecrunch.comp.nus.edu.sg/index.php">Home</a></li>
+                                                    <li><a href="https://codecrunch.comp.nus.edu.sg/user_course_viewall.php">My Courses</a></li>
+                                                                <li><a href="https://codecrunch.comp.nus.edu.sg/tutorial_browser.php">Browse Tutorials</a></li>
+                                                                <li><a href="https://codecrunch.comp.nus.edu.sg/task_browser.php">Browse Tasks</a></li>
+                                                                <li><a href="https://codecrunch.comp.nus.edu.sg/task_criteria.php">Search</a></li>
+                                                                <li><a href="https://codecrunch.comp.nus.edu.sg/user_viewsubmissions.php">My Submissions</a></li>
+                                                <li><a href="https://codecrunch.comp.nus.edu.sg/logout_process.php">Logout</a></li>
+                            </ul></div>
+        </div>
+</div>
+<div id="container">
+<div id="outer">
+<div id="inner">
+	<div id="content_full">                         
+		<div class="content-header"><h3>CS2030 (AY26/27) Mock Practical Assessment #2</h3></div>
+		<div class="spacer"></div>
+		<table width="100%" cellpadding="0" cellspacing="0" border="0">
+			<tbody><tr><td valign="top" style="width: 30%;">
+				<div class="meta_header">Tags &amp; Categories</div>
+				<div id="classifyList"><span class="value">Tags:
+</span>
+<span class="value">Categories:
+</span></div>
+			</td>
+			<td valign="top" style="width: 40%;">
+				<div class="meta_header">Related Tutorials</div>
+				<div id="tutorialList"></div>
+			</td>
+			<td valign="top" style="width: 30%;">
+			</td>
+			</tr>
+		</tbody></table>
+		<div class="content-header">
+			<h3>Task Content
+							</h3>
+		</div>                          
+		<div class="panel"><div class="task-content">
+		<h2>Natural Numbers</h2>
+
+<p>
+Natural numbers are commonly observed in nature, and have been used for counting since time immemorial.
+Natural numbers start with zero, and the successor of a natural number is also a natural number.
+As an example, one (<tt>1</tt>) is the successor of 
+zero (<tt>succ(0)</tt>), 
+two (<tt>2</tt>) is the successor of 
+one (<tt>succ(1)</tt>), etc.
+
+</p><p>Simple operations can be performed on natural numbers.
+In particular, addition can be observed as a repeated successor application.
+For example, adding two to zero is <tt>succ(succ(0))</tt> which gives two (<tt>2</tt>).
+With addition defined, other operations such as subtraction and multiplication can follow.
+
+</p><h2>Task</h2>
+
+<p>In this task, you are to define the common operations of natural numbers, as well as natural fractions, i.e. fractions whose numerator and denominator are natural numbers.
+
+</p><p>You are given the <tt><a href="https://codecrunch.comp.nus.edu.sg/taskfile.php/5730/AbstractNum.java">AbstractNum</a></tt> class shown below.
+
+</p><pre>import java.util.Optional;
+import java.util.function.Function;
+import java.util.function.Predicate;
+
+class AbstractNum&lt;T&gt; {
+    protected static final Function&lt;Integer, Integer&gt; s = x -&gt; x + 1;
+    protected static final Function&lt;Integer, Integer&gt; n = x -&gt; -x;
+    protected static final Predicate&lt;Integer&gt; valid = x -&gt; x &gt;= 0;
+
+    protected final Optional&lt;T&gt; opt;
+
+    protected AbstractNum(T i) {
+        this(Optional.&lt;T&gt;of(i));
+    }
+
+    protected AbstractNum(Optional&lt;T&gt; opt) {
+        this.opt = opt;
+    }
+
+    static AbstractNum&lt;Integer&gt; zero() {
+        return new AbstractNum&lt;Integer&gt;(0);
+    }
+
+    public boolean equals(Object obj) {
+        if (obj == this) {
+            return true;
+        } else {
+            if (obj instanceof AbstractNum&lt;?&gt; abs) {
+                return abs.opt.equals(this.opt);
+            } else {
+                return false;
+            }
+        }
+    }
+
+    protected boolean isValid() {
+        return this.opt.map(x -&gt; true).orElse(false);
+    }
+
+    public String toString() {
+        return this.opt.map(x -&gt; x.toString()).orElse("NaN");
+    }
+}
+</pre>
+
+<p>Note the definitions of the two functions (<tt>s</tt> and <tt>n</tt>) and predicate <tt>valid</tt>.
+These are the only lambdas that you will need for arithmetic manipulation.
+In your implementation, you are not allowed to use the operators 
+<tt>+</tt>
+<tt>-</tt>
+<tt>*</tt>
+<tt>/</tt>
+<tt>%</tt> (other similar forms e.g. <tt>+=</tt>, <tt>++</tt>, etc.),
+or bitwise operations to perform arithmetic manipulation.
+
+</p><p>There is a single instance property <tt>opt</tt> of type <tt>Optional&lt;T&gt;</tt>.
+This is the only property that you need.
+As such, you are not allowed to define any other instance properties, including constants, in your implementation.
+
+</p><p>The <tt>static</tt> method <tt>zero()</tt> creates a <tt>AbstractNum</tt> with the integer zero.  This is the only "value" that you will need in your implementation.
+As such, you are not allowed to use numerical values in your implementation.
+
+</p><p>The <tt>equals</tt> method is provided.
+Only use this to compare natural numbers and fractions.
+You will not be allowed to use comparison operators 
+<tt>&lt; &gt; == != &lt;= &gt;=</tt>. 
+The predicate <tt>valid</tt> may come in handy.
+
+</p><p>Two other methods <tt>isValid</tt> and <tt>toString</tt> are provided for you.
+You will not need to define any <tt>toString</tt> method in your implementation.
+In addition, there should be no dependency on <tt>String</tt> in your implementation.
+Also note the use of <tt>orElse</tt> in these methods.  
+In your implementation, you are not allowed to use the
+<tt>Optional</tt> methods <tt>isPresent</tt>, <tt>isEmpty</tt>,
+<tt>equals</tt>, or any form of get methods, i.e.
+<tt>get</tt>, <tt>orElse</tt>, <tt>orElseGet</tt>, <tt>orElseThrow</tt>.
+
+</p><h2>Other Constraints</h2>
+
+<p>The following are the usual constraints.
+You should keep to the constructs and programming discipline 
+instilled throughout the module.</p>
+
+<ul>
+<li>Write each <tt>class</tt>/<tt>interface</tt> in its own file. </li>
+<li>Ensure that ALL object properties and class constants are declared <tt>private final</tt>. </li>
+<li>Ensure that that your classes are NOT cyclic dependent.</li>
+<li>ONLY the following java libraries ARE allowed:
+<ul>
+<li><tt>java.lang</tt>
+</li><li><tt>java.util.List</tt>
+</li><li><tt>java.util.Optional</tt>
+</li><li><tt>java.util.stream.Stream</tt>, and 
+</li><li>functional interfaces from <tt>java.util.function</tt>.
+</li></ul>
+</li><li>Use <tt>&amp;&amp;</tt>, <tt>||</tt> and <tt>!</tt> in logical expressions.
+</li><li>You are NOT allowed to use java keywords/literals: <tt>null</tt>, <tt>instanceof</tt>
+</li><li>You are NOT allowed to use Java reflection, i.e. <tt>Object::getClasses</tt> and other methods from <tt>Class</tt>
+</li><li>You are NOT allowed to use <tt>*</tt> wildcard imports.
+</li><li>You are NOT allowed to define anonymous inner classes; define lambdas instead.
+</li><li>You are NOT allowed to define array constructs, e.g.
+<tt>String[]</tt> or using ellipsis, e.g.<tt>String...</tt>
+</li></ul>
+
+<p>This task comprises a number of levels.
+You are required to complete ALL levels.</p>
+
+
+<h2>Level 1</h2>
+
+<p>Write an immutable <tt>Num</tt> class that inherits from <tt>AbstractNum</tt> with the following <tt>static</tt> methods:
+
+</p><ul>
+<li><tt>of(int i)</tt> that takes in an integer <tt>i</tt> and
+returns it as a natural number if <tt>i &gt;= 0</tt>, or an invalid natural number <tt>NaN</tt> otherwise.
+You will need to define appropriate <tt>private</tt> constructor(s).
+Use <tt>AbstractNum.valid</tt> to help you determine the validity of the natural number.
+
+</li><li>The <tt>zero()</tt> method is defined for you.  
+It returns the natural number representing zero.
+You will need to write the accompanying <tt>private</tt> constructor.
+
+<pre>    static Num zero() {
+        return new Num(AbstractNum.zero());
+    }
+</pre>
+
+</li></ul>
+
+<pre>jshell&gt; Num zero = Num.zero()
+zero ==&gt; 0
+
+jshell&gt; Num one = Num.of(1)
+one ==&gt; 1
+
+jshell&gt; Num invalid = Num.of(-1)
+invalid ==&gt; NaN
+
+jshell&gt; List&lt;AbstractNum&gt; list = List.&lt;AbstractNum&gt;of(zero, one, invalid)
+list ==&gt; [0, 1, NaN]
+</pre>
+
+<p>Using the function <tt>s</tt> defined in <tt>AbstractNum</tt>, write a <tt>succ</tt> method that returns the successor of a natural number.  If the number is invalid, it's successor is also invalid.
+In addition, write a <tt>static</tt> method <tt>one()</tt> that returns the natural number <tt>1</tt>.
+
+</p><pre>jshell&gt; Num.one()
+$.. ==&gt; 1
+
+jshell&gt; Num.zero().succ()
+$.. ==&gt; 1
+
+jshell&gt; Num.one().equals(Num.zero().succ()) // using AbstractNum::equals
+$.. ==&gt; true
+
+jshell&gt; Num.of(-1).succ()
+$.. ==&gt; NaN
+
+jshell&gt; Num.one().succ().succ()
+$.. ==&gt; 3
+
+jshell&gt; Num.of(-1).succ().succ()
+$.. ==&gt; NaN
+</pre>
+
+<h2>Level 2</h2>
+
+<p>Write the <tt>add</tt> method that takes in a natural number and returns the result of addition as a natural number.  You will need to call <tt>succ</tt> repeatedly until the result is reached.
+Moreover, an add operation is only possible if both operands are valid.
+
+</p><p>You may choose to write a loop construct or use <tt>Stream</tt>.
+Do not use recursion.
+Also pay attention to the restriction on <tt>Optional</tt> methods.
+
+</p><pre>jshell&gt; Num one = Num.one()
+one ==&gt; 1
+
+jshell&gt; Num zero = Num.zero()
+zero ==&gt; 0
+
+jshell&gt; Num invalid = Num.of(-1)
+invalid ==&gt; NaN
+
+jshell&gt; zero.add(zero)
+$.. ==&gt; 0
+
+jshell&gt; zero.add(one)
+$.. ==&gt; 1
+
+jshell&gt; zero.add(invalid)
+$.. ==&gt; NaN
+
+jshell&gt; one.add(zero)
+$.. ==&gt; 1
+
+jshell&gt; one.add(one)
+$.. ==&gt; 2
+
+jshell&gt; one.add(invalid)
+$.. ==&gt; NaN
+
+jshell&gt; invalid.add(zero)
+$.. ==&gt; NaN
+
+jshell&gt; Num result = zero.add(one).add(zero).add(one)
+result ==&gt; 2
+
+jshell&gt; result.add(result)
+$.. ==&gt; 4
+
+jshell&gt; zero.add(invalid).add(zero).add(one)
+$.. ==&gt; NaN
+</pre>
+
+<h2>Level 3</h2>
+
+<p>Include the <tt>mul</tt> and <tt>sub</tt> methods to perform 
+multiplication and subtraction respectively.
+Suppose <tt>m</tt> and <tt>n</tt> are valid natural numbers,
+
+</p><ul>
+<li>For multiplication, say <tt>m.mul(n)</tt>, it can be seen as <tt>m</tt> repeated additions of <tt>n</tt>, or vice-versa.
+</li><li>For subtraction, say <tt>m.sub(n)</tt>, it is observed that it is equivalent to the addition,
+i.e. <tt>(-n).add(m)</tt>.  That is to say, we need to negate the argument <tt>n</tt> (without invalidating it), and then add <tt>m</tt> to it.
+Use the <tt>n</tt> function in <tt>AbstractNum</tt>.
+</li></ul>
+
+<p>Just like addition, the <tt>mul</tt> and <tt>sub</tt> operations are only possible if both operands are valid.
+
+</p><pre>jshell&gt; Num one = Num.one()
+one ==&gt; 1
+
+jshell&gt; Num zero = Num.zero()
+zero ==&gt; 0
+
+jshell&gt; Num invalid = Num.of(-1)
+invalid ==&gt; NaN
+
+jshell&gt; zero.sub(zero)
+$.. ==&gt; 0
+
+jshell&gt; zero.sub(one)
+$.. ==&gt; NaN
+
+jshell&gt; zero.sub(invalid)
+$.. ==&gt; NaN
+
+jshell&gt; one.sub(zero)
+$.. ==&gt; 1
+
+jshell&gt; one.sub(one)
+$.. ==&gt; 0
+
+jshell&gt; one.sub(invalid)
+$.. ==&gt; NaN
+
+jshell&gt; invalid.sub(zero)
+$.. ==&gt; NaN
+
+jshell&gt; zero.mul(zero)
+$.. ==&gt; 0
+
+jshell&gt; zero.mul(one)
+$.. ==&gt; 0
+
+jshell&gt; zero.mul(invalid)
+$.. ==&gt; NaN
+
+jshell&gt; one.mul(zero)
+$.. ==&gt; 0
+
+jshell&gt; one.mul(one)
+$.. ==&gt; 1
+
+jshell&gt; one.mul(invalid)
+$.. ==&gt; NaN
+
+jshell&gt; invalid.mul(zero)
+$.. ==&gt; NaN
+
+jshell&gt; Num.of(2).mul(Num.of(3))
+$.. ==&gt; 6
+</pre>
+
+<h2>Level 4</h2>
+
+<p>Natural numbers are pretty boring.  Let's include natural fractions!
+
+</p><p>A valid natural fraction comprises a numerator and denominator part that are valid natural numbers.
+In addition, the denominator must not be zero.
+
+</p><p>The <tt><a href="https://codecrunch.comp.nus.edu.sg/taskfile.php/5730/Frac.java">Frac</a></tt> class is given to you.
+
+</p><pre>class Frac extends Pair&lt;Num, Num&gt; {
+    private Frac(Num n, Num d) {
+        super(n, d);
+    }
+
+    static Frac of(Num n, Num d) {
+        return new Frac(n, d);
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s : %s", t(), u());
+    }
+}
+</pre>
+
+<p>It's a simplified <tt><a href="https://codecrunch.comp.nus.edu.sg/taskfile.php/5730/Pair.java">Pair</a></tt> class where both values of the pair are of type
+<tt>Num</tt>.
+It also contains a <tt>toString</tt> method that returns the appropriate <tt>String</tt>
+representation of the fraction.
+
+</p><p>Write an immutable <tt>Fraction</tt> class that inherits from <tt>AbstractNum</tt>
+with a <tt>static</tt> method <tt>of</tt> (with appropriate constructors) that takes
+in two integer values <tt>n</tt> and <tt>d</tt> and creates a fraction <tt>n : d</tt>
+
+</p><pre>jshell&gt; Fraction.of(1, 2)
+$.. ==&gt; 1 : 2
+
+jshell&gt; Fraction.of(2, 1)
+$.. ==&gt; 2 : 1
+
+jshell&gt; Fraction.of(2, 2)
+$.. ==&gt; 2 : 2
+
+jshell&gt; Fraction.of(0, 2)
+$.. ==&gt; 0 : 2
+
+jshell&gt; Fraction.of(2, 0)
+$.. ==&gt; NaN
+
+jshell&gt; Fraction.of(-1, 2)
+$.. ==&gt; NaN
+
+jshell&gt; Fraction.of(1, -2)
+$.. ==&gt; NaN
+</pre>
+
+
+<h2>Level 5</h2>
+
+<p>Include the <tt>add</tt>, <tt>sub</tt> and <tt>mul</tt> operations to operate on two fractions.
+
+</p><p>In case you forget,
+
+</p><pre> a     c     ad + bc
+--- + --- = ---------
+ b     d       bd
+
+ a     c     ad - bc
+--- - --- = ---------
+ b     d       bd
+
+ a     c     ac
+--- x --- = ----
+ b     d     bd
+</pre>
+
+<p>Just like <tt>Num</tt>, operations are only possible if both operands are valid.
+
+</p><pre>jshell&gt; Fraction.of(1, 2).add(Fraction.of(1, 4))
+$.. ==&gt; 6 : 8
+
+jshell&gt; Fraction.of(-1, 2).add(Fraction.of(1, 4))
+$.. ==&gt; NaN
+
+jshell&gt; Fraction.of(1, 2).sub(Fraction.of(1, 4))
+$.. ==&gt; 2 : 8
+
+jshell&gt; Fraction.of(1, 4).sub(Fraction.of(1, 2))
+$.. ==&gt; NaN
+
+jshell&gt; Fraction.of(1, 2).mul(Fraction.of(2, 1))
+$.. ==&gt; 2 : 2
+
+jshell&gt; Fraction.of(1, 2).mul(Fraction.of(2, 0))
+$.. ==&gt; NaN
+</pre>
+
+<p><i>Self-challenge... you may want to try implementing a method
+<tt>reduce()</tt> to simplify the fraction.</i>
+
+<!--
+<h2>Level 6</h2>
+
+<p>You will probably notice that the fractions are not in the reduced form.
+Write a method <tt>reduce()</tt> to reduce the fraction to it's simplest form.
+
+<pre>
+jshell&gt; Fraction.of(1, 2).add(Fraction.of(1, 4)).reduce()
+$.. ==&gt; 3 : 4
+
+jshell&gt; Fraction.of(-1, 2).add(Fraction.of(1, 4)).reduce()
+$.. ==&gt; NaN
+
+jshell&gt; Fraction.of(1, 2).sub(Fraction.of(1, 4)).reduce()
+$.. ==&gt; 1 : 4
+
+jshell&gt; Fraction.of(1, 4).sub(Fraction.of(1, 2)).reduce()
+$.. ==&gt; NaN
+
+jshell&gt; Fraction.of(1, 2).mul(Fraction.of(2, 1)).reduce()
+$.. ==&gt; 1 : 1
+
+jshell&gt; Fraction.of(1, 2).mul(Fraction.of(2, 0)).reduce()
+$.. ==&gt; NaN
+</pre>
+-->
+
+
+		</p></div></div>                          
+					<div class="content-header">
+					<h3>Submission (Course)</h3>
+			</div>
+			<div id="courseNotification"></div>
+			<div class="panel" id="course_submit">
+				<div><span class="label">Select course:</span> <select id="course_id">
+			<option value="232">CS2030 (2026/2027 Sem 1) - Programming Methodology II</option>				</select>
+				</div>
+				<span class="label" style="vertical-align:top">Your Files:</span>
+				<span class="value-long">
+					<div id="plupload_containerCourse" style="position: relative;">
+						<a id="course_submission" href="javascript:;" class="submitButton" style="position: relative; z-index: 1;">BROWSE</a>
+					<div id="html5_1k77va07adnh3paaut6u010i35_container" class="moxie-shim moxie-shim-html5" style="position: absolute; top: -7px; left: 0px; width: 103px; height: 27px; overflow: hidden; z-index: 0;"><input id="html5_1k77va07adnh3paaut6u010i35" type="file" style="font-size: 999px; opacity: 0; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" multiple="" accept=".java,.c,.cpp,.h,.py,.jar,.jsh" tabindex="-1"></div></div>
+					<br>
+					<div id="filelistCourse"></div>
+					<script type="text/javascript">
+						var uploaderCourse;
+						$(document).ready(function() {
+							uploaderCourse = new plupload.Uploader({
+								runtimes: 'html5,flash,html4',
+								browse_button: 'course_submission',
+								container: 'plupload_containerCourse',
+								prevent_duplicates: true,
+								url: 'plupload/uploadFiles.php',
+
+								filters: {
+									max_file_size: '2097152', 
+									mime_types: [
+										{title : "Allowed files", extensions : "java,c,cpp,h,py,jar,jsh"}	
+									]
+								},
+
+								init: {
+									PostInit: function () {
+										document.getElementById('filelistCourse').innerHTML = '';
+									},
+
+									FilesAdded: function (up, files) {
+										plupload.each(files, function(file) {
+											document.getElementById('filelistCourse').innerHTML += 
+												'<li class="plupload_file ui-state-default plupload_delete" id="' + file.id + '" class="plupload_file_name">' +  
+													'<div class="plupload_file_status">' +
+														'<div class="plupload_file_action">' + 
+															'<div class="plupload_action_icon ui-icon ui-icon-circle-close" onclick="uploaderCourse.removeFile(uploaderCourse.getFile(\''+file.id+'\'));"> </div>' + 
+														'</div>' +
+														'<div class="plupload_file_name" title="' + file.name + '">' + 
+															'<span class="plupload_file_name_wrapper">' + file.name + '   (<i>' + plupload.formatSize(file.size) + '</i>) <b></b>' + '</span>' +
+														'</div>' +
+													'</div>' +
+												'</li>';
+										});
+										document.getElementById('filelistCourse').innerHTML = '<ul class="plupload_filelist_content" id="uploader_filelist_Course" unselectable="on">' + document.getElementById('filelistCourse').innerHTML + '</ul>';
+
+									},
+
+									FilesRemoved: function(up, files) {
+										plupload.each(files, function(file) {
+											$('#' + file.id).remove();
+										});
+									},
+
+									FileUploaded: function(up, file, info) {
+										$('#' + file.id).remove();
+									},
+
+									UploadProgress: function(up, file) {
+										$('#' + file.id + ' b')[0].innerHTML = '<span>' + file.percent + "%</span>";
+									},
+
+									UploadComplete: function(up, files) {
+										doCourseTaskGrade();
+									},
+
+									Error: function(up, err) {
+										alert("\nError #" + err.code + ": " + err.message);
+									}
+								}
+							});
+							uploaderCourse.init();
+						});
+					</script>
+					<p><a href="javascript:uploaderCourse.setOption('multipart_params', { 'sess_id': '434434e5e1e3287dd1139d9304e759ff','type': 'course_submission', 'tid': '5730', 'username': 'e0843506', 'uid': '27562' }); javascript:uploaderCourse.start();" class="submitButton">SUBMIT</a>
+					(only .java, .c, .cpp, .h, .jsh, and .py extensions allowed)</p>
+				</span>
+				<br>
+				<span class="label">&nbsp;</span>
+				<span class="value-long" style="font-size: 90%; color: #777;">To submit multiple files, click on the Browse button, then select one or more
+				files. The selected file(s) will be added to the upload queue. You can repeat this step to add more files. Check that you have all the files
+				needed for your submission. Then click on the Submit button to upload your submission.</span>
+			</div>
+										<input type="hidden" id="tid" name="tid" value="5730">
+		</div>
+		<!-- end content -->
+</div>
+<!-- end inner -->
+<div id="loading-mask">
+        <p id="loading_mask_loader" class="loader" style="display: none;"> <img alt="Loading..." src="./CodeCrunch_files/ajax-loader-tr.gif"> <br>
+                Please wait... </p>
+</div>
+<div id="practice-progress" style="display:none;position:fixed;inset:0;z-index:100000;background:rgba(0,0,0,.4);cursor:wait;">
+    <div role="status" aria-live="polite" aria-atomic="true" style="position:absolute;top:40%;left:50%;transform:translate(-50%,-50%);background:white;color:#222;padding:28px;max-width:420px;width:80%;text-align:center;border-radius:8px;box-shadow:0 4px 20px #555;">
+        <img src="./CodeCrunch_files/ajax-loader-tr.gif" alt="" width="32" height="32"><br>
+        <strong id="practice-progress-message">Uploading your files. Please wait…</strong>
+        <p>Please keep this page open. Larger submissions may take a little longer.</p>
+    </div>
+</div>
+<script type="text/javascript">
+$(".star").rating({
+        focus: function(value, link) {
+                var tip = $("#rating_text");
+                tip[0].data = tip[0].data || tip.html(); 
+                tip.html(link.title || "value: " + value);
+        },
+        blur: function(value, link) {
+                var tip = $("#rating_text");
+                $("#rating_text").html(tip[0].data || "");
+        },
+        callback: function(value, link) {
+                $.ajax({
+                        type: "POST",
+                        url: "task_updaterating.php",
+                        data: ({tid:$("#tid").val(), rating:value}),
+                        success: function(html) {
+                                var msg = html.split(";");
+                                $("#rating_text").removeClass().addClass(msg[0]);
+                                $("#rating_text").html(msg[1]);
+                        }
+                });
+        }
+});
+
+function getComments() {
+        $.ajax({
+                type: "POST",
+                url: "task_getcomments.php",
+                data: ({tid:$("#tid").val()}),
+                success: function(html) {
+                        $("#commentList").html(html);
+                }
+        });
+}
+
+function doTaskGrade(e, d) {
+        practiceProgress.show('Files uploaded. Submitting for grading. Please wait…');
+        $.ajax({
+                global: false,
+                type: "POST",
+                url: "doTaskGrade.php",
+                data: ({tid:$("#tid").val()}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#practiceNotification").removeClass().addClass(msg[0]);
+                        $("#practiceNotification").html(msg[1]);
+                },
+                error: function () {
+                    practiceProgress.fail('The submission could not be confirmed. Check My Submissions before trying again.');
+                },
+                complete: function () { practiceProgress.hide(); }
+        });
+
+}
+
+function doCourseTaskGrade(e, d) {
+        $.ajax({
+                type: "POST",
+                url: "doTaskGrade.php",
+                data: ({tid:$("#tid").val(), course_id:$("#course_id").val(), do_course:1}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#courseNotification").removeClass().addClass(msg[0]);
+                        $("#courseNotification").html(msg[1]);
+                }
+        });
+
+}
+
+function addComment() {
+        $.ajax({
+                type: "POST",
+                url: "task_addcomment.php",
+                data: ({tid:$("#tid").val(), comment:encodeURIComponent($("#comment").val())}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#commentNotification").removeClass().addClass(msg[0]);
+                        $("#commentNotification").html(msg[1]);
+                        
+                        getComments();
+                }
+        });
+}
+
+function deleteComment(c) {
+        $.ajax({
+                type: "POST",
+                url: "task_deletecomment.php",
+                data: ({comment_id:c}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#commentNotification").removeClass().addClass(msg[0]);
+                        $("#commentNotification").html(msg[1]);
+                        
+                        getComments();
+                }
+        });
+}
+
+function getClassify(){
+                $.ajax({
+                type: "GET",
+                url: "task_classify.php",
+                data: ({tid:$("#tid").val()}),
+                success: function(html) {
+                        $("#classifyList").html(html);
+                }
+        });
+}
+
+function getTutorial(){
+        $.ajax({
+                type: "POST",
+                url: "task_gettutorials.php",
+                data: ({tid:$("#tid").val()}),
+                success: function(html) {
+                        $("#tutorialList").html(html);
+                }
+        });
+}
+
+function getQueries() {
+        $.ajax({
+                type: "POST",
+                url: "task_getqueries.php",
+                data: ({tid:$("#tid").val()}),
+                success: function(html) {
+                        $("#queryList").html(html);
+                }
+        });
+}
+
+function addQuery() {
+        $.ajax({
+                type: "POST",
+                url: "task_addquery.php",
+                data: ({tid:$("#tid").val(), contest_id:$("#contest_id").val(), query:encodeURIComponent($("#query").val())}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#queryNotification").removeClass().addClass(msg[0]);
+                        $("#queryNotification").html(msg[1]);
+                        
+                        getQueries();
+                }
+        });
+}
+
+function deleteQuery(q) {
+        $.ajax({
+                type: "POST",
+                url: "task_deletequery.php",
+                data: ({query_id:q}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#queryNotification").removeClass().addClass(msg[0]);
+                        $("#queryNotification").html(msg[1]);
+                        
+                        getQueries();
+                }
+        });
+}
+
+function addTag() {
+        $.ajax({
+                type: "POST",
+                url: "tag_add.php",
+                data: ({tid:$("#tid").val(), tags:$("#tagwords").val()}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#tagNotification").removeClass().addClass(msg[0]);
+                        $("#tagNotification").html(msg[1]);
+                        
+                        getClassify();
+                }
+        });
+}
+
+
+$(document).ready(function() {
+        getComments();
+        getQueries();
+        getClassify();
+        getTutorial();
+        //getCloud();
+});
+
+$(document).everyTime(60000, function(i) {
+        if ($("#tid").val() != "" && $("#tid").val() != null) {
+                $.ajax({
+                        type: "POST",
+                        url: "task_checkcontest.php",
+                        data: ({tid:$("#tid").val()}),
+                        success: function(html) {
+                                if (html == "0") {
+                                        $("#contest_submit").html("");
+                                }
+                        }
+                });
+                $.ajax({
+                        type: "POST",
+                        url: "task_checkcourse.php",
+                        data: ({tid:$("#tid").val()}),
+                        success: function(html) {
+                                if (html == "0") {
+                                        $("#course_submit").html("");
+                                }
+                        }
+                });
+        }
+}, 0);
+
+$('#loading_mask_loader')
+        .hide()  // hide it initially
+        .ajaxStart(function() {
+                $(this).show();
+        })
+        .ajaxStop(function() {
+                $(this).hide();
+        });
+        
+</script>
+
+
+</div> <!-- end outer -->
+
+</div> <!-- end container -->
+
+
+
+</body></html>
